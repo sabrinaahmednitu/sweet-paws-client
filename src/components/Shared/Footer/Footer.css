@@ -1,0 +1,27 @@
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+     background-color: #e6fffd;
+     padding-top: 15px;
+     gap: 10px;
+}
+.footer-img{
+    width: 228px;
+    height: 92px; 
+}
+.footer-logo h3{
+  font-size: large;
+  font-weight: bold;
+}
+.second-footer,.first-footer{
+     background-color: #e6fffd;
+}
+.last-footer{
+    background: url(https://www.puppyspot.com/assets/img/components/footer/footer-graphic.svg) 0 100% no-repeat;
+    background-color: #e6fffd;
+     background-size: 100% ;
+    padding: 2em 2em 12em;
+    text-align: center;
+}
