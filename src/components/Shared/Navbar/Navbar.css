@@ -1,0 +1,25 @@
+.navbar{
+   background: linear-gradient(263deg,#E3A379 -10.95%,#DF7E85 33.97%,#DD6189 98.23%);
+color: white;
+  }
+
+
+/* cart items css */
+.cart__trolly__link {
+  position: relative;
+}
+.cart__trolly {
+  position: relative;
+}
+.cart__total__item {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(122, 103, 231);
+  color: white; 
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  top: -20%;
+  left: 70%;
+}
