@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar/Navbar.css';
+import navlogo from "../../images/Sweet_Paws__2_-removebg-preview.png"
 
 const Navbar = () => {
   const navItem = (
@@ -21,7 +22,10 @@ const Navbar = () => {
   );
   return (
     <div>
-      <div>
+      <section className="nav-1">
+        <p>Email us between 8AM-Midnight EST, every day! </p>
+      </section>
+      <section>
         <div className="navbar bg-[#e6e7eb] text-black font-bold ">
           {/* nav-1 */}
           <div className="navbar-start">
@@ -49,7 +53,12 @@ const Navbar = () => {
                 {navItem}
               </ul>
             </div>
-            <a className="normal-case text-xl">SweetPaws</a>
+            {/* <a className="normal-case text-xl">SweetPaws</a> */}
+           
+              <a href="">
+                <img className="navlogo" src={navlogo} alt="" />
+              </a>
+          
           </div>
 
           {/* nav-2 */}
@@ -65,7 +74,8 @@ const Navbar = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </section>
+      <hr />
     </div>
   );
 };

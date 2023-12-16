@@ -1,9 +1,23 @@
-.navbar{
-   background: linear-gradient(263deg,#E3A379 -10.95%,#DF7E85 33.97%,#DD6189 98.23%);
-color: white;
-  }
+.nav-1 {
+  text-align: center;
+  background-color: #66af37;
+  color: white;
+  font-family: Sarabun, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 0px;
+}
 
+.navbar {
+  /* background: linear-gradient(263deg,#E3A379 -10.95%,#DF7E85 33.97%,#DD6189 98.23%); */
+  background-color: white;
+  color: black;
+}
 
+.navlogo{
+  width: 136px;
+  height: 60px;
+}
 /* cart items css */
 .cart__trolly__link {
   position: relative;
@@ -16,7 +30,7 @@ color: white;
   width: 20px;
   height: 20px;
   background-color: rgb(122, 103, 231);
-  color: white; 
+  color: white;
   border-radius: 50%;
   display: grid;
   place-items: center;
