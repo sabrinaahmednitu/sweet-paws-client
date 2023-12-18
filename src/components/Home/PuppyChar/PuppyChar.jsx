@@ -3,15 +3,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
-import { FreeMode, Pagination } from 'swiper/modules';
-
+import { FreeMode } from 'swiper/modules';
 import './PuppyChar.css';
 
 const PuppyChar = () => {
   return (
     <div className="container mx-auto">
       <section>
-        <div className='puppy-char-header'>
+        <div className="puppy-char-header">
           <img src="	https://www.puppyspot.com/preact/img/star.svg" alt="" />
           <h2>Puppy Characteristics</h2>
           <p>
