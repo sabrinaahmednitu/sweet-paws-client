@@ -47,7 +47,7 @@ const PuppyChar = () => {
           pagination={{
             clickable: true,
           }}
-          modules={[FreeMode, Pagination]}
+          modules={[FreeMode]}
           className="mySwiper-char"
         >
           <SwiperSlide className="SwiperSlide-char">
@@ -129,6 +129,17 @@ const PuppyChar = () => {
             </a>
           </SwiperSlide>
         </Swiper>
+      </section>
+      <section className='char-btn-container'>
+        <a href="">
+          <button className="char-btn">
+            Browse All Puppies
+            <img
+              src="	https://www.puppyspot.com/preact/img/forward-caret-white.svg"
+              alt=""
+            />
+          </button>
+        </a>
       </section>
     </div>
   );
