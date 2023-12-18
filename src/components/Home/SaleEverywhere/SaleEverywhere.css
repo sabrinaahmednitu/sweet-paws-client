@@ -1,0 +1,89 @@
+
+.state-main{
+        background-color: #eaf9ff;
+       
+}
+/* -----first part css------ */
+
+.state-header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  margin-bottom:10px ;
+}
+
+.state-header h2{
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.36em;
+    margin: 0;
+}
+.state-header img{
+    margin: 1rem auto;
+    max-width: 264px;
+    min-width: 184px;
+}
+.state-header p{
+    color: #000;
+    letter-spacing: .1px;
+    line-height: 26px;
+    font-size: 20px;
+    line-height: 25px;
+    margin: 0 0 1rem;
+}
+
+
+/* -----second part css------ */
+.states-container {
+  display: flex;
+  margin: auto;
+}
+
+.states {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.state-1 {
+  width: 200px;
+  margin: 10px;
+}
+
+.state-1 h3 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.state-1 ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.state-1 li {
+  font-size: 14px;
+  margin-bottom: 5px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.state-1 {
+  background-color: #f8f8f8;
+  border: 1px solid  #71d0ff;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* using grid (dont use align-items center) */
+/* .states{
+display: grid;
+grid-template-columns: repeat(5,1fr);
+justify-content: center;
+} */
