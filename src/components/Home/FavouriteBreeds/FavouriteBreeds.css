@@ -32,8 +32,6 @@
   text-align: center;
   font-size: 18px;
   background: #fff;
-
-  /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,9 +44,48 @@
   object-fit: cover;
 }
 
-.swiper {
+/* .swiper {
   width: 100%;
   height: 300px;
   margin: 20px auto;
+} */
+
+.swiper-slide a{
+      text-decoration: none;
+    color: #000;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
+
+.swiper-slide img{
+      height: 300px;
+    width: 326px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.swiper-slide div{
+      margin-top: 19px;
+          width: 100%;
+    text-align: center;
+}
+
+.swiper-slide div span{
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    position: relative;
+    padding-right: 25px;
+    text-align: center;
+}
+.swiper-slide div img{
+      transform: translateY(-3px);
+    margin-left: -10px;
+    display: inline;
+    height: 10px;
+    width: 10px;
+}
+
+
 
