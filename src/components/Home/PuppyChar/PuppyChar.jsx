@@ -11,8 +11,8 @@ const PuppyChar = () => {
   return (
     <div className="container mx-auto">
       <section>
-        <div>
-          <img src="" alt="" />
+        <div className='puppy-char-header'>
+          <img src="	https://www.puppyspot.com/preact/img/star.svg" alt="" />
           <h2>Puppy Characteristics</h2>
           <p>
             We’ve curated a list of our most popular characteristics of breeds
@@ -130,7 +130,7 @@ const PuppyChar = () => {
           </SwiperSlide>
         </Swiper>
       </section>
-      <section className='char-btn-container'>
+      <section className="char-btn-container">
         <a href="">
           <button className="char-btn">
             Browse All Puppies
