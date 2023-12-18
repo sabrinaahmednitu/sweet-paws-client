@@ -1,3 +1,8 @@
+.navbar-container{
+   position: fixed;
+   width: 100%;
+   z-index: 1000;
+}
 .nav-1 {
   text-align: center;
   background-color: #66af37;

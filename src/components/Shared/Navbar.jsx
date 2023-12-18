@@ -21,7 +21,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div>
+    <div className='navbar-container'>
       <section className="nav-1">
         <p>Email us between 8AM-Midnight EST, every day! </p>
       </section>
