@@ -55,7 +55,7 @@ const Navbar = () => {
             </div>
             {/* <a className="normal-case text-xl">SweetPaws</a> */}
            
-              <a href="">
+              <a href="/">
                 <img className="navlogo" src={navlogo} alt="" />
               </a>
           
