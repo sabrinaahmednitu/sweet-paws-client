@@ -169,9 +169,12 @@ const AboutUs = () => {
             </div>
             <hr />
           </div>
-          <div>
-            <p>Read More</p>
-            <p>Please direct all press inquiries to press@puppyspot.com</p>
+          <div className="about-last">
+            <strong>Read More</strong>
+            <p>
+              Please direct all press inquiries to{' '}
+              <strong>press@sweetpaws.com</strong>{' '}
+            </p>
           </div>
         </div>
       </section>

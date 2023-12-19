@@ -1,199 +1,202 @@
-.searchFind{
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    position: relative;
-    padding-top: 40px;
-    padding-bottom: 50px;
-    max-width: 1300px;
-    margin: auto;
+.searchFind {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  max-width: 1300px;
+  margin: auto;
 }
 
-.searchFind-left{
-flex-basis: 45%;
+.searchFind-left {
+  flex-basis: 45%;
 }
-.searchFind-right{
-flex-basis: 45%;
+.searchFind-right {
+  flex-basis: 45%;
 }
-.searchFind-right h6{
-    font-size: 15px;
-    font-weight: 600;
-    text-transform: capitalize;
-    line-height: 32px;
+.searchFind-right h6 {
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 32px;
 }
-.searchFind-right h1{
-    font-weight: 700;
-    font-size: 47px;
-    line-height: 55px;
+.searchFind-right h1 {
+  font-weight: 700;
+  font-size: 47px;
+  line-height: 55px;
 }
-.searchFind-right p{
-
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 30px;
-        margin-top: 20px;
-    margin-bottom: 16px;
+.searchFind-right p {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: 20px;
+  margin-bottom: 16px;
 }
-.searchFind-left img{
-    vertical-align: middle;
-    display: inline-block;
-    height: auto;
-    max-width: 100%;
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
-}
-
-.searchFind-list{
-    display: flex;
-     gap: 30px;
-}
-.searchFind-list ul li{
-font-size: 18px;
-line-height: 50px;
-}
-.searchfind-icon{
-    font-size: 18px;
-    color: #18BE72;
-    margin-right: 15px;
+.searchFind-left img {
+  vertical-align: middle;
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
 }
 
-.about-btn{
-     color: #fff;
+.searchFind-list {
+  display: flex;
+  gap: 30px;
+}
+.searchFind-list ul li {
+  font-size: 18px;
+  line-height: 50px;
+}
+.searchfind-icon {
+  font-size: 18px;
+  color: #18be72;
+  margin-right: 15px;
+}
+
+.about-btn {
+  color: #fff;
   background-color: #ff9100;
   font-size: 18px;
   font-weight: 700;
   line-height: 2px;
-  height: 40px;
   border-radius: 50px;
   padding: 25px 56px;
   transition: 0.3s;
   cursor: pointer;
   margin-top: 20px;
   margin-bottom: 50px;
-  
 }
-.about-header{
-      max-width: 1360px;
-      margin: auto;
-      background-image: url(../../images/about.jpg);
-     background-size: cover;
+
+/* --------------header part css--------------- */
+
+.about-header {
+  max-width: 1360px;
+  margin: auto;
+  background-image: url(../../images/about-3.png);
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 2em 2em 12em;
-  text-align: center;
+  text-align: left;
   width: 100%;
   height: 400px;
   position: relative;
 }
 
-.about-header-content{
+.about-header-content {
   backdrop-filter: blur(5px);
-  background-color: rgba(34, 32, 32, 0.2);
+  background-color: rgba(34, 236, 15, 0.2);
+  /* background-color: rgba(34, 32, 32, 0.2); */
   position: absolute;
-width: 90%;
-height: 80%;
+  width: 90%;
+  height: 84%;
 }
-.about-header-content h2{
-    font-size: 68px;
-    line-height: 77px;
-    color: white;
-}
-
-.hero-header h1{
-font-size: 36px;
-   text-align: center;
-   margin-top: 30px;
-   margin-bottom: 10px;
-    
-}
-.hero-header p{
-font-size: 18px;
-text-align: center;
-margin-bottom: 40px;
-line-height: 28px;
+.about-header-content h2 {
+  font-size: 68px;
+  color: rgb(45, 75, 49);
+  padding-top: 5px;
 }
 
-.about-placed-container{
-        background-color: #eaf9ff;
-    /* margin: 0 auto; */
-    max-width: 1360px;
-    padding: 2em 3em;
-        margin: 0 auto 0.5em;
+.hero-header h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
-.about-placed{
-    display: flex;
-    justify-content: center;
-   
-    
+.hero-header p {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 28px;
 }
-.placed-1{
-    flex-basis: 50%;
-   
+
+.about-placed-container {
+  background-color: #eaf9ff;
+  /* margin: 0 auto; */
+  max-width: 1360px;
+  padding: 2em 3em;
+  margin: 0 auto 0.5em;
 }
-.placed-2{
-     flex-basis:50%;
-     background-color: white;
-        font-size: 46px;
-    grid-column: 1;
-    grid-row: 1;
-    line-height: 63px;
-    padding: 2em 1.5em 1.5em;
-    text-align: left;
+.about-placed {
+  display: flex;
+  justify-content: center;
+}
+.placed-1 {
+  flex-basis: 50%;
+}
+.placed-2 {
+  flex-basis: 50%;
+  background-color: white;
+  font-size: 46px;
+  grid-column: 1;
+  grid-row: 1;
+  line-height: 63px;
+  padding: 2em 1.5em 1.5em;
+  text-align: left;
 }
 
 /* ------coverage part------ */
-.coverage-main h1{
-font-size: 40px;
-text-align: center;
-margin-top: 40px;
-margin-bottom: 30px;
+
+.coverage-main h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
 }
-.coverage-item p{
-font-size: 14px;
+.coverage-item p {
+  font-size: 14px;
+  margin-top: 20px;
 }
-.coverage-item h2{
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 43px;
-    margin: 0;
+.coverage-item h2 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 43px;
+  margin: 0;
 }
-.coverage-item p{
-    font-size: 14px;
-color: #a6a6a6;
-    text-transform: uppercase;
+.coverage-item h6 {
+  font-size: 14px;
+  color: #a6a6a6;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.about-last {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.about-last strong {
+  font-size: 18px;
+  letter-spacing: 0.1px;
+  line-height: 26px;
+  color: #ff9100;
+}
+.about-last p {
+  color: #000;
+  font-size: 16px;
+  letter-spacing: 0.1px;
+  line-height: 26px;
+  margin-top: 10px;
+}
 
 @media only screen and (max-width: 900px) {
-  .about-header-content h2{
+  .about-header-content h2 {
     font-size: 36px;
     line-height: 63px;
-    color: white;
+    color: rgb(15, 15, 15);
     padding: 15px;
-}
-.about-placed{
+  }
+  .about-placed {
     display: block;
-}
-.placed-2{
-     background-color: white;
-            font-size: 36px;
+  }
+  .placed-2 {
+    background-color: white;
+    font-size: 36px;
     line-height: 49px;
     padding: 0.5em;
     text-align: center;
-
-}
+  }
 }
