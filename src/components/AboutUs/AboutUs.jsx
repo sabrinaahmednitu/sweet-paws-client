@@ -46,7 +46,7 @@ const AboutUs = () => {
           </div>
         </section>
         <section>
-          <div>
+          <div className='coverage-main container mx-auto'>
             <h1>Coverage</h1>
             <div className="coverage-container">
               <div className="coverage-item">
@@ -54,6 +54,7 @@ const AboutUs = () => {
                 <h2>The Marketplace 100: 2022</h2>
                 <p>A16Z FUTURE</p>
               </div>
+              <hr />
               <div className="coverage-item">
                 <p>April 1, 2022</p>
                 <h2>
@@ -62,6 +63,7 @@ const AboutUs = () => {
                 </h2>
                 <p>YAHOO! NEWS</p>
               </div>
+              <hr />
               <div className="coverage-item">
                 <p>February 20, 2022</p>
                 <h2>
@@ -70,6 +72,7 @@ const AboutUs = () => {
                 </h2>
                 <p>CBS TAMPA BAY</p>
               </div>
+              <hr />
               <div className="coverage-item">
                 <p>February 3, 2022</p>
                 <h2>
@@ -78,6 +81,7 @@ const AboutUs = () => {
                 </h2>
                 <p>ABC PHILADELPHIA</p>
               </div>
+              <hr />
               <div className="coverage-item">
                 <p>January 28, 2022</p>
                 <h2>
@@ -85,6 +89,11 @@ const AboutUs = () => {
                 </h2>
                 <p>GOBANKINGRATES</p>
               </div>
+              <hr />
+            </div>
+            <div>
+              <p>Read More</p>
+              <p>Please direct all press inquiries to press@puppyspot.com</p>
             </div>
           </div>
         </section>
