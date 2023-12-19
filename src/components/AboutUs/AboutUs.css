@@ -74,8 +74,19 @@ text-align: center;
 margin-top: 40px;
 margin-bottom: 30px;
 }
-.coverage-item{
-
+.coverage-item p{
+font-size: 14px;
+}
+.coverage-item h2{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 43px;
+    margin: 0;
+}
+.coverage-item p{
+    
+color: #a6a6a6;
+    text-transform: uppercase;
 }
 
 

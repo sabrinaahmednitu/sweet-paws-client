@@ -52,7 +52,7 @@ const AboutUs = () => {
               <div className="coverage-item">
                 <p>April 14, 2022</p>
                 <h2>The Marketplace 100: 2022</h2>
-                <p>A16Z FUTURE</p>
+                <h6>A16Z FUTURE</h6>
               </div>
               <hr />
               <div className="coverage-item">
@@ -61,7 +61,7 @@ const AboutUs = () => {
                   Two-thirds of Americans claim they spare no expense when it
                   comes to their furry companions
                 </h2>
-                <p>YAHOO! NEWS</p>
+                <h6>YAHOO! NEWS</h6>
               </div>
               <hr />
               <div className="coverage-item">
@@ -70,7 +70,7 @@ const AboutUs = () => {
                   Make-A-Wish Southern Florida gifts 2-year-old with
                   Goldendoodle puppy
                 </h2>
-                <p>CBS TAMPA BAY</p>
+                <h6>CBS TAMPA BAY</h6>
               </div>
               <hr />
               <div className="coverage-item">
@@ -79,7 +79,7 @@ const AboutUs = () => {
                   Make-A-Wish, PuppySpot surprise 8-year-old South Jersey girl
                   with puppy
                 </h2>
-                <p>ABC PHILADELPHIA</p>
+                <h6>ABC PHILADELPHIA</h6>
               </div>
               <hr />
               <div className="coverage-item">
@@ -87,7 +87,7 @@ const AboutUs = () => {
                 <h2>
                   6 Major Companies That Offer Pawternity Leave for Pet Parents
                 </h2>
-                <p>GOBANKINGRATES</p>
+                <h6>GOBANKINGRATES</h6>
               </div>
               <hr />
             </div>
