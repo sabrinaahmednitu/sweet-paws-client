@@ -1,14 +1,14 @@
-.available-main{
-    margin-top: 50px;
-    margin-bottom: 50px;
+.available-main {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-.available-cards{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
+.available-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
 }
 /* .available-cards{
     display: grid;
@@ -19,99 +19,134 @@
     margin-top: 40px;
 } */
 
-.available-card img{
-    width: 90%;
+.available-card img {
+  width: 90%;
 }
 
-.available-header{
-    max-width: 1370px;
-    margin: auto;
+.available-header {
+  max-width: 1370px;
+  margin: auto;
 }
 
-.available-header h1{
-        font-size: 36px;
-        font-weight: bold;
-        margin-top: 10px;
-        margin-bottom: 10px;
+.available-header h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-.available-header p{
-       color: #000;
+.available-header p {
+  color: #000;
+  font-size: 16px;
+  letter-spacing: 0.1px;
+  line-height: 26px;
+}
+.dog-character-head {
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+/* ----------review part----------- */
+
+.puppy-reviews-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  margin-top: 40px;
+}
+.puppy-review-card {
+  flex-basis: 350px;
+  margin-bottom: 20px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+  padding-bottom: 10px;
+}
+.puppy-review-card img {
+  width: 350px;
+  height: 350px;
+  margin: auto;
+  border-radius: 20px 20px 0px 0px;
+}
+.puppy-review-card-content {
+  width: 350px;
+  margin: auto;
+  padding: 20px;
+}
+.puppy-review-card-content h2 {
+  font-size: 24px;
+}
+.puppy-review-card-content h6 {
+  font-size: 16px;
+  color: gray;
+}
+.puppy-review-card-content p {
+  color: #000;
+  font-size: 16px;
+  letter-spacing: 0.1px;
+  line-height: 26px;
+  margin-top: 5px;
+}
+.puppy-review h1 {
+  font-size: 28px;
+  text-align: center;
+  margin-top: 50px;
+  font-weight: 700;
+}
+.stars {
+  display: flex;
+  gap: 5px;
+}
+.fa-star {
+  color: rgb(255, 153, 0);
+}
+
+/* -----------some info part-------- */
+.some-info-container {
+  margin-top: 50px;
+  background-color: #f7f7f7;
+  padding: 70px 0px;
+}
+
+.some-info {
+  background: #fff;
+  border: 1px solid #d8d8d8;
+  border-radius: 0.5rem;
+  margin: auto;
+  max-width: 72rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.some-info p{
+    color: #000;
     font-size: 16px;
     letter-spacing: .1px;
     line-height: 26px;
 }
-.dog-character-head{
-    font-size: 26px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 40px;
-}
-
-
-/* ----------review part----------- */
-
- .puppy-reviews-cards{
-     display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-    margin-top: 40px;
-}
-.puppy-review-card {
-  margin-bottom: 20px;
-  height: 600px;
-  display: flex;
-  flex-direction: row;
-}
-
-.card {
-  height: 100%; 
-}
-
-.card-body {
-  height: 100%; 
-}
-.card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; 
-}
-.puppy-review h1{
-        font-size: 28px;
-    text-align: center;
-    margin-top: 50px;
-    font-weight: 700;
-}
-.stars{
-    display: flex;
-    gap:5px ;
-}
-.fa-star{
-    color: rgb(255, 153, 0);
-} 
-
-
 /* -----------dog character part-------- */
 
-.dog-character{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 50px;
-    flex-wrap: wrap;
+.dog-character {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 50px;
+  flex-wrap: wrap;
 }
-.dog-char-1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
+.dog-char-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
 }
-.dog-char-1 img{
-    border-radius: 50%;
+.dog-char-1 img {
+  border-radius: 50%;
 }
-.dog-char-1 p{
-    font-size: 20px;
-    font-weight: 600;
+.dog-char-1 p {
+  font-size: 20px;
+  font-weight: 600;
 }
-

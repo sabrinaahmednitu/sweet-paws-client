@@ -54,7 +54,120 @@ const TrustedCommunity = () => {
             </a>
           </div>
         </section>
-        <section className="TrustedCommunity-slider"></section>
+        <section className="TrustedCommunity-slider">
+          <div className="trusted-item-1">
+            <img
+              src="https://cdn-yotpo-images-production.yotpo.com/Review/530260269/502077975/original.jpg?1702476086"
+              alt=""
+            />
+            <div className="trusted-item-1-content">
+              <div className="home-stars">
+                <div>
+                  <i className="fa-solid fa-star"></i>
+                </div>
+                <div>
+                  <i className="fa-solid fa-star"></i>
+                </div>
+                <div>
+                  <i className="fa-solid fa-star"></i>
+                </div>
+                <div>
+                  <i className="fa-solid fa-star"></i>
+                </div>
+                <div>
+                  <i className="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div>
+                <p>
+                  Our experience with puppy spot was excellent . Communication
+                  was good. The wait in between buying the puppy and delivery
+                  was torture lol but they sent updated pics and videos and kept
+                  in touch. Our puppy is in excellent health as per our vet. The
+                  breeder he came from took good care of him. He is an absolute
+                  joy to our family .
+                </p>
+              </div>
+              <div>
+                <h6>- Robin K., New York</h6>
+              </div>
+              <div>
+                <h5>12/13/2023</h5>
+              </div>
+            </div>
+          </div>
+          <div className="trusted-item-1">
+            <img
+              src="https://cdn-yotpo-images-production.yotpo.com/Review/529586520/500810740/original.jpg?1702265336"
+              alt=""
+            />
+            <div className="trusted-item-1-content">
+              <div className="home-stars">
+                <div>
+                  <i className="fa-solid fa-star"></i>
+                </div>
+                <div>
+                  <i className="fa-solid fa-star"></i>
+                </div>
+                <div>
+                  <i className="fa-solid fa-star"></i>
+                </div>
+                <div>
+                  <i className="fa-solid fa-star"></i>
+                </div>
+                <div>
+                  <i className="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div>
+                <p>Had a very pleasant experience from start to finish .</p>
+              </div>
+              <div>
+                <h6>- Sherryl A., Nevada</h6>
+              </div>
+              <div>
+                <h5>12/11/2023</h5>
+              </div>
+            </div>
+          </div>
+          <div className="trusted-item-1">
+            <img
+              src="https://cdn-yotpo-images-production.yotpo.com/Review/529462792/500378480/original.jpg?1702210791"
+              alt=""
+            />
+            <div className="trusted-item-1-content">
+              <div className="home-stars">
+                <div>
+                  <i className="fa-solid fa-star"></i>
+                </div>
+                <div>
+                  <i className="fa-solid fa-star"></i>
+                </div>
+                <div>
+                  <i className="fa-solid fa-star"></i>
+                </div>
+                <div>
+                  <i className="fa-solid fa-star"></i>
+                </div>
+                <div>
+                  <i className="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div>
+                <p>
+                  Toby is a wonderful addition to our family. We are in love and
+                  he is adjusting perfectly ❤️ Thank you
+                </p>
+              </div>
+              <div>
+                <h6>- Lorre S., New York</h6>
+              </div>
+              <div>
+                <h5>12/10/2023</h5>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   );

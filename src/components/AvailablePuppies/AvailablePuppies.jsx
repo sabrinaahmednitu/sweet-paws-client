@@ -18,150 +18,157 @@ const AvailablePuppies = () => {
       </section>
       <section>
         <div className="available-cards">
-          <div className="available-card">
-            <div className="card card-compact w-[256px] shadow-xl">
-              <figure>
-                <img
-                  src="https://photos.puppyspot.com/5/listing/745165/photo/502114012_small.JPG"
-                  alt="Shoes"
-                />
-              </figure>
-              <div className="card-body">
+          <div className="puppy-review-card">
+            <div className="">
+              <img
+                src="https://photos.puppyspot.com/breeds/218/card/500415401_medium.jpg"
+                alt="Shoes"
+              />
+
+              <div className="puppy-review-card-content">
                 <h2 className="card-title">Arrio</h2>
                 <p>Golden Retriever</p>
                 <p>15 weeks</p>
               </div>
             </div>
           </div>
-          <div className="available-card">
-            <div className="card card-compact w-[256px] shadow-xl">
-              <figure>
-                <img
-                  src="https://photos.puppyspot.com/5/listing/745165/photo/502114012_small.JPG"
-                  alt="Shoes"
-                />
-              </figure>
-              <div className="card-body">
+          <div className="puppy-review-card">
+            <div className="">
+              <img
+                src="https://photos.puppyspot.com/breeds/276/card/500416275_medium.jpg"
+                alt="Shoes"
+              />
+
+              <div className="puppy-review-card-content">
                 <h2 className="card-title">Arrio</h2>
                 <p>Golden Retriever</p>
                 <p>15 weeks</p>
               </div>
             </div>
           </div>
-          <div className="available-card">
-            <div className="card card-compact w-[256px] shadow-xl">
-              <figure>
-                <img
-                  src="	https://photos.puppyspot.com/2/listing/748592/photo/502172177_small.jpg"
-                  alt="Shoes"
-                />
-              </figure>
-              <div className="card-body">
+
+          <div className="puppy-review-card">
+            <div className="">
+              <img
+                src="https://photos.puppyspot.com/breeds/226/card/500424518_medium.jpg"
+                alt="Shoes"
+              />
+
+              <div className="puppy-review-card-content">
                 <h2 className="card-title">Arrio</h2>
                 <p>Golden Retriever</p>
                 <p>15 weeks</p>
               </div>
             </div>
           </div>
-          <div className="available-card">
-            <div className="card card-compact w-[256px] shadow-xl">
-              <figure>
-                <img
-                  src="	https://photos.puppyspot.com/5/listing/745165/photo/502114012_small.JPG"
-                  alt="Shoes"
-                />
-              </figure>
-              <div className="card-body">
+          <div className="puppy-review-card">
+            <div className="">
+              <img
+                src="https://photos.puppyspot.com/2/listing/748592/photo/502172177_small.jpg"
+                alt="Shoes"
+              />
+
+              <div className="puppy-review-card-content">
                 <h2 className="card-title">Arrio</h2>
                 <p>Golden Retriever</p>
                 <p>15 weeks</p>
               </div>
             </div>
           </div>
-          <div className="available-card">
-            <div className="card card-compact w-[256px] shadow-xl">
-              <figure>
-                <img
-                  src="	https://photos.puppyspot.com/5/listing/745165/photo/502114012_small.JPG"
-                  alt="Shoes"
-                />
-              </figure>
-              <div className="card-body">
+
+          <div className="puppy-review-card">
+            <div className="">
+              <img
+                src="https://photos.puppyspot.com/breeds/434/card/502167658_medium.jpg"
+                alt="Shoes"
+              />
+
+              <div className="puppy-review-card-content">
                 <h2 className="card-title">Arrio</h2>
                 <p>Golden Retriever</p>
                 <p>15 weeks</p>
               </div>
             </div>
           </div>
-          <div className="available-card">
-            <div className="card card-compact w-[256px] shadow-xl">
-              <figure>
-                <img
-                  src="	https://photos.puppyspot.com/2/listing/748592/photo/502172177_small.jpg"
-                  alt="Shoes"
-                />
-              </figure>
-              <div className="card-body">
+          <div className="puppy-review-card">
+            <div className="">
+              <img
+                src="https://photos.puppyspot.com/breeds/459/card/500423536_medium.jpg"
+                alt="Shoes"
+              />
+
+              <div className="puppy-review-card-content">
                 <h2 className="card-title">Arrio</h2>
                 <p>Golden Retriever</p>
                 <p>15 weeks</p>
               </div>
             </div>
           </div>
-          <div className="available-card">
-            <div className="card card-compact w-[256px] shadow-xl">
-              <figure>
-                <img
-                  src="	https://photos.puppyspot.com/5/listing/745165/photo/502114012_small.JPG"
-                  alt="Shoes"
-                />
-              </figure>
-              <div className="card-body">
+
+          <div className="puppy-review-card">
+            <div className="">
+              <img
+                src="https://photos.puppyspot.com/breeds/390/card/500419164_medium.jpg"
+                alt="Shoes"
+              />
+
+              <div className="puppy-review-card-content">
                 <h2 className="card-title">Arrio</h2>
                 <p>Golden Retriever</p>
                 <p>15 weeks</p>
               </div>
             </div>
           </div>
-          <div className="available-card">
-            <div className="card card-compact w-[256px] shadow-xl">
-              <figure>
-                <img
-                  src="https://photos.puppyspot.com/0/listing/749640/photo/502161558_small.jpg"
-                  alt="Shoes"
-                />
-              </figure>
-              <div className="card-body">
+          <div className="puppy-review-card">
+            <div className="">
+              <img
+                src="https://photos.puppyspot.com/breeds/389/card/500412676_medium.jpg"
+                alt="Shoes"
+              />
+
+              <div className="puppy-review-card-content">
                 <h2 className="card-title">Arrio</h2>
                 <p>Golden Retriever</p>
                 <p>15 weeks</p>
               </div>
             </div>
           </div>
-          <div className="available-card">
-            <div className="card card-compact w-[256px] shadow-xl">
-              <figure>
-                <img
-                  src="	https://photos.puppyspot.com/5/listing/745165/photo/502114012_small.JPG"
-                  alt="Shoes"
-                />
-              </figure>
-              <div className="card-body">
+          <div className="puppy-review-card">
+            <div className="">
+              <img
+                src="https://photos.puppyspot.com/breeds/347/card/500415579_medium.jpg"
+                alt="Shoes"
+              />
+
+              <div className="puppy-review-card-content">
                 <h2 className="card-title">Arrio</h2>
                 <p>Golden Retriever</p>
                 <p>15 weeks</p>
               </div>
             </div>
           </div>
-          <div className="available-card">
-            <div className="card card-compact w-[256px] shadow-xl">
-              <figure>
-                <img
-                  src="https://photos.puppyspot.com/0/listing/749640/photo/502161558_small.jpg"
-                  alt="Shoes"
-                />
-              </figure>
-              <div className="card-body">
+          <div className="puppy-review-card">
+            <div className="">
+              <img
+                src="https://photos.puppyspot.com/breeds/222/card/500416331_medium.jpg"
+                alt="Shoes"
+              />
+
+              <div className="puppy-review-card-content">
+                <h2 className="card-title">Arrio</h2>
+                <p>Golden Retriever</p>
+                <p>15 weeks</p>
+              </div>
+            </div>
+          </div>
+          <div className="puppy-review-card">
+            <div className="">
+              <img
+                src="https://photos.puppyspot.com/breeds/258/card/500420369_medium.jpg"
+                alt="Shoes"
+              />
+
+              <div className="puppy-review-card-content">
                 <h2 className="card-title">Arrio</h2>
                 <p>Golden Retriever</p>
                 <p>15 weeks</p>
@@ -170,21 +177,49 @@ const AvailablePuppies = () => {
           </div>
         </div>
       </section>
+      <section className='some-info-container'>
+        <div className="some-info">
+          <p>
+            At PuppySpot, we have the widest selection of puppies for sale on
+            the internet. Whether you're looking for a purebred Australian
+            Shepherd, a hypoallergenic Mini Poodle, a dashing designer breed
+            like the Goldendoodle or the Cavapoo, or the ever-popular Golden
+            Retriever, we've got what you're looking for. Our exclusive network
+            of breeders is second to none, which is why every puppy provided
+            through us is backed by our industry-leading 10-year health
+            commitment.
+          </p>
+          <p>
+            We have spent over twenty years sourcing the highest quality
+            breeders from all around the country. From the Miniature Poodle to
+            the Great Dane, each puppy comes with a special AKC registration
+            package provided through PuppySpot. We want you to feel secure in
+            your purchase, knowing your breeder only utilizes the most
+            responsible, sustainable breeding practices.
+          </p>
+          <p>
+            We're excited to be there with you on your journey, whether you're a
+            new pet parent welcoming your first Goldendoodle into the family, or
+            you're a seasoned pro adding your fourth Siberian Husky to the pack.
+            We all treat our dogs like family around here, which is why we will
+            always go the extra mile to help you find the puppy you will love
+            from the moment they're delivered to your door.
+          </p>
+        </div>
+      </section>
       <section>
         <div className="puppy-review">
           <h1>Reviews</h1>
           <div className="puppy-reviews-cards">
             <div className="puppy-review-card">
-              <div className="card w-[400px] h-[600px] shadow-xl">
-                <figure>
-                  <img
-                    className="w-[400px] h-[350px]"
-                    src="https://cdn-yotpo-images-production.yotpo.com/Review/529462792/500378480/original.jpg?1702210791"
-                    alt="Shoes"
-                  />
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">Lorre S.</h2>
+              <div className="">
+                <img
+                  src="https://cdn-yotpo-images-production.yotpo.com/Review/529462792/500378480/original.jpg?1702210791"
+                  alt="Shoes"
+                />
+
+                <div className="puppy-review-card-content">
+                  <h2>Lorre S.</h2>
                   <h6>12/10/2023</h6>
                   <p>Goldendoodle</p>
                   <div className="stars">
@@ -213,16 +248,14 @@ const AvailablePuppies = () => {
               </div>
             </div>
             <div className="puppy-review-card">
-              <div className="card  w-[400px]  shadow-xl">
-                <figure>
-                  <img
-                    className="w-[400px] h-[350px]"
-                    src="https://cdn-yotpo-images-production.yotpo.com/Review/529165115/499072457/original.jpg?1702058808"
-                    alt="Shoes"
-                  />
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">Amrei G.</h2>
+              <div className="">
+                <img
+                  src="https://cdn-yotpo-images-production.yotpo.com/Review/529165115/499072457/original.jpg?1702058808"
+                  alt="Shoes"
+                />
+
+                <div className="puppy-review-card-content">
+                  <h2>Amrei G.</h2>
                   <h6>12/08/2023</h6>
                   <p>Goldendoodle</p>
                   <div className="stars">
@@ -251,16 +284,14 @@ const AvailablePuppies = () => {
               </div>
             </div>
             <div className="puppy-review-card">
-              <div className="card w-[400px]  shadow-xl">
-                <figure>
-                  <img
-                    className="w-[400px] h-[350px]"
-                    src="	https://cdn-yotpo-images-production.yotpo.com/Review/528622514/498225517/original.jpg?1701983199"
-                    alt="Shoes"
-                  />
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">Lorre S.</h2>
+              <div className="">
+                <img
+                  src="	https://cdn-yotpo-images-production.yotpo.com/Review/528622514/498225517/original.jpg?1701983199"
+                  alt="Shoes"
+                />
+
+                <div className="puppy-review-card-content">
+                  <h2 className="">Lorre S.</h2>
                   <h6>12/10/2023</h6>
                   <p>Goldendoodle</p>
                   <div className="stars">
