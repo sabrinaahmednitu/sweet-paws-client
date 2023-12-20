@@ -6,7 +6,9 @@ const AvailablePuppies = () => {
   return (
     <div className="available-main container mx-auto">
       <section className="available-header">
-        <h6>SweetPaws > Puppies for Sale</h6>
+        <h6>
+          SweetPaws <i className="fa-solid fa-arrow-right"></i> Puppies for Sale
+        </h6>
         <h1>Happy, Healthy Puppies for Sale</h1>
         <p>
           Browse our nationwide selection of adorable, healthy puppies for sale
@@ -19,8 +21,10 @@ const AvailablePuppies = () => {
       <section>
         <div className="available-cards">
           <div className="puppy-review-card">
-            <div className="">
+            <div className="card-img-box">
+              <div className="love"></div>
               <img
+                className="img-box-1"
                 src="https://photos.puppyspot.com/breeds/218/card/500415401_medium.jpg"
                 alt="Shoes"
               />
@@ -33,8 +37,10 @@ const AvailablePuppies = () => {
             </div>
           </div>
           <div className="puppy-review-card">
-            <div className="">
+            <div className="card-img-box">
+              <div className="love"></div>
               <img
+                className="img-box-1"
                 src="https://photos.puppyspot.com/breeds/276/card/500416275_medium.jpg"
                 alt="Shoes"
               />
@@ -48,8 +54,10 @@ const AvailablePuppies = () => {
           </div>
 
           <div className="puppy-review-card">
-            <div className="">
+            <div className="card-img-box">
+              <div className="love"></div>
               <img
+                className="img-box-1"
                 src="https://photos.puppyspot.com/breeds/226/card/500424518_medium.jpg"
                 alt="Shoes"
               />
@@ -62,8 +70,10 @@ const AvailablePuppies = () => {
             </div>
           </div>
           <div className="puppy-review-card">
-            <div className="">
+            <div className="card-img-box">
+              <div className="love"></div>
               <img
+                className="img-box-1"
                 src="https://photos.puppyspot.com/2/listing/748592/photo/502172177_small.jpg"
                 alt="Shoes"
               />
@@ -77,8 +87,10 @@ const AvailablePuppies = () => {
           </div>
 
           <div className="puppy-review-card">
-            <div className="">
+            <div className="card-img-box">
+              <div className="love"></div>
               <img
+                className="img-box-1"
                 src="https://photos.puppyspot.com/breeds/434/card/502167658_medium.jpg"
                 alt="Shoes"
               />
@@ -91,8 +103,10 @@ const AvailablePuppies = () => {
             </div>
           </div>
           <div className="puppy-review-card">
-            <div className="">
+            <div className="card-img-box">
+              <div className="love"></div>
               <img
+                className="img-box-1"
                 src="https://photos.puppyspot.com/breeds/459/card/500423536_medium.jpg"
                 alt="Shoes"
               />
@@ -106,8 +120,10 @@ const AvailablePuppies = () => {
           </div>
 
           <div className="puppy-review-card">
-            <div className="">
+            <div className="card-img-box">
+              <div className="love"></div>
               <img
+                className="img-box-1"
                 src="https://photos.puppyspot.com/breeds/390/card/500419164_medium.jpg"
                 alt="Shoes"
               />
@@ -120,8 +136,10 @@ const AvailablePuppies = () => {
             </div>
           </div>
           <div className="puppy-review-card">
-            <div className="">
+            <div className="card-img-box">
+              <div className="love"></div>
               <img
+                className="img-box-1"
                 src="https://photos.puppyspot.com/breeds/389/card/500412676_medium.jpg"
                 alt="Shoes"
               />
@@ -134,8 +152,10 @@ const AvailablePuppies = () => {
             </div>
           </div>
           <div className="puppy-review-card">
-            <div className="">
+            <div className="card-img-box">
+              <div className="love"></div>
               <img
+                className="img-box-1"
                 src="https://photos.puppyspot.com/breeds/347/card/500415579_medium.jpg"
                 alt="Shoes"
               />
@@ -148,8 +168,10 @@ const AvailablePuppies = () => {
             </div>
           </div>
           <div className="puppy-review-card">
-            <div className="">
+            <div className="card-img-box">
+              <div className="love"></div>
               <img
+                className="img-box-1"
                 src="https://photos.puppyspot.com/breeds/222/card/500416331_medium.jpg"
                 alt="Shoes"
               />
@@ -162,8 +184,10 @@ const AvailablePuppies = () => {
             </div>
           </div>
           <div className="puppy-review-card">
-            <div className="">
+            <div className="card-img-box">
+              <div className="love"></div>
               <img
+                className="img-box-1"
                 src="https://photos.puppyspot.com/breeds/258/card/500420369_medium.jpg"
                 alt="Shoes"
               />
@@ -177,7 +201,7 @@ const AvailablePuppies = () => {
           </div>
         </div>
       </section>
-      <section className='some-info-container'>
+      <section className="some-info-container">
         <div className="some-info">
           <p>
             At PuppySpot, we have the widest selection of puppies for sale on

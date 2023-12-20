@@ -10,14 +10,6 @@
   align-items: center;
   margin-top: 40px;
 }
-/* .available-cards{
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-} */
 
 .available-card img {
   width: 90%;
@@ -48,6 +40,27 @@
   margin-bottom: 40px;
 }
 
+/* ----------available card part----------- */
+.card-img-box{
+    position: relative;
+    width: 100%;
+}
+
+.love{
+    background-color: #fff;
+    background-image: url(	https://www.puppyspot.com/assets/img/shared/favorite-heart.svg);
+    background-position: 0.8em 0;
+    background-repeat: no-repeat;
+    background-size: 1.5rem;
+    border-radius: 0 0 0 8rem;
+    height: 2rem;
+    position: absolute;
+    top: 5px;
+    right: 3px;
+    width: 2.5rem;
+    z-index: 5;
+    z-index: auto;
+}
 /* ----------review part----------- */
 
 .puppy-reviews-cards {
@@ -61,7 +74,7 @@
   flex-basis: 350px;
   margin-bottom: 20px;
   height: auto;
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
   padding-bottom: 10px;
 }
@@ -69,7 +82,8 @@
   width: 350px;
   height: 350px;
   margin: auto;
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 20px ;
+  padding: 8px;
 }
 .puppy-review-card-content {
   width: 350px;
