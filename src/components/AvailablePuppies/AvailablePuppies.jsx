@@ -171,6 +171,32 @@ const AvailablePuppies = () => {
             </div>
           </div>
         </section>
+        <section className="dog-character-main">
+          <h1 className="dog-character-head">Dog Characteristics</h1>
+          <div className="dog-character">
+            <div className="dog-char-1">
+              <img
+                src="https://www.puppyspot.com/preact/img/active-dog-breeds.svg"
+                alt=""
+              />
+              <p>Top Active Dog Breeds</p>
+            </div>
+            <div className="dog-char-1">
+              <img
+                src="	https://www.puppyspot.com/preact/img/apartment-breeds.svg"
+                alt=""
+              />
+              <p>Best Apartment Dogs</p>
+            </div>
+            <div className="dog-char-1">
+              <img
+                src="https://www.puppyspot.com/preact/img/family-breeds.svg"
+                alt=""
+              />
+              <p>Best Family Dogs</p>
+            </div>
+          </div>
+        </section>
       </div>
     );
 };
