@@ -42,17 +42,6 @@ const Signup = () => {
   return (
     <div className=" hero login-main ">
       <div className="hero-content flex-col lg:flex-row-reverse ">
-        {/* text-left */}
-        <div className="text-center lg:text-left">
-          <h1 className="text-5xl font-bold text-white ">Signup now !</h1>
-
-          <p className="py-6 text-2xl text-white ">
-            Signup is the process of gaining access to a secure system or
-            account providing valid credentials, such as a username and
-            password.
-          </p>
-        </div>
-
         {/* form-right */}
         <div className=" card flex-shrink-0 w-full max-w-sm shadow-2xl bg-white pt-5 pb-10">
           <h1 className="text-center text-4xl text-black font-bold mb-3">
@@ -178,6 +167,17 @@ const Signup = () => {
             </Link>
           </p>
           <SocialLogin></SocialLogin>
+        </div>
+        {/* text-right-end */}
+        {/* text-left */}
+        <div className="text-center">
+          <h1 className="text-5xl font-bold ">Signup now !</h1>
+
+          <p className="py-6 text-2xl">
+            Signup is the process of gaining access to a secure system or
+            account providing valid credentials, such as a username and
+            password.
+          </p>
         </div>
       </div>
     </div>
