@@ -1,27 +1,49 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import './Navbar/Navbar.css';
 import navlogo from "../../images/Sweet_Paws__2_-removebg-preview.png"
+import { AuthContext } from '../../Hooks/AuthProvider';
+import { signOut } from 'firebase/auth';
+import auth from '../../firebase.init';
 
 const Navbar = () => {
+  const { user } = useContext(AuthContext);
+  const navigate = useNavigate();
+   const logout = () => {
+     signOut(auth);
+     navigate('/login');
+   };
   const navItem = (
     <>
       <li>
         <Link to="/">Home</Link>
       </li>
-      <li>
-        <Link to="/availablePuppies">Available Puppies</Link>
-      </li>
+      {user && (
+        <li>
+          <Link to="/availablePuppies">Available Puppies</Link>
+        </li>
+      )}
       <li>
         <Link to="/aboutus">About Us</Link>
       </li>
       <li>
         <Link to="/ContactUs">Contact Us</Link>
       </li>
+      {/* {user ? (
+        <button onClick={logout} className=" btn btn-success font-bold ">
+          SignOut
+        </button>
+      ) : (
+        <Link to="/login" className="flex justify-center align-items-center">
+          <button className="btn-info pl-[10px] pr-[10px] rounded ">
+            Login
+          </button>
+        </Link>
+      )} */}
     </>
   );
   return (
-    <div className='navbar-container'>
+    <div className="navbar-container">
       <section className="nav-1">
         <p>Email us between 8AM-Midnight EST, every day! </p>
       </section>
@@ -54,11 +76,10 @@ const Navbar = () => {
               </ul>
             </div>
             {/* <a className="normal-case text-xl">SweetPaws</a> */}
-           
-              <a href="/">
-                <img className="navlogo" src={navlogo} alt="" />
-              </a>
-          
+
+            <a href="/">
+              <img className="navlogo" src={navlogo} alt="" />
+            </a>
           </div>
 
           {/* nav-2 */}
@@ -70,7 +91,23 @@ const Navbar = () => {
           <div className="navbar-end mx-auto ">
             {/* <p>{user?.displayName}</p> */}
             <Link>
-              <h2>Login</h2>
+              {user ? (
+                <button
+                  onClick={logout}
+                  className=" btn btn-success font-bold "
+                >
+                  SignOut
+                </button>
+              ) : (
+                <Link
+                  to="/login"
+                  className="flex justify-center align-items-center"
+                >
+                  <button className="btn-info pl-[10px] pr-[10px] rounded ">
+                    Login
+                  </button>
+                </Link>
+              )}
             </Link>
           </div>
         </div>

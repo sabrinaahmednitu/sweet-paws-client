@@ -4,6 +4,8 @@ import AvailablePuppies from '../components/AvailablePuppies/AvailablePuppies';
 import ContactUs from '../components/ContactUs/ContactUs';
 import Home from '../components/Home/Home';
 import Error from '../components/Shared/Error/Error';
+import Login from '../components/Shared/Login/Login';
+import Signup from '../components/Shared/Signup/Signup';
 import Main from '../Layout/Main';
 
 export const router = createBrowserRouter([
@@ -26,6 +28,14 @@ export const router = createBrowserRouter([
       {
         path: '/contactus',
         element: <ContactUs></ContactUs>,
+      },
+      {
+        path: '/signup',
+        element: <Signup></Signup>,
+      },
+      {
+        path: '/login',
+        element: <Login></Login>,
       },
       {
         path: '*',

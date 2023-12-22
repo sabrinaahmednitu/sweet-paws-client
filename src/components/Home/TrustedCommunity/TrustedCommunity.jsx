@@ -7,6 +7,7 @@ const TrustedCommunity = () => {
         <section className="TrustedCommunity-content">
           <div>
             <img
+              className="TrustedCommunity-img"
               src="	https://www.puppyspot.com/preact/img/trusted-by-community-icon.svg"
               alt=""
             />
@@ -127,6 +128,43 @@ const TrustedCommunity = () => {
               </div>
               <div>
                 <h5>12/11/2023</h5>
+              </div>
+            </div>
+          </div>
+          <div className="trusted-item-1">
+            <img
+              src="https://cdn-yotpo-images-production.yotpo.com/Review/529462792/500378480/original.jpg?1702210791"
+              alt=""
+            />
+            <div className="trusted-item-1-content">
+              <div className="home-stars">
+                <div>
+                  <i className="fa-solid fa-star"></i>
+                </div>
+                <div>
+                  <i className="fa-solid fa-star"></i>
+                </div>
+                <div>
+                  <i className="fa-solid fa-star"></i>
+                </div>
+                <div>
+                  <i className="fa-solid fa-star"></i>
+                </div>
+                <div>
+                  <i className="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div>
+                <p>
+                  Toby is a wonderful addition to our family. We are in love and
+                  he is adjusting perfectly ❤️ Thank you
+                </p>
+              </div>
+              <div>
+                <h6>- Lorre S., New York</h6>
+              </div>
+              <div>
+                <h5>12/10/2023</h5>
               </div>
             </div>
           </div>
