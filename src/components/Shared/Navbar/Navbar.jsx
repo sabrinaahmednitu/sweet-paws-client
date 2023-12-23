@@ -1,9 +1,20 @@
-import { Link} from 'react-router-dom';
+
+import { signOut } from 'firebase/auth';
+import { useContext } from 'react';
+import { Link, useNavigate} from 'react-router-dom';
+import auth from '../../../firebase.init';
+import { AuthContext } from '../../../Hooks/AuthProvider';
+
 import navlogo from "../../../images/Sweet_Paws__2_-removebg-preview.png"
 import './Navbar.css'
 
 const Navbar = () => {
-
+    const { user } = useContext(AuthContext);
+    const navigate = useNavigate();
+    const logout = () => {
+      signOut(auth);
+      navigate('/login');
+    };
   const navItem = (
     <>
       <li>
@@ -70,7 +81,7 @@ const Navbar = () => {
           <div className="navbar-end mx-auto ">
             {/* <p>{user?.displayName}</p> */}
             <Link>
-              {/* {user ? (
+              {user ? (
                 <button
                   onClick={logout}
                   className=" btn btn-success font-bold "
@@ -86,7 +97,7 @@ const Navbar = () => {
                     Login
                   </button>
                 </Link>
-              )} */}
+              )}
             </Link>
           </div>
         </div>
