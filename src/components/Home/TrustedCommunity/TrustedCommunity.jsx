@@ -37,7 +37,7 @@ const TrustedCommunity = () => {
           <div className="trustrd-btn-container">
             <a href="">
               <button className="trustedCom-btn">
-                Read More Review
+                More Review
                 <img
                   src="https://www.puppyspot.com/preact/img/forward-caret-white.svg"
                   alt=""

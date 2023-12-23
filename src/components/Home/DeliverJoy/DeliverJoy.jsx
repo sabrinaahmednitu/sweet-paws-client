@@ -1,5 +1,6 @@
 import React from 'react';
 import './DeliverJoy.css'
+import happy from '../../../images/pexels-photo-5860106.jpeg' 
 const DeliverJoy = () => {
     return (
       <div>
@@ -56,54 +57,59 @@ const DeliverJoy = () => {
             </div>
           </section>
           {/* -------- section-2 ----------- */}
-          <section className="Deliver-slider">
-            <div className="delivery-cards">
-              <div className="delivery-1-container">
-                <div className="delivery-1">
-                  <img
-                    src="https://cdn.buttercms.com/gtCNOEshRxG223uZY7uF"
-                    alt=""
-                  />
-                  <h3>Puppy Chaperone</h3>
-                  <p>
-                    A Puppy Chaperone brings your puppy to an airport near you.
-                    A Puppy Chaperone is a human companion who accompanies your
-                    puppy in the cabin of the plane.
-                  </p>
-                </div>
-              </div>
-              <div className="delivery-1-container">
-                <div className="delivery-1">
-                  <img
-                    src="https://cdn.buttercms.com/REPdSlLTi8MAXfzH6zAC"
-                    alt=""
-                  />
-                  <h3>Deliver Near Your Home</h3>
-                  <p>
-                    We work with trusted licensed professionals in the
-                    commercial air and ground transportation puppy travel
-                    business to get your puppy to a pickup location as close to
-                    your home as possible.
-                  </p>
-                </div>
-              </div>
-              <div className="delivery-1-container">
-                <div className="delivery-1">
-                  <img
-                    src="https://cdn.buttercms.com/ageDkvUSoq7JPxwKFWy0"
-                    alt=""
-                  />
-                  <h3>Breeder Meet Up</h3>
-                  <p>
-                    Meet the breeder and your puppy at a location near the
-                    kennel. If you are interested in a pickup, please check with
-                    a PuppySpot pack member to see if this is an option.
-                  </p>
-                </div>
-              </div>
+          <section>
+            <div className='deliver-img'>
+              <img src={happy} alt="" />
             </div>
           </section>
         </div>
+        <section className="Deliver-slider">
+          <div className="delivery-cards">
+            <div className="delivery-1-container">
+              <div className="delivery-1">
+                <img
+                  src="https://cdn.buttercms.com/gtCNOEshRxG223uZY7uF"
+                  alt=""
+                />
+                <h3>Puppy Chaperone</h3>
+                <p>
+                  A Puppy Chaperone brings your puppy to an airport near you. A
+                  Puppy Chaperone is a human companion who accompanies your
+                  puppy in the cabin of the plane.
+                </p>
+              </div>
+            </div>
+            <div className="delivery-1-container">
+              <div className="delivery-1">
+                <img
+                  src="https://cdn.buttercms.com/REPdSlLTi8MAXfzH6zAC"
+                  alt=""
+                />
+                <h3>Deliver Near Your Home</h3>
+                <p>
+                  We work with trusted licensed professionals in the commercial
+                  air and ground transportation puppy travel business to get
+                  your puppy to a pickup location as close to your home as
+                  possible.
+                </p>
+              </div>
+            </div>
+            <div className="delivery-1-container">
+              <div className="delivery-1">
+                <img
+                  src="https://cdn.buttercms.com/ageDkvUSoq7JPxwKFWy0"
+                  alt=""
+                />
+                <h3>Breeder Meet Up</h3>
+                <p>
+                  Meet the breeder and your puppy at a location near the kennel.
+                  If you are interested in a pickup, please check with a
+                  PuppySpot pack member to see if this is an option.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     );
 };

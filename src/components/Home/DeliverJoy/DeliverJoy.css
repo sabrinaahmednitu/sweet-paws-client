@@ -1,13 +1,11 @@
 .Deliver-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 10px;
+    gap: 30px;
     margin-top: 50px;
     padding-bottom: 50px;
+    max-width: 1300px;
 }
-
-
-
 
 .Deliver-content h3{
         color: #000;
@@ -102,10 +100,20 @@ background-color: rgba(113,208,255,.1019607843);
  margin-left: 9px;
 }
 
+
+/* -----------------deliver img section----------- */
+.deliver-img img{
+width: 100%;
+height: 500px;
+object-fit: cover;
+border-radius: 15px;
+}
+/* -----------------cards section----------- */
 .delivery-cards{
     display: flex;
     justify-content: center;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .delivery-1-container{
     text-decoration: none;
@@ -149,3 +157,14 @@ background-color: rgba(113,208,255,.1019607843);
       margin-bottom: 40px;
 }
 
+
+
+@media only screen and (max-width: 800px) {
+ .Deliver-container{
+    display: block;
+   padding: 20px;
+}
+.deliver-img img{
+    margin-top: 20px;
+}
+}

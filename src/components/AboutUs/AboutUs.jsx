@@ -1,5 +1,6 @@
 import React from 'react';
 import './AboutUs.css';
+import happydog from '../../images/pexels-photo-4056475.webp'
 
 const AboutUs = () => {
   return (
@@ -83,14 +84,24 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section className="about-header-main">
         <div className="about-header">
           <div className="about-header-content">
             <h2>
               <strong>Our mission</strong> is to make{' '}
               <strong>lives better</strong> by placing{' '}
-              <strong>healthy puppies</strong> in ,<strong>happy homes</strong>
+              <strong>healthy puppies</strong> in ,
+              <strong>
+                happy homes <br />
+              </strong>
             </h2>
+            <p className="about-header-icon">
+              <i class="fa-solid fa-hand-holding-heart"></i>
+              <i class="fa-solid fa-house"></i>
+            </p>
+          </div>
+          <div className="about-header-img">
+            <img src={happydog} alt="" />
           </div>
         </div>
       </section>
