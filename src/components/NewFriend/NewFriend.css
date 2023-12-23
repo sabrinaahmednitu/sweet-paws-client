@@ -1,0 +1,28 @@
+.newfriend-main{
+       background-color: #e6fffd;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 4em 1em;
+    width: 100%;
+}
+.newfriend-content{
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #66af37;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 2em;
+    text-align: center;
+        flex-direction: row;
+    height: 5em;
+    justify-content: space-around;
+}
+ .newfriend-img{
+    height: 84px;
+    width: 160px;
+  transform: scaleX(-1);
+}

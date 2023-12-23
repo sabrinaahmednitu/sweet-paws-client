@@ -1,5 +1,5 @@
 .available-main {
-  margin-top: 50px;
+  padding-top: 50px;
   margin-bottom: 50px;
 }
 .available-cards {
@@ -23,7 +23,7 @@
 .available-header h1 {
   font-size: 36px;
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 70px;
   margin-bottom: 10px;
 }
 .available-header p {

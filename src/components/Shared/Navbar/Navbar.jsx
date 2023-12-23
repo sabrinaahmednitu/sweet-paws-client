@@ -1,45 +1,24 @@
-import React, { useContext } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import './Navbar/Navbar.css';
-import navlogo from "../../images/Sweet_Paws__2_-removebg-preview.png"
-import { AuthContext } from '../../Hooks/AuthProvider';
-import { signOut } from 'firebase/auth';
-import auth from '../../firebase.init';
+import { Link} from 'react-router-dom';
+import navlogo from "../../../images/Sweet_Paws__2_-removebg-preview.png"
+import './Navbar.css'
 
 const Navbar = () => {
-  const { user } = useContext(AuthContext);
-  const navigate = useNavigate();
-   const logout = () => {
-     signOut(auth);
-     navigate('/login');
-   };
+
   const navItem = (
     <>
       <li>
         <Link to="/">Home</Link>
       </li>
-      {user && (
         <li>
           <Link to="/availablePuppies">Available Puppies</Link>
         </li>
-      )}
+    
       <li>
         <Link to="/aboutus">About Us</Link>
       </li>
       <li>
         <Link to="/ContactUs">Contact Us</Link>
       </li>
-      {/* {user ? (
-        <button onClick={logout} className=" btn btn-success font-bold ">
-          SignOut
-        </button>
-      ) : (
-        <Link to="/login" className="flex justify-center align-items-center">
-          <button className="btn-info pl-[10px] pr-[10px] rounded ">
-            Login
-          </button>
-        </Link>
-      )} */}
     </>
   );
   return (
@@ -91,7 +70,7 @@ const Navbar = () => {
           <div className="navbar-end mx-auto ">
             {/* <p>{user?.displayName}</p> */}
             <Link>
-              {user ? (
+              {/* {user ? (
                 <button
                   onClick={logout}
                   className=" btn btn-success font-bold "
@@ -107,7 +86,7 @@ const Navbar = () => {
                     Login
                   </button>
                 </Link>
-              )}
+              )} */}
             </Link>
           </div>
         </div>
