@@ -93,9 +93,10 @@ background-color: rgb(247, 247, 247);
   justify-content: center;
   align-items: center;
   gap: 20px;
-  max-width: 1500px;
+  max-width: 1300px;
   margin: auto;
   padding: 30px 0px;
+  
 }
 .about-header-content{
   flex-basis: 40%;
@@ -128,13 +129,6 @@ background-color: rgb(247, 247, 247);
 
 
 
-
-
-
-
-
-
-
 /*---------- hero header-------- */
 
 .hero-header h1 {
@@ -153,7 +147,7 @@ background-color: rgb(247, 247, 247);
 .about-placed-container {
   background-color: #eaf9ff;
   /* margin: 0 auto; */
-  max-width: 1360px;
+  max-width: 1300px;
   padding: 2em 3em;
   margin: 0 auto 0.5em;
 }
@@ -167,7 +161,7 @@ background-color: rgb(247, 247, 247);
 .placed-2 {
   flex-basis: 50%;
   background-color: white;
-  font-size: 46px;
+  font-size: 40px;
   grid-column: 1;
   grid-row: 1;
   line-height: 63px;
@@ -218,6 +212,15 @@ background-color: rgb(247, 247, 247);
   margin-top: 10px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .placed-2 {
+    background-color: white;
+    font-size: 36px;
+    padding: 0.5em;
+    text-align: center;
+    padding-top: 30px;
+  }
+}
 @media only screen and (max-width: 900px) {
   .searchFind{
     display: block;
@@ -242,5 +245,11 @@ background-color: rgb(247, 247, 247);
     line-height: 49px;
     padding: 0.5em;
     text-align: center;
+  }
+  .hero-header{
+padding: 20px;
+  }
+  .coverage-main{
+    padding: 20px;
   }
 }

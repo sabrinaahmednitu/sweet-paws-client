@@ -129,7 +129,9 @@ const AboutUs = () => {
               />
             </div>
             <div className="placed-2">
-              We have placed over 220,000 puppies into over 220,000 homes.
+              We have placed over 220,000 puppies into
+              over
+              220,000 homes.
             </div>
           </div>
         </div>
