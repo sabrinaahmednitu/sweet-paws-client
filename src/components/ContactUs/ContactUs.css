@@ -33,3 +33,11 @@
 .contactUs-container p strong{
     color: #ff9100;
 }
+
+
+@media only screen and (max-width: 900px) {
+    .contactUs-container p{
+        padding: 0px 25px;
+    }
+   
+}
