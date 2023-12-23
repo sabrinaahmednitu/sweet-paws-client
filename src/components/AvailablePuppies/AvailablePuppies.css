@@ -123,6 +123,7 @@
   margin-top: 50px;
   background-color: #f7f7f7;
   padding: 70px 0px;
+
 }
 
 .some-info {
@@ -149,6 +150,8 @@
   justify-content: space-evenly;
   gap: 50px;
   flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
 }
 .dog-char-1 {
   display: flex;
