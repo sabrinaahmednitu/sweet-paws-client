@@ -84,7 +84,7 @@ const Navbar = () => {
               {user ? (
                 <button
                   onClick={logout}
-                  className=" btn btn-success font-bold "
+                  className="signout-btn font-bold "
                 >
                   SignOut
                 </button>

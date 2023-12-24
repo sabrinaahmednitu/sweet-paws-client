@@ -32,17 +32,6 @@ const Login = () => {
     return (
       <div className=" hero login-main">
         <div className="hero-content flex-col lg:flex-row-reverse ">
-          {/* text-left */}
-          <div className="text-center lg:text-left">
-            <h1 className="text-5xl font-bold text-white ">Login now !</h1>
-
-            <p className="py-6 text-2xl text-white ">
-              Login is the process of gaining access to a secure system or
-              account providing valid credentials, such as a username and
-              password.
-            </p>
-          </div>
-
           {/* form-right */}
           <div className=" card flex-shrink-0 w-full max-w-sm shadow-2xl bg-white pt-5 pb-10">
             <h1 className="text-center text-4xl text-black font-bold mb-3">
@@ -70,7 +59,7 @@ const Login = () => {
                       message: 'provide a valid email',
                     },
                   })}
-                  className="input input-bordered w-full max-w-md"
+                  className="input input-bordered w-full max-w-md "
                 />
 
                 <label className="label">
@@ -148,6 +137,16 @@ const Login = () => {
             <SocialLogin></SocialLogin>
           </div>
           {/* form-right */}
+          {/* text-left */}
+          <div className="text-center lg:text-left">
+            <h1 className="text-5xl font-bold text-white ">Login now !</h1>
+
+            <p className="py-6 text-2xl text-white ">
+              Login is the process of gaining access to a secure system or
+              account providing valid credentials, such as a username and
+              password.
+            </p>
+          </div>
         </div>
       </div>
     );

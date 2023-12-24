@@ -42,3 +42,13 @@
   top: -20%;
   left: 70%;
 }
+
+.signout-btn{
+  background-color: #ff9100;
+  color:white;
+  outline: none;
+  width: auto;
+  padding: 0px 20px;
+  height:40px;
+  border-radius: 8px;
+}

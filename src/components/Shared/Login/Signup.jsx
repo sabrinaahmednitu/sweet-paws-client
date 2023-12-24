@@ -15,7 +15,7 @@ const Signup = () => {
   const { signUp, verifyEmail } =
     useContext(AuthContext);
 
-//   const googleProvider = new GoogleAuthProvider();
+
 
   const navigate = useNavigate();
   const location = useLocation();
@@ -41,34 +41,11 @@ const Signup = () => {
       .catch((error) => console.log(error));
   };
 
-  //  for Google SignIn
-//   const handleGoogleSignIn = () => {
-//    signInWithPopup(auth,googleProvider)
-//      .then((result) => {
-//        const user = result.user;
-//        console.log(user);
 
-//        alert(' Thank you !!!', 'Your account has been created');
-//        verifyEmail();
-//        navigate('/');
-//      })
-//      .catch((error) => console.log(error));
-//   };
 
   return (
     <div className=" hero login-main ">
       <div className="hero-content flex-col lg:flex-row-reverse ">
-        {/* text-left */}
-        <div className="text-center lg:text-left">
-          <h1 className="text-5xl font-bold text-white ">Signup now !</h1>
-
-          <p className="py-6 text-2xl text-white ">
-            Signup is the process of gaining access to a secure system or
-            account providing valid credentials, such as a username and
-            password.
-          </p>
-        </div>
-
         {/* form-right */}
         <div className=" card flex-shrink-0 w-full max-w-sm shadow-2xl bg-white pt-5 pb-10">
           <h1 className="text-center text-4xl text-black font-bold mb-3">
@@ -194,16 +171,16 @@ const Signup = () => {
             </Link>
           </p>
           <SocialLogin></SocialLogin>
-          {/* register filed and google and github button */}
-          {/* <div className="divider">OR</div>
-          <button
-            onClick={handleGoogleSignIn}
-            className="btn btn-outline btn-second w-full"
-          >
-            {' '}
-            <img className="mx-3" style={{ width: '40px' }} alt="" /> CONTINUE
-            WITH GOOGLE
-          </button> */}
+        </div>
+        {/* text-left */}
+        <div className="text-center lg:text-left">
+          <h1 className="text-5xl font-bold text-white ">Signup now !</h1>
+
+          <p className="py-6 text-2xl text-white ">
+            Signup is the process of gaining access to a secure system or
+            account providing valid credentials, such as a username and
+            password.
+          </p>
         </div>
       </div>
     </div>

@@ -1,21 +1,21 @@
 import {
+  FacebookAuthProvider,
   GithubAuthProvider,
   GoogleAuthProvider,
-  FacebookAuthProvider,
 } from 'firebase/auth';
 import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../../Hooks/AuthProvider';
 
 const SocialLogin = () => {
-  const { googleLoginInProvider, githubSignUp, verifyEmail, facebookSignUp } =
+   const { googleLoginInProvider, githubSignUp, verifyEmail, facebookSignUp } =
     useContext(AuthContext);
 
   const navigate = useNavigate();
 
   const googleProvider = new GoogleAuthProvider();
     const githubProvider = new GithubAuthProvider();
-    const facebookProvider = new FacebookAuthProvider();
+   const facebookProvider = new FacebookAuthProvider();
 
   //  for Google SignIn
 
