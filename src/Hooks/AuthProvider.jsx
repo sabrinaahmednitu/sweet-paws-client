@@ -6,6 +6,8 @@ import {
   sendEmailVerification,
   signInWithEmailAndPassword,
   signInWithPopup,
+  signInWithRedirect,
+  sendPasswordResetEmail ,
   signOut,
 } from 'firebase/auth';
 import React, { createContext, useEffect, useState } from 'react';
@@ -33,8 +35,12 @@ const AuthProvider = ({ children }) => {
     return signInWithPopup(auth, provider);
   };
   const facebookSignUp = (provider) => {
-    return signInWithPopup(auth, provider);
+    return signInWithRedirect(auth, provider);
   };
+
+  // const ResetPassword = (email) => {
+  //   return sendPasswordResetEmail(auth, email);
+  // };
 
   const logOut = () => {
     return signOut(auth);
@@ -65,6 +71,7 @@ const AuthProvider = ({ children }) => {
     googleLoginInProvider,
     githubSignUp,
     facebookSignUp,
+    
   };
 
   return (

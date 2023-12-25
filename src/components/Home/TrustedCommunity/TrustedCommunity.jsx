@@ -58,7 +58,7 @@ const TrustedCommunity = () => {
         <section className="TrustedCommunity-slider">
           <div className="trusted-item-1">
             <img
-              src="https://cdn-yotpo-images-production.yotpo.com/Review/530260269/502077975/original.jpg?1702476086"
+              src="https://cdn-yotpo-images-production.yotpo.com/Review/531797504/504244824/original.jpg?1703042922"
               alt=""
             />
             <div className="trusted-item-1-content">
@@ -170,7 +170,7 @@ const TrustedCommunity = () => {
           </div>
           <div className="trusted-item-1">
             <img
-              src="https://cdn-yotpo-images-production.yotpo.com/Review/529462792/500378480/original.jpg?1702210791"
+              src="https://cdn-yotpo-images-production.yotpo.com/Review/530260269/502077975/original.jpg?1702476086"
               alt=""
             />
             <div className="trusted-item-1-content">

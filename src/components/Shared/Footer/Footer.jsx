@@ -21,7 +21,7 @@ const Footer = () => {
             <a className="link link-hover">View All Puppies</a>
             <a className="link link-hover">View All Characteristics</a>
             <a href="#">
-              <button className="btn">Breed Match Quiz</button>
+              <button className="btn bg-white">Breed Match Quiz</button>
             </a>
           </nav>
           <nav>

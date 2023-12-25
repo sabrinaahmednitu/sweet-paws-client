@@ -1,19 +1,20 @@
+  
 import { updateProfile } from 'firebase/auth';
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../Hooks/AuthProvider';
 import SocialLogin from './SocialLogin/SocialLogin';
 
 const Signup = () => {
+  const[user,setUser]=useState({})
   const {
     register,
     formState: { errors },
     handleSubmit,
     reset,
   } = useForm();
-  const { signUp, verifyEmail } =
-    useContext(AuthContext);
+  const { signUp, verifyEmail, ResetPassword } = useContext(AuthContext);
 
 
 
@@ -27,10 +28,16 @@ const Signup = () => {
 
   const signupOnSubmit = (data) => {
     console.log(data);
+    
     signUp(data.email, data.password)
+      
       .then((result) => {
+        const { email } = result.user;
+        const userInfo = { email: email };
+        setUser(userInfo)
         const user = result.user;
         console.log(user);
+        
         alert(' Thank you !!!', 'Your account has been created');
         reset();
         verifyEmail();
@@ -41,6 +48,41 @@ const Signup = () => {
       .catch((error) => console.log(error));
   };
 
+
+
+  const handleReset = (user) => {
+    console.log(user)
+  ResetPassword(user.email)
+    .then(() => {
+      // Password reset email sent!
+      // ..
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+  }
+  
+  // const handleReset = (user) => {
+  //   console.log(user)
+  // ResetPassword(user.email)
+  //   .then(() => {
+  //     // Password reset email sent!
+  //     // ..
+  //   })
+  //   .catch((error) => {
+  //     console.log(error);
+  //   });
+  // }
+  
+  // const handleReset = async (data) => {
+  //   try {
+  //     await ResetPassword(data.email);
+  //     // Password reset email sent!
+  //     console.log(`Password reset email sent to ${data.email}`);
+  //   } catch (error) {
+  //     console.error('Error sending password reset email:', error.message);
+  //   }
+  // };
 
 
   return (
@@ -144,7 +186,7 @@ const Signup = () => {
               <label className="label">
                 <span className="label-text">
                   Forget Password ?
-                  <button className="btn btn-link">Reset</button>
+                  <button className="btn btn-link" onClick={handleReset}>Reset</button>
                 </span>
               </label>
               {/* Forgot password */}

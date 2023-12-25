@@ -33,16 +33,16 @@ const SocialLogin = () => {
   };
 
   // for github SignUp;
-  const handleGitHub = () => {
-    githubSignUp(githubProvider)
-      .then((result) => {
-        const user = result.user;
-        console.log(user);
-        verifyEmail();
-        navigate('/');
-      })
-      .catch((error) => console.log(error));
-  };
+  // const handleGitHub = () => {
+  //   githubSignUp(githubProvider)
+  //     .then((result) => {
+  //       const user = result.user;
+  //       console.log(user);
+  //       verifyEmail();
+  //       navigate('/');
+  //     })
+  //     .catch((error) => console.log(error));
+  // };
   // for facebook SignUp;
   const handleFacebook = () => {
     facebookSignUp(facebookProvider)
@@ -72,14 +72,14 @@ const SocialLogin = () => {
         </button>
       </div>
       {/* and github button */}
-      <div className="form-control mt-2">
+      {/* <div className="form-control mt-2">
         <button
           onClick={handleGitHub}
           className="btn text-white bg-black-200 w-[75%] max-w-md mx-auto"
         >
           Continue with github
         </button>
-      </div>
+      </div> */}
       {/* and facebook button */}
       <div className="form-control mt-2">
         <button

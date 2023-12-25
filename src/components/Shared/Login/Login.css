@@ -6,6 +6,7 @@
    background-position:bottom ;
     /* background-attachment: fixed; */
     z-index: -1;
+    padding-top:70px ;
 }
 .hero-content{
     z-index: 10;
