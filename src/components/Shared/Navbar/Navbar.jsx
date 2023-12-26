@@ -30,6 +30,9 @@ const Navbar = () => {
       <li>
         <Link to="/ContactUs">Contact Us</Link>
       </li>
+      <li>
+        <Link to="/reset">Reset</Link>
+      </li>
     </>
   );
   return (

@@ -108,7 +108,7 @@ const Signup = () => {
                     message: 'name is required',
                   },
                 })}
-                className="input input-bordered w-full max-w-md"
+                className="input input-bordered w-full max-w-md text-white"
               />
 
               <label className="label">
@@ -137,7 +137,7 @@ const Signup = () => {
                     message: 'provide a valid email',
                   },
                 })}
-                className="input input-bordered w-full max-w-md"
+                className="input input-bordered w-full max-w-md text-white"
               />
 
               <label className="label">
@@ -166,7 +166,7 @@ const Signup = () => {
                     message: 'provide a valid password',
                   },
                 })}
-                className="input input-bordered w-full max-w-md"
+                className="input input-bordered w-full max-w-md text-white"
               />
 
               <label className="label">
@@ -186,7 +186,9 @@ const Signup = () => {
               <label className="label">
                 <span className="label-text">
                   Forget Password ?
-                  <button className="btn btn-link" onClick={handleReset}>Reset</button>
+                  <Link to="/reset" className="btn btn-link">
+                    Reset
+                  </Link>
                 </span>
               </label>
               {/* Forgot password */}

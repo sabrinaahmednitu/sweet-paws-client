@@ -33,7 +33,7 @@ const Login = () => {
       <div className=" hero login-main">
         <div className="hero-content flex-col lg:flex-row-reverse ">
           {/* form-right */}
-          <div className=" card flex-shrink-0 w-full max-w-sm shadow-2xl bg-white pt-5 pb-10">
+          <div className="login-container card flex-shrink-0 w-full max-w-sm shadow-2xl bg-white pt-5 pb-10">
             <h1 className="text-center text-4xl text-black font-bold mb-3">
               Login
             </h1>
@@ -44,7 +44,7 @@ const Login = () => {
               {/* Email */}
               <div>
                 <label className="label">
-                  <span className="label-text">Email</span>
+                  <span className="label-text ">Email</span>
                 </label>
                 <input
                   type="text"
@@ -59,7 +59,7 @@ const Login = () => {
                       message: 'provide a valid email',
                     },
                   })}
-                  className="input input-bordered w-full max-w-md "
+                  className="input input-bordered w-full max-w-md text-white"
                 />
 
                 <label className="label">
@@ -92,7 +92,7 @@ const Login = () => {
                       message: 'provide a valid ppassword',
                     },
                   })}
-                  className="input input-bordered w-full max-w-md"
+                  className="input input-bordered w-full max-w-md text-white"
                 />
 
                 <label className="label">

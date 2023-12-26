@@ -18,6 +18,7 @@ export const AuthContext = createContext();
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [reset, setReset] = useState(null);
 
   const signUp = (email, password) => {
     return createUserWithEmailAndPassword(auth, email, password);
@@ -38,9 +39,9 @@ const AuthProvider = ({ children }) => {
     return signInWithRedirect(auth, provider);
   };
 
-  // const ResetPassword = (email) => {
-  //   return sendPasswordResetEmail(auth, email);
-  // };
+const ResetPassword = (email, setReset) => {
+  return sendPasswordResetEmail(auth, email);
+};
 
   const logOut = () => {
     return signOut(auth);
@@ -71,7 +72,7 @@ const AuthProvider = ({ children }) => {
     googleLoginInProvider,
     githubSignUp,
     facebookSignUp,
-    
+    ResetPassword,
   };
 
   return (
