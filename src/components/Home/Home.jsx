@@ -8,7 +8,7 @@ import PuppyChar from './PuppyChar/PuppyChar';
 import SaleEverywhere from './SaleEverywhere/SaleEverywhere';
 import TrustedCommunity from './TrustedCommunity/TrustedCommunity';
 import RecentlyViewed from './RecentlyViewed/RecentlyViewed';
-
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 const Home = () => {
     return (
       <div>
@@ -21,6 +21,13 @@ const Home = () => {
         <DeliverJoy></DeliverJoy>
         <RecentlyViewed></RecentlyViewed>
         <SaleEverywhere></SaleEverywhere>
+        <div>
+          <MessengerCustomerChat
+            pageId="<PAGE_ID>"
+            appId="<APP_ID>"
+            htmlRef="<REF_STRING>"
+          />
+        </div>
       </div>
     );
 };
