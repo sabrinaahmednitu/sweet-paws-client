@@ -6,6 +6,8 @@ import {
 import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../../Hooks/AuthProvider';
+import google from '../../../../images/google4.png'
+import facebook from '../../../../images/facebook.png'
 
 const SocialLogin = () => {
    const { googleLoginInProvider, githubSignUp, verifyEmail, facebookSignUp } =
@@ -68,6 +70,7 @@ const SocialLogin = () => {
           onClick={handleGoogleSignIn}
           className="btn text-white bg-black-200  w-[75%] max-w-md mx-auto"
         >
+          <i class="fa-brands fa-google"></i>
           Continue with google
         </button>
       </div>
@@ -86,6 +89,7 @@ const SocialLogin = () => {
           onClick={handleFacebook}
           className="btn text-white bg-black-200 w-[75%] max-w-md mx-auto"
         >
+          <i class="fa-brands fa-facebook"></i>
           Continue with facebook
         </button>
       </div>

@@ -35,21 +35,3 @@ color: #000;
   border: none;
   transition: all 0.2s ease-in-out;
 }
-
-
-.money-form{
-  width: 100%;
-  height: auto;
-  position: relative;
-}
-.money-form-container{
-  width: 90%;
-  max-width: 450px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  background-color: rgb(129, 125, 125);
-  padding: 50px 60px 70px;
-  text-align: center;
-}

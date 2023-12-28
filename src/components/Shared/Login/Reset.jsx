@@ -61,7 +61,7 @@ const Reset = () => {
             {error && <p className="text-red-700 my-4">{error}</p>}
 
             <button
-              className="btn btn-accent w-full mt-2 text-white"
+              className="btn w-full mt-2 text-white reset-btn"
               type="submit"
             >
               Reset
