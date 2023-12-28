@@ -1,21 +1,19 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../Hooks/AuthProvider';
-import './Login.css'
+import './Login.css';
 import SocialLogin from './SocialLogin/SocialLogin';
-import money1 from '../../../images/download__1___1___1_-removebg-preview.png'
+import money1 from '../../../images/download__1___1___1_-removebg-preview.png';
 // import money1 from '../../../images/download (1).png'
 const Login = () => {
   const {
     register,
-    watch,
     formState: { errors },
     handleSubmit,
   } = useForm();
   const { logIn } = useContext(AuthContext);
   const navigate = useNavigate();
-
   const navigateSignup = () => {
     navigate('/signup');
   };
@@ -27,24 +25,19 @@ const Login = () => {
       .then((result) => {
         const user = result.user;
         console.log(user);
-        // alert(' Thank you !!!', 'Successfully login');
+        alert(' Thank you !!!', 'Successfully login');
         navigate('/');
       })
       .catch((error) => console.log(error));
   };
 
-  // Watch the value of the "cardNumber" field
-  const cardNumberValue = watch('cardNumber');
 
-  const handlemoney = (e) => {
-    e.preventDefault();
-  };
   return (
     <div className=" hero login-main">
       <div className="hero-content flex-col lg:flex-row-reverse ">
         {/* form-right */}
         <div className="login-container card flex-shrink-0 w-full max-w-sm shadow-2xl bg-white pt-5 pb-10">
-          <h1 className="text-center text-4xl text-black font-bold mb-3">
+          <h1 className="text-center text-4xl text-white font-bold mb-3">
             Login
           </h1>
           <form
@@ -53,8 +46,8 @@ const Login = () => {
           >
             {/* Email */}
             <div>
-              <label className="label">
-                <span className="label-text ">Email</span>
+              <label className="label ">
+                <span className="label-text text-black">Email</span>
               </label>
               <input
                 type="text"
@@ -86,7 +79,7 @@ const Login = () => {
             {/* Password */}
             <div className="form-control">
               <label className="label">
-                <span className="label-text">Password</span>
+                <span className="label-text text-black">Password</span>
               </label>
 
               <input
@@ -120,23 +113,28 @@ const Login = () => {
 
               {/* Forgot password */}
               <label className="label">
-                <a href="#" className="label-text-alt link link-hover">
-                  Forgot password?
-                </a>
+                <span className="label-text text-black">
+                  Forget Password ?
+                  <Link to="/reset" className="btn btn-link">
+                    Reset
+                  </Link>
+                </span>
               </label>
               {/* Forgot password */}
             </div>
             {/* Password */}
 
             <div className="form-control ">
-              <button type="submit" className="btn btn-primary max-w-md">
+              <button
+                type="submit"
+                className="btn btn-primary max-w-md text-white"
+              >
                 Login
               </button>
             </div>
           </form>
           <p className="text-black mt-3 text-center">
-            Do not have an account
-            <Link
+            Do not have an account? <br /><Link
               className="text-green-600 font-bold "
               to="/signup"
               onClick={navigateSignup}
@@ -149,7 +147,7 @@ const Login = () => {
         {/* form-right */}
 
         {/* form-left bg-[#dcfce7]*/}
-        <div className="login-container card flex-shrink-0 w-full max-w-sm shadow-2xl bg-white pt-5 pb-10">
+        {/* <div className="login-container card flex-shrink-0 w-full max-w-sm shadow-2xl bg-white pt-5 pb-10">
           <h1 className="text-center text-4xl text-black font-bold mb-3">
             Pay Invioce
           </h1>
@@ -157,7 +155,7 @@ const Login = () => {
             <img src={money1} alt="" />
           </div>
           <form className="w-[75%] mx-auto" onSubmit={(e) => handlemoney(e)}>
-            {/* Name on card */}
+            Name on card
             <div>
               <label className="label">
                 <span className="label-text text-black">Name on card</span>
@@ -186,9 +184,9 @@ const Login = () => {
                 )}
               </label>
             </div>
-            {/* Name on card */}
+            Name on card
 
-            {/*card number*/}
+            card number
             <div className="form-control">
               <label className="label">
                 <span className="label-text text-black">Card number</span>
@@ -202,20 +200,20 @@ const Login = () => {
                     value: /^4\d{12}(\d{3})?$/,
                     message: 'Please provide a valid Visa card number',
                   },
-                  // pattern: {
-                  //   value: /^(5[1-5]\d{14})$/,
-                  //   message:
-                  //     'Please provide a valid mastercardPattern  card number',
-                  // },
-                  // pattern: {
-                  //   value: /^(34|37)\d{13}$/,
-                  //   message:
-                  //     'Please provide a valid amexPattern  card number',
-                  // },
+                  pattern: {
+                    value: /^(5[1-5]\d{14})$/,
+                    message:
+                      'Please provide a valid mastercardPattern  card number',
+                  },
+                  pattern: {
+                    value: /^(34|37)\d{13}$/,
+                    message:
+                      'Please provide a valid amexPattern  card number',
+                  },
                 })}
                 className="input input-bordered w-full max-w-md bg-white"
               />
-              {/* Display the value of the Visa Card Number input */}
+             
               <p>Visa Card Number: {cardNumberValue}</p>
               <label className="label text-black">
                 {errors.cardNumber?.type === 'pattern' && (
@@ -225,8 +223,8 @@ const Login = () => {
                 )}
               </label>
             </div>
-            {/*card number*/}
-            {/* ZIP/Postal code */}
+            card number
+            ZIP/Postal code
             <div className="form-control">
               <label className="label">
                 <span className="label-text text-black">ZIP/Postal code</span>
@@ -260,7 +258,7 @@ const Login = () => {
                 )}
               </label>
             </div>
-            {/* ZIP/Postal code */}
+            ZIP/Postal code
 
             <div className="form-control ">
               <button
@@ -271,7 +269,7 @@ const Login = () => {
               </button>
             </div>
           </form>
-        </div>
+        </div> */}
         {/* form */}
       </div>
     </div>

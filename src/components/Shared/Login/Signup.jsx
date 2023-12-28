@@ -89,7 +89,7 @@ const Signup = () => {
     <div className=" hero login-main ">
       <div className="hero-content flex-col lg:flex-row-reverse ">
         {/* form-right */}
-        <div className=" card flex-shrink-0 w-full max-w-sm shadow-2xl bg-white pt-5 pb-10">
+        <div className="login-container card flex-shrink-0 w-full max-w-sm shadow-2xl bg-white pt-5 pb-10">
           <h1 className="text-center text-4xl text-black font-bold mb-3">
             Signup
           </h1>
@@ -182,36 +182,25 @@ const Signup = () => {
                 )}
               </label>
 
-              {/* Forgot password */}
-              <label className="label">
-                <span className="label-text">
-                  Forget Password ?
-                  <Link to="/reset" className="btn btn-link">
-                    Reset
-                  </Link>
-                </span>
-              </label>
-              {/* Forgot password */}
             </div>
             {/* Password */}
 
             <div>
               <button
                 type="submit"
-                className="btn btn-primary  w-full max-w-md"
+                className="btn btn-primary  w-full max-w-md text-white"
               >
                 sign Up
               </button>
             </div>
           </form>
           <p className="text-black mt-2 text-center">
-            Already have an account
-            <Link
+            Already have an account? <br /><Link
               className="text-green-600 font-bold"
               to="/login"
               onClick={navigateLogin}
             >
-              Please Login
+                Please Login
             </Link>
           </p>
           <SocialLogin></SocialLogin>

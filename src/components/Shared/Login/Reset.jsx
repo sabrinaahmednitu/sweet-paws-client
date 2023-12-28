@@ -1,106 +1,73 @@
-import { sendPasswordResetEmail } from "firebase/auth";
-import { useContext } from "react";
-import auth from "../../../firebase.init";
-import { AuthContext } from "../../../Hooks/AuthProvider";
-import MessengerCustomerChat from 'react-messenger-customer-chat';
-import './Reset.css'
+import React, { useContext, useRef, useState } from 'react';
+import Swal from 'sweetalert2';
+import { AuthContext } from '../../../Hooks/AuthProvider';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import './Reset.css';
 const Reset = () => {
-  const { ResetPassword } = useContext(AuthContext);
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     const emailValue = e.target.value;
-//     ResetPassword(auth, emailValue)
-//       .then((data) => {
-//         alert('check your email');
-//       })
-//       .catch((err) => {
-//         alert(err.code);
-//       });
-//     };
-    
+  const emailRef = useRef();
+  const { ResetPassword, setLoading } = useContext(AuthContext);
+  const [error, setError] = useState('');
+  const [message, setMessage] = useState('');
 
-  const handleSubmit = (e) => {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const from = location.state?.from?.pathname || '/login';
+
+  async function handleSubmit(e) {
     e.preventDefault();
-    const emailValue = e.target.value;
-    ResetPassword(auth, emailValue)
-      .then(() => {
-       alert('check your email');
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-    };
-    
+
+    try {
+      setMessage('');
+      setError('');
+      // setLoading(true)
+      console.log('wait');
+      await ResetPassword(emailRef.current.value);
+      navigate(from, { replace: true });
+      console.log('done');
+      setMessage('Check your inbox for further instructions');
+      Swal.fire('Check your email');
+    } catch (error) {
+      console.log(error);
+      setError('Failed to reset password');
+    }
+
+    setLoading(false);
+    emailRef.current.value = ' ';
+  }
+
   return (
     <div
       style={{
         padding: '190px',
       }}
     >
-      <form className="reset-container" onSubmit={(e) => handleSubmit(e)}>
-        <label htmlFor="">Email</label>
-        <br />
-        <input
-          style={{
-            padding: '10px',
-          }}
-          type="email"
-          className="input input-bordered  max-w-md "
-        ></input>
-        <br />
-
-        <label htmlFor="">password</label>
-        <br />
-        <input
-          style={{
-            padding: '10px',
-          }}
-          type="email"
-          className="input input-bordered  max-w-md "
-        ></input>
-        <br />
-        <label htmlFor="">Confirm password</label>
-        <br />
-        <input
-          style={{
-            padding: '10px',
-          }}
-          type="email"
-          className="input input-bordered  max-w-md "
-        ></input>
-        <br />
-        <br />
-        <button className="btn reset-btn">Reset</button>
-      </form>
-      <div className="money-form">
-        <div className="money-form-container">
-          <h1>Pay Invoice</h1>
-          <form>
-            <div className="money-input-group">
-              <div className="money-input">
-                <label htmlFor="">Name on card </label>
-                <input type="text" placeholder="card name" />
-              </div>
-              <div className="money-input">
-                <label htmlFor="">Card Number</label>
-                <input type="text" placeholder="card number" />
-              </div>
-              <div className="money-input">
-                <label htmlFor="">expire date</label>
-                <input type="text" placeholder="card name" />
-              </div>
-              <div className="money-input">
-                <label htmlFor="">security code</label>
-                <input type="text" placeholder="card name" />
-              </div>
-              <div className="money-input">
-                <label htmlFor="">ZIP/Postal code</label>
-                <input type="text" placeholder="card name" />
-              </div>
+      <div className="w-96 p-7 mx-auto">
+        <h2 className="text-center mb-4">Reset Password </h2>
+        {message && <p className="text-cyan-600">{message}</p>}
+        <form className="reset-container" onSubmit={handleSubmit}>
+          <div className="" id="email">
+            <label>Email</label>
+            <br />
+            <div className="flex items-center border-solid border-2 border-gray-300 hover:border-solid rounded-[12px]">
+              <input
+                type="email"
+                ref={emailRef}
+                required
+                className="input focus:outline-none focus:ring-0 w-[100%] text-white"
+              />
             </div>
-            <button>Pay $5</button>
-          </form>
-        </div>
+
+            {error && <p className="text-red-700 my-4">{error}</p>}
+
+            <button
+              className="btn btn-accent w-full mt-2 text-white"
+              type="submit"
+            >
+              Reset
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   );
