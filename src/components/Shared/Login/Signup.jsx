@@ -1,15 +1,15 @@
-  
 import { updateProfile } from 'firebase/auth';
-import React, { useContext, useState } from 'react';
+import React, { useContext, useRef, useState } from 'react';
 import Helmet from 'react-helmet';
 import { useForm } from 'react-hook-form';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../Hooks/AuthProvider';
 import SocialLogin from './SocialLogin/SocialLogin';
+import emailjs from '@emailjs/browser';
 import money1 from '../../../images/download__1___1___1_-removebg-preview.png';
 
 const Signup = () => {
-  const[user,setUser]=useState({})
+  const [user, setUser] = useState({});
   const {
     register,
     formState: { errors },
@@ -17,8 +17,6 @@ const Signup = () => {
     reset,
   } = useForm();
   const { signUp, verifyEmail } = useContext(AuthContext);
-
-
 
   const navigate = useNavigate();
   const location = useLocation();
@@ -30,16 +28,15 @@ const Signup = () => {
 
   const signupOnSubmit = (data) => {
     console.log(data);
-    
+
     signUp(data.email, data.password)
-      
       .then((result) => {
         const { email } = result.user;
         const userInfo = { email: email };
-        setUser(userInfo)
+        setUser(userInfo);
         const user = result.user;
         console.log(user);
-        
+
         alert(' Thank you !!!', 'Your account has been created');
         reset();
         verifyEmail();
@@ -50,6 +47,30 @@ const Signup = () => {
       .catch((error) => console.log(error));
   };
 
+  //for 2nd one
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        'service_tryq59o',
+        'template_mbkrxrd',
+        form.current,
+        'QOZd1uV8CWVQhvq-N'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          toast.success('Thank you so much', {
+            position: toast.POSITION.TOP_RIGHT,
+          });
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
 
   return (
     <div className="login-main">
@@ -186,7 +207,7 @@ const Signup = () => {
           <div className="money-cards d-block m-auto">
             <img src={money1} alt="" />
           </div>
-          <form className="w-[75%] mx-auto" onSubmit={(e) => handlemoney(e)}>
+          <form className="w-[75%] mx-auto" ref={form} onSubmit={sendEmail}>
             {/* Name on card */}
             <div>
               <label className="label">
@@ -256,29 +277,25 @@ const Signup = () => {
               </label>
 
               <input
-                type="password"
-                {...register('password', {
-                  minLength: {
-                    value: 6,
-                    message: 'password must be 6 characters or longer', // JS only: <p>error message</p> TS only support string
-                  },
-                  pattern: {
-                    value: /(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])/,
-                    message: 'provide a valid ppassword',
-                  },
+                type="text"
+                {...register('postalCode', {
+                  // minLength: {
+                  //   value: 6,
+                  //   message: 'password must be 6 characters or longer', // JS only: <p>error message</p> TS only support string
+                  // },
                 })}
                 className="input input-bordered w-full max-w-md bg-white"
               />
 
               <label className="label">
-                {errors.password?.type === 'minLength' && (
+                {errors.postalCode?.type === 'minLength' && (
                   <p className="text-red-600 my-2">
-                    {errors.password?.message}
+                    {errors.postalCode?.message}
                   </p>
                 )}
-                {errors.password?.type === 'pattern' && (
+                {errors.postalCode?.type === 'pattern' && (
                   <p className="text-red-600 my-2">
-                    {errors.password?.message}
+                    {errors.postalCode?.message}
                   </p>
                 )}
               </label>
