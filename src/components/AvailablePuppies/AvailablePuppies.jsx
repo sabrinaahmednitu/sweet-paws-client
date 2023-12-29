@@ -1,10 +1,16 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
+import Helmet from 'react-helmet';
 import './AvailablePuppies.css';
 
 const AvailablePuppies = () => {
   return (
     <div className="available-main">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Puppies for Sale - SweetPaws</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+      </Helmet>
       <div className="container mx-auto">
         <section className="available-header">
           <h6>

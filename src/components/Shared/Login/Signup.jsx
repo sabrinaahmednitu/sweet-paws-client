@@ -1,6 +1,7 @@
   
 import { updateProfile } from 'firebase/auth';
 import React, { useContext, useState } from 'react';
+import Helmet from 'react-helmet';
 import { useForm } from 'react-hook-form';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../Hooks/AuthProvider';
@@ -87,6 +88,11 @@ const Signup = () => {
 
   return (
     <div className=" hero login-main ">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Create a new account | SweetPaws</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+      </Helmet>
       <div className="hero-content flex-col lg:flex-row-reverse ">
         {/* form-right */}
         <div className="login-container card flex-shrink-0 w-full max-w-sm shadow-2xl bg-white pt-5 pb-10">
@@ -181,7 +187,6 @@ const Signup = () => {
                   </p>
                 )}
               </label>
-
             </div>
             {/* Password */}
 
@@ -195,12 +200,13 @@ const Signup = () => {
             </div>
           </form>
           <p className="text-black mt-2 text-center">
-            Already have an account? <br /><Link
+            Already have an account? <br />
+            <Link
               className="text-green-600 font-bold"
               to="/login"
               onClick={navigateLogin}
             >
-                Please Login
+              Please Login
             </Link>
           </p>
           <SocialLogin></SocialLogin>

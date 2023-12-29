@@ -1,9 +1,15 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 import './ContactUs.css'
 
 const ContactUs = () => {
     return (
       <div>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Contact us | SweetPaws</title>
+          <link rel="canonical" href="http://mysite.com/example" />
+        </Helmet>
         <div className="contactUs-container">
           <img
             src="https://www.puppyspot.com/assets/img/components/contact-us/envelope.svg"

@@ -1,10 +1,16 @@
 import React from 'react';
 import './AboutUs.css';
 import happydog from '../../images/pexels-photo-4056475.webp'
+import Helmet from 'react-helmet';
 
 const AboutUs = () => {
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>About SweetPaws</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+      </Helmet>
       <section>
         <div className="searchFind">
           <div className="searchFind-left">
@@ -129,9 +135,7 @@ const AboutUs = () => {
               />
             </div>
             <div className="placed-2">
-              We have placed over 220,000 puppies into
-              over
-              220,000 homes.
+              We have placed over 220,000 puppies into over 220,000 homes.
             </div>
           </div>
         </div>

@@ -5,6 +5,7 @@ import { AuthContext } from '../../../Hooks/AuthProvider';
 import './Login.css';
 import SocialLogin from './SocialLogin/SocialLogin';
 import money1 from '../../../images/download__1___1___1_-removebg-preview.png';
+import Helmet from 'react-helmet';
 // import money1 from '../../../images/download (1).png'
 const Login = () => {
   const {
@@ -34,6 +35,11 @@ const Login = () => {
 
   return (
     <div className=" hero login-main">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Log into your account | SweetPaws</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+      </Helmet>
       <div className="hero-content flex-col lg:flex-row-reverse ">
         {/* form-right */}
         <div className="login-container card flex-shrink-0 w-full max-w-sm shadow-2xl bg-white pt-5 pb-10">
@@ -134,7 +140,8 @@ const Login = () => {
             </div>
           </form>
           <p className="text-black mt-3 text-center">
-            Do not have an account? <br /><Link
+            Do not have an account? <br />
+            <Link
               className="text-green-600 font-bold "
               to="/signup"
               onClick={navigateSignup}

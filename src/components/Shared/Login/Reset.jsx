@@ -3,6 +3,7 @@ import Swal from 'sweetalert2';
 import { AuthContext } from '../../../Hooks/AuthProvider';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './Reset.css';
+import Helmet from 'react-helmet';
 const Reset = () => {
   const emailRef = useRef();
   const { ResetPassword, setLoading } = useContext(AuthContext);
@@ -42,10 +43,20 @@ const Reset = () => {
         padding: '190px',
       }}
     >
-      <div className="w-96 p-7 mx-auto">
-        <h2 className="text-center mb-4">Reset Password </h2>
+      <div className="w-96 p-7 mx-auto reset-main">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Forgot Your Password ? | SweetPaws</title>
+          <link rel="canonical" href="http://mysite.com/example" />
+        </Helmet>
+
         {message && <p className="text-cyan-600">{message}</p>}
         <form className="reset-container" onSubmit={handleSubmit}>
+          <h3> Forgot your password?</h3>
+          <h2 className="text- mb-4">
+            Enter your email address and we will send you instructions to reset
+            your password.
+          </h2>
           <div className="" id="email">
             <label>Email</label>
             <br />
@@ -64,7 +75,7 @@ const Reset = () => {
               className="btn w-full mt-2 text-white reset-btn"
               type="submit"
             >
-              Reset
+              Submit
             </button>
           </div>
         </form>
