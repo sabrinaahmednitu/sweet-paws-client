@@ -13,6 +13,7 @@
   padding: 10px 0px;
 }
 
+
 .navbar {
   /* background: linear-gradient(263deg,#E3A379 -10.95%,#DF7E85 33.97%,#DD6189 98.23%); */
   background-color: white;
@@ -24,7 +25,7 @@
   height: 60px;
 }
 /* cart items css */
-.cart__trolly__link {
+/* .cart__trolly__link {
   position: relative;
 }
 .cart__trolly {
@@ -41,7 +42,7 @@
   place-items: center;
   top: -20%;
   left: 70%;
-}
+} */
 
 .signout-btn{
   background-color: #ff9100;

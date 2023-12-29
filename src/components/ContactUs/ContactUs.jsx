@@ -2,8 +2,8 @@ import React, { useRef } from 'react';
 import Helmet from 'react-helmet';
 import emailjs from '@emailjs/browser';
 import './ContactUs.css';
-import { toast, ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { toast } from 'react-toastify';
+
 
 const ContactUs = () => {
   const form = useRef();
@@ -19,7 +19,7 @@ const ContactUs = () => {
       .then(
         (result) => {
           console.log(result.text);
-          toast.success('Success Notification !', {
+          toast.success('Thank you so much', {
             position: toast.POSITION.TOP_RIGHT,
           });
         },
@@ -83,7 +83,7 @@ const ContactUs = () => {
           </form>
         </section>
       </section>
-      <ToastContainer />
+     
     </div>
   );
 };
