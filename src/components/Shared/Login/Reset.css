@@ -1,9 +1,9 @@
-.reset-main h3 {
+.reset-container h3 {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 5px;
 }
-.reset-main h2 {
+.reset-container h2 {
   color: #000;
   font-size: 16px;
   letter-spacing: 0.1px;
@@ -14,6 +14,7 @@
   margin-bottom: 190px;
 }
 .reset-container {
+  max-width: 380px;
   width: 380px;
   background: #f8f9fd;
   background: linear-gradient(

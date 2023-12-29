@@ -1,21 +1,19 @@
 .login-main{
     background-image: url('https://www.puppyspot.com/assets/img/authentication/background-large.svg');
-   height: 100vh;
+   height: auto;
    width: 100%;
    background-size: cover;
    background-position:bottom ;
     /* background-attachment: fixed; */
     z-index: -1;
-    padding-top:70px ;
+    padding-top:170px ;
+    padding-bottom:70px ;
 }
 .hero-content{
     z-index: 10;
 }
 
-.login-container{box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 30px 30px -20px;}
-
 .login-container {
-  max-width: 350px;
    background: linear-gradient(
     0deg,
     rgb(253, 228, 205) 0%,

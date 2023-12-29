@@ -43,7 +43,7 @@ const Reset = () => {
         padding: '190px',
       }}
     >
-      <div className="w-96 p-7 mx-auto reset-main">
+      <div className="reset-main">
         <Helmet>
           <meta charSet="utf-8" />
           <title>Forgot Your Password ? | SweetPaws</title>

@@ -6,8 +6,8 @@ import './Login.css';
 import SocialLogin from './SocialLogin/SocialLogin';
 import money1 from '../../../images/download__1___1___1_-removebg-preview.png';
 import Helmet from 'react-helmet';
-// import money1 from '../../../images/download (1).png'
 const Login = () => {
+   
   const {
     register,
     formState: { errors },
@@ -32,6 +32,7 @@ const Login = () => {
       .catch((error) => console.log(error));
   };
 
+ 
 
   return (
     <div className=" hero login-main">
@@ -68,7 +69,7 @@ const Login = () => {
                     message: 'provide a valid email',
                   },
                 })}
-                className="input input-bordered w-full max-w-md text-white"
+                className="input input-bordered w-full max-w-md"
               />
 
               <label className="label">
@@ -101,7 +102,7 @@ const Login = () => {
                     message: 'provide a valid ppassword',
                   },
                 })}
-                className="input input-bordered w-full max-w-md text-white"
+                className="input input-bordered w-full max-w-md "
               />
 
               <label className="label">
@@ -154,7 +155,7 @@ const Login = () => {
         {/* form-right */}
 
         {/* form-left bg-[#dcfce7]*/}
-        {/* <div className="login-container card flex-shrink-0 w-full max-w-sm shadow-2xl bg-white pt-5 pb-10">
+        <div className=" card flex-shrink-0 w-full max-w-sm shadow-2xl bg-white pt-5 pb-10">
           <h1 className="text-center text-4xl text-black font-bold mb-3">
             Pay Invioce
           </h1>
@@ -162,38 +163,35 @@ const Login = () => {
             <img src={money1} alt="" />
           </div>
           <form className="w-[75%] mx-auto" onSubmit={(e) => handlemoney(e)}>
-            Name on card
+            {/* Name on card */}
             <div>
               <label className="label">
                 <span className="label-text text-black">Name on card</span>
               </label>
               <input
                 type="text"
-                {...register('email', {
+                {...register('cardName', {
                   required: {
                     value: true,
-                    message: 'Email is required',
+                    message: 'cardName is required',
                   },
-                  pattern: {
-                    value: /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/,
-                    message: 'provide a valid email',
-                  },
+                  
                 })}
                 className="input input-bordered w-full max-w-md bg-white"
               />
 
               <label className="label">
                 {errors.email?.type === 'required' && (
-                  <p className="text-red-600 my-2">{errors.email?.message}</p>
+                  <p className="text-red-600 my-2">
+                    {errors.cardName?.message}
+                  </p>
                 )}
-                {errors.email?.type === 'pattern' && (
-                  <p className="text-red-600 my-2">{errors.email?.message}</p>
-                )}
+                
               </label>
             </div>
-            Name on card
+            {/* Name on card */}
 
-            card number
+            {/* card number */}
             <div className="form-control">
               <label className="label">
                 <span className="label-text text-black">Card number</span>
@@ -214,14 +212,12 @@ const Login = () => {
                   },
                   pattern: {
                     value: /^(34|37)\d{13}$/,
-                    message:
-                      'Please provide a valid amexPattern  card number',
+                    message: 'Please provide a valid amexPattern  card number',
                   },
                 })}
                 className="input input-bordered w-full max-w-md bg-white"
               />
-             
-              <p>Visa Card Number: {cardNumberValue}</p>
+
               <label className="label text-black">
                 {errors.cardNumber?.type === 'pattern' && (
                   <p className="text-red-600 my-2">
@@ -230,8 +226,8 @@ const Login = () => {
                 )}
               </label>
             </div>
-            card number
-            ZIP/Postal code
+            {/* card number */}
+            {/* ZIP/Postal code */}
             <div className="form-control">
               <label className="label">
                 <span className="label-text text-black">ZIP/Postal code</span>
@@ -265,7 +261,7 @@ const Login = () => {
                 )}
               </label>
             </div>
-            ZIP/Postal code
+            {/* ZIP/Postal code */}
 
             <div className="form-control ">
               <button
@@ -276,7 +272,7 @@ const Login = () => {
               </button>
             </div>
           </form>
-        </div> */}
+        </div>
         {/* form */}
       </div>
     </div>
