@@ -3,6 +3,7 @@ import AboutUs from '../components/AboutUs/AboutUs';
 import AvailablePuppies from '../components/AvailablePuppies/AvailablePuppies';
 import ContactUs from '../components/ContactUs/ContactUs';
 import Home from '../components/Home/Home';
+import PetInsurance from '../components/PetInsurance/PetInsurance';
 import Error from '../components/Shared/Error/Error';
 import Login from '../components/Shared/Login/Login';
 import Reset from '../components/Shared/Login/Reset';
@@ -32,16 +33,20 @@ export const router = createBrowserRouter([
         element: <ContactUs></ContactUs>,
       },
       {
+        path: '/petInsurance',
+        element: <PetInsurance></PetInsurance>,
+      },
+      {
         path: '/login',
-        element:<Login></Login>
+        element: <Login></Login>,
       },
       {
         path: '/reset',
-        element:<Reset></Reset>
+        element: <Reset></Reset>,
       },
       {
         path: '/signup',
-        element:<Signup></Signup>
+        element: <Signup></Signup>,
       },
       {
         path: '*',
