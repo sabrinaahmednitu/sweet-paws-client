@@ -27,10 +27,13 @@ bottom: 0;
 }
 .solution-cards-flex{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  text-align: center;
 }
 .solution-card img{
 height: 85px;
 width: 85px;
+display: block;
+margin: auto;
 }
