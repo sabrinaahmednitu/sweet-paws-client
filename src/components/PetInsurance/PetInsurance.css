@@ -25,15 +25,48 @@ bottom: 0;
      background: rgb(235,230,217);
     height: 36.125rem;
 }
+.got-solution-content h3{
+    text-align: center;
+    line-height: 2.375rem;
+    font-size: 1.9814rem;
+    padding: 50px 0px;
+        color: #162B49;
+    font-size: 1.9814rem;
+    line-height: 2.4rem;
+    text-align: center;
+    font-weight: 400;
+}
 .solution-cards-flex{
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  gap: 20px;
+  max-width: 60rem;
+  margin: auto;
+}
+.solution-card{
+     height: 21.5625rem;
+    width: 20rem;
+  background-color:  rgb(228,222,207);
+  padding: 20px;
+      top: 9.9375rem
 }
 .solution-card img{
-height: 85px;
-width: 85px;
+height: 105px;
+width: 105px;
 display: block;
 margin: auto;
+}
+.solution-card h1{
+    color: #162B49;
+    font-size: 1.2384rem;
+    text-align: center;
+    margin:20px 0px ;
+}
+.solution-card h4{
+color: #37465A;
+    font-size: 1.1146rem;
+    line-height: 1.8rem;
+    text-align: center;
 }

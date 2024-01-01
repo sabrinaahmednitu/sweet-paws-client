@@ -10,7 +10,7 @@ const PetInsurance = () => {
           <section>
             <div className="got-solution-container">
               <div className="got-solution-content">
-                <h1>Got a situation? We’ve got a solution.</h1>
+                <h3>Got a situation? We’ve got a solution.</h3>
                 <div className="solution-cards-flex">
                   <div className="solution-card">
                     <img
