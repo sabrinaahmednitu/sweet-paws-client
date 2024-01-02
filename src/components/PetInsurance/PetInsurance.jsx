@@ -1,5 +1,8 @@
 import React from 'react';
 import './PetInsurance.css'
+import insurance1 from '../../images/insurance-1.jpg'
+import insurance2 from '../../images/insurance-2.jpg'
+import insurance3 from '../../images/insurance-3.jpg'
 const PetInsurance = () => {
     return (
       <div>
@@ -44,6 +47,45 @@ const PetInsurance = () => {
                       We help them stay healthy with optional add-on coverage
                       for exams, vaccines & check-ups.
                     </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div className="pre-exciting-section">
+              <div className="pre-exciting-content">
+                <div className="pre-exciting-1">
+                  <div className="pre-exciting-left">
+                    <img src={insurance2} alt="" />
+                  </div>
+                  <div className="pre-exciting-right">
+                    <h1>
+                      Rest Easy Knowing We Cover Pre-Existing Conditions After
+                      365 Days*
+                    </h1>
+                    <p>
+                      We believe every pet is a champion—that’s why we’re the
+                      only pet insurance company to cover pre-existing
+                      conditions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="pre-exciting-content">
+                <div className="pre-exciting-1">
+                  <div className="pre-exciting-right">
+                    <h4>
+                      Not available in all states. Pre-existing condition
+                      coverage available after 365 days of continuous coverage.
+                      “Only brand“ refers to comparison with 5 pet insurance
+                      carriers making up approximately 80% of the US pet
+                      insurance market (Nationwide, ASPCA, Trupanion,
+                      HealthyPaws and PetPlan).
+                    </h4>
+                  </div>
+                  <div className="pre-exciting-left">
+                    <img src={insurance1} alt="" />
                   </div>
                 </div>
               </div>

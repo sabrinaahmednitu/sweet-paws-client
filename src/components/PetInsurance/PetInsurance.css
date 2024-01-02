@@ -70,3 +70,48 @@
   text-align: center;
   margin-bottom: 30px;
 }
+
+
+/* pre-exciting-section */
+
+.pre-exciting-section{
+  background-color: rgb(83, 83, 73);
+  color: white;
+  padding: 40px 0px;
+}
+.pre-exciting-1{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  gap: 10px;
+
+}
+
+.pre-exciting-left{
+  flex-basis: 30%;
+}
+.pre-exciting-right{
+  flex-basis: 60%;
+}
+
+.pre-exciting-left img{
+  border-radius: 10px;
+}
+.pre-exciting-right h1{
+    text-align: left;
+    line-height: 2.8125rem;
+    font-size: 1.7337rem;
+}
+.pre-exciting-right p{
+      
+    font-size: 1.2384rem;
+    line-height: 2rem;
+    text-align: left;
+}
+.pre-exciting-right h4{
+          text-align: left;
+    line-height: 1.1875rem;
+    font-size: 0.743rem;
+}
