@@ -25,16 +25,16 @@ export const router = createBrowserRouter([
         element: <AvailablePuppies></AvailablePuppies>,
       },
       {
+        path: '/petInsurance',
+        element: <PetInsurance></PetInsurance>,
+      },
+      {
         path: '/aboutus',
         element: <AboutUs></AboutUs>,
       },
       {
         path: '/contactus',
         element: <ContactUs></ContactUs>,
-      },
-      {
-        path: '/petInsurance',
-        element: <PetInsurance></PetInsurance>,
       },
       {
         path: '/login',

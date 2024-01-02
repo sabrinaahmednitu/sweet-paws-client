@@ -20,18 +20,17 @@ const Navbar = () => {
       <li>
         <Link to="/">Home</Link>
       </li>
-        <li>
-          <Link to="/availablePuppies">Available Puppies</Link>
-        </li>
-    
+      <li>
+        <Link to="/availablePuppies">Available Puppies</Link>
+      </li>
+      <li>
+        <Link to="/petInsurance">Pet Insurance</Link>
+      </li>
       <li>
         <Link to="/aboutus">About Us</Link>
       </li>
       <li>
         <Link to="/ContactUs">Contact Us</Link>
-      </li>
-      <li>
-        <Link to="/petInsurance">Pet Insurance</Link>
       </li>
     </>
   );

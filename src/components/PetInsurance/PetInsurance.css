@@ -1,6 +1,6 @@
 .insurance-banner {
   background-image: url(https://v.fastcdn.co/u/de99de39/64417521-0-ZACH-BUDI-INDUSTRIAL.jpg);
-   background-size: cover;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   /* padding: 2em 2em 12em; */
@@ -8,65 +8,66 @@
   width: 100%;
   height: 650px;
 }
-.insurance-banner h1{
-font-size: 40px;
-color: white;
-font-weight: bold;
-padding-top: 500px;
-bottom: 0;
+.insurance-banner h1 {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  padding-top: 500px;
+  bottom: 0;
 }
 
-.insurance-container{
-  padding-top:120px;
+.insurance-container {
+  padding-top: 120px;
 }
 
 /* got-solution-container */
-.got-solution-container{
-     background: rgb(235,230,217);
-    height: 36.125rem;
+.got-solution-container {
+  background: rgb(235, 230, 217);
+  height: auto;
+  padding: 50px 0px;
 }
-.got-solution-content h3{
-    text-align: center;
-    line-height: 2.375rem;
-    font-size: 1.9814rem;
-    padding: 50px 0px;
-        color: #162B49;
-    font-size: 1.9814rem;
-    line-height: 2.4rem;
-    text-align: center;
-    font-weight: 400;
+.got-solution-content h3 {
+  text-align: center;
+  line-height: 2.375rem;
+  font-size: 1.9814rem;
+  padding-bottom: 50px;
+  color: #162b49;
+  font-size: 1.9814rem;
+  line-height: 2.4rem;
+  text-align: center;
+  font-weight: 400;
 }
-.solution-cards-flex{
+.solution-cards-flex {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   text-align: center;
   gap: 20px;
-  max-width: 60rem;
   margin: auto;
 }
-.solution-card{
-     height: 21.5625rem;
-    width: 20rem;
-  background-color:  rgb(228,222,207);
+.solution-card {
+  height: auto;
+  width: 20rem;
+  background-color: rgb(228, 222, 207);
   padding: 20px;
-      top: 9.9375rem
 }
-.solution-card img{
-height: 105px;
-width: 105px;
-display: block;
-margin: auto;
+.solution-card img {
+  height: 105px;
+  width: 105px;
+  display: block;
+  margin: auto;
 }
-.solution-card h1{
-    color: #162B49;
-    font-size: 1.2384rem;
-    text-align: center;
-    margin:20px 0px ;
+.solution-card h1 {
+  color: #162b49;
+  font-size: 1.2384rem;
+  text-align: center;
+  margin: 20px 0px;
 }
-.solution-card h4{
-color: #37465A;
-    font-size: 1.1146rem;
-    line-height: 1.8rem;
-    text-align: center;
+.solution-card h4 {
+  color: #37465a;
+  font-size: 1.1146rem;
+  line-height: 1.8rem;
+  text-align: center;
+  margin-bottom: 30px;
 }
