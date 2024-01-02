@@ -201,20 +201,126 @@ const Signup = () => {
 
         {/* text-left */}
         <div className=" card flex-shrink-0 w-full max-w-sm shadow-2xl bg-white pt-5 pb-10">
-          <h1 className="text-center text-4xl text-black font-bold mb-3">
-            Pay Invioce
+          <h1 className="text-center text-3xl text-black font-bold mb-3">
+            Get Membership
           </h1>
           <div className="money-cards d-block m-auto">
             <img src={money1} alt="" />
           </div>
           <form className="w-[75%] mx-auto" ref={form} onSubmit={sendEmail}>
+            <div className="flex gap-2">
+              {/* first Name*/}
+              <div>
+                <label className="label">
+                  <span className="label-text text-black">First Name</span>
+                </label>
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  {...register('firstName', {
+                    required: {
+                      value: true,
+                      message: 'firstName is required',
+                    },
+                  })}
+                  className="input input-bordered w-full max-w-md bg-white"
+                />
+
+                <label className="label">
+                  {errors.email?.type === 'required' && (
+                    <p className="text-red-600 my-2">
+                      {errors.firstName?.message}
+                    </p>
+                  )}
+                </label>
+              </div>
+              {/* first Name  */}
+              {/* last Name*/}
+              <div>
+                <label className="label">
+                  <span className="label-text text-black">Last Name</span>
+                </label>
+                <input
+                  type="text"
+                  placeholder="Last Name"
+                  {...register('lastName', {
+                    required: {
+                      value: true,
+                      message: 'lastName is required',
+                    },
+                  })}
+                  className="input input-bordered w-full max-w-md bg-white"
+                />
+
+                <label className="label">
+                  {errors.email?.type === 'required' && (
+                    <p className="text-red-600 my-2">
+                      {errors.lastName?.message}
+                    </p>
+                  )}
+                </label>
+              </div>
+              {/* last Name  */}
+            </div>
+            <div className="flex gap-2">
+              {/* date of birth  */}
+              <div>
+                <label className="label">
+                  <span className="label-text text-black">date of birth </span>
+                </label>
+                <input
+                  type="date"
+                  {...register('dateBirth ', {
+                    required: {
+                      value: true,
+                      message: 'dateBirth is required',
+                    },
+                  })}
+                  className="input input-bordered w-full max-w-md bg-white"
+                />
+
+                <label className="label">
+                  {errors.dateBirth?.type === 'required' && (
+                    <p className="text-red-600 my-2">
+                      {errors.dateBirth?.message}
+                    </p>
+                  )}
+                </label>
+              </div>
+              {/* date of birth  */}
+              {/* email*/}
+              <div>
+                <label className="label">
+                  <span className="label-text text-black">Email</span>
+                </label>
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  {...register('lastName', {
+                    required: {
+                      value: true,
+                      message: 'Email is required',
+                    },
+                  })}
+                  className="input input-bordered w-full max-w-md bg-white"
+                />
+
+                <label className="label">
+                  {errors.email?.type === 'required' && (
+                    <p className="text-red-600 my-2">{errors.email?.message}</p>
+                  )}
+                </label>
+              </div>
+              {/* email  */}
+            </div>
             {/* Name on card */}
             <div>
               <label className="label">
-                <span className="label-text text-black">Name on card</span>
+                <span className="label-text text-black">Card Type</span>
               </label>
               <input
                 type="text"
+                placeholder="Enter Card Name"
                 {...register('cardName', {
                   required: {
                     value: true,
@@ -270,6 +376,61 @@ const Signup = () => {
               </label>
             </div>
             {/* card number */}
+            <div className="flex gap-2">
+              {/* Expiration date */}
+              <div>
+                <label className="label">
+                  <span className="label-text text-black">
+                    Expiration date{' '}
+                  </span>
+                </label>
+                <input
+                  type="date"
+                  {...register('expirationDate ', {
+                    required: {
+                      value: true,
+                      message: 'Expiration date is required',
+                    },
+                  })}
+                  className="input input-bordered w-full max-w-md bg-white"
+                />
+
+                <label className="label">
+                  {errors.expirationDate?.type === 'required' && (
+                    <p className="text-red-600 my-2">
+                      {errors.expirationDate?.message}
+                    </p>
+                  )}
+                </label>
+              </div>
+              {/* date of birth  */}
+              {/* security code*/}
+              <div>
+                <label className="label">
+                  <span className="label-text text-black">Security Code</span>
+                </label>
+                <input
+                  type="text"
+                  placeholder="security code"
+                  {...register('securityCode', {
+                    required: {
+                      value: true,
+                      message: 'securityCode is required',
+                    },
+                  })}
+                  className="input input-bordered w-full max-w-md bg-white"
+                />
+
+                <label className="label">
+                  {errors.securityCode?.type === 'required' && (
+                    <p className="text-red-600 my-2">
+                      {errors.securityCode?.message}
+                    </p>
+                  )}
+                </label>
+              </div>
+              {/* security Code  */}
+            </div>
             {/* ZIP/Postal code */}
             <div className="form-control">
               <label className="label">
