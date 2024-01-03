@@ -138,6 +138,13 @@ const PuppyChar = () => {
               alt=""
             />
           </button>
+          <button className="char-btn">
+            Browse All Puppies
+            <img
+              src="	https://www.puppyspot.com/preact/img/forward-caret-white.svg"
+              alt=""
+            />
+          </button>
         </a>
       </section>
     </div>
