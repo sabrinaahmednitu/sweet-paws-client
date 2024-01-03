@@ -91,6 +91,61 @@ const PetInsurance = () => {
               </div>
             </div>
           </section>
+          <section>
+            <div className="insurance-plan-container">
+              <h1>What's included in the base plan</h1>
+              <p>
+                Our base Accident & Illness coverage offers reimbursement for
+                the following expenses:
+              </p>
+              <div className="insurance-plan-flex">
+                <div className="insurance-plan-box">
+                  <ul>
+                    <li>PROCEDURES</li>
+                    <li>X-Ray & Ultrasound</li>
+                    <li>Laboratory Tests</li>
+                    <li>CT Scan & MRI</li>
+                    <li>Surgery</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div className="simpler-think-container">
+              <div className="simpler-content">
+                <div>
+                  <h1>The process is simpler than you think</h1>
+                  <p>So don’t give us that look!</p>
+                </div>
+                <div>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section className="circle-box-container">
+            <div className="circle-box-flex">
+              <div className="circle-box">
+                <div className="circle-1">
+                  <p>1</p>
+                </div>
+                <h1>VISIT YOUR VET</h1>
+              </div>
+              <div className="circle-box">
+                <div className="circle-1">
+                  <p>2</p>
+                </div>
+                <h1>SUBMIT YOUR CLAIM</h1>
+              </div>
+              <div className="circle-box">
+                <div className="circle-1">
+                  <p>3</p>
+                </div>
+                <h1>GET REIMBURSED</h1>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
     );

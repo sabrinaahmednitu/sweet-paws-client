@@ -71,47 +71,108 @@
   margin-bottom: 30px;
 }
 
-
 /* pre-exciting-section */
 
-.pre-exciting-section{
+.pre-exciting-section {
   background-color: rgb(83, 83, 73);
   color: white;
   padding: 40px 0px;
 }
-.pre-exciting-1{
+.pre-exciting-1 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   max-width: 1000px;
   margin: auto;
   gap: 10px;
-
 }
 
-.pre-exciting-left{
+.pre-exciting-left {
   flex-basis: 30%;
 }
-.pre-exciting-right{
+.pre-exciting-right {
   flex-basis: 60%;
 }
 
-.pre-exciting-left img{
+.pre-exciting-left img {
   border-radius: 10px;
 }
-.pre-exciting-right h1{
-    text-align: left;
-    line-height: 2.8125rem;
-    font-size: 1.7337rem;
+.pre-exciting-right h1 {
+  text-align: left;
+  line-height: 2.8125rem;
+  font-size: 1.7337rem;
 }
-.pre-exciting-right p{
-      
-    font-size: 1.2384rem;
-    line-height: 2rem;
-    text-align: left;
+.pre-exciting-right p {
+  font-size: 1.2384rem;
+  line-height: 2rem;
+  text-align: left;
 }
-.pre-exciting-right h4{
-          text-align: left;
-    line-height: 1.1875rem;
-    font-size: 0.743rem;
+.pre-exciting-right h4 {
+  text-align: left;
+  line-height: 1.1875rem;
+  font-size: 0.743rem;
+}
+
+.simpler-think-container {
+  background-image: url(https://v.fastcdn.co/u/de99de39/64417706-0-BILLIE-ROXIE-HOME-LI.jpg);
+  background: repeat rgb(228, 222, 207) 52% 51% / cover;
+  background-image: url(//v.fastcdn.co/u/de99de39/64417706-0-BILLIE-ROXIE-HOME-LI.jpg),
+    url(//v.fastcdn.co/t/b9e2fefd/8c85cb3f/1699278837-64417706-ghost-BILLIE-ROXIE-HOME-LI.jpg);
+  height: 41.5625rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.simpler-content {
+  max-width: 30rem;
+  color: white;
+  margin-left: 160px;
+}
+.simpler-content h1 {
+  text-align: center;
+  line-height: 3.75rem;
+  font-size: 2.7864rem;
+}
+.simpler-content p {
+  text-align: center !important;
+  line-height: 3.75rem !important;
+  font-size: 1.4861rem !important;
+}
+
+
+/*------------ circle-box --------------*/
+.circle-box-flex{
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 700px;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.circle-box-container{
+  background-color: rgb(116, 124, 100);
+ 
+}
+.circle-box p{
+    height: 8.125rem;
+    width: 8.125rem;
+    border: 0.0625rem solid #FFC435;
+    background: rgb(255,196,53);
+    border-radius: 50%;
+    line-height: 8rem;
+    text-align: center;
+    font-size: 50px;
+    display: block;
+    margin: auto;
+}
+.circle-box h1{
+   font-size: 20px;
+    margin: 50px 0px;
+     color: white;
+}
+
+.circle-1{
+  margin-top: -70px;
 }
