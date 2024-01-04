@@ -99,13 +99,45 @@ const PetInsurance = () => {
                 the following expenses:
               </p>
               <div className="insurance-plan-flex">
-                <div className="insurance-plan-box">
+                <div className="insurance-plan-box insurance-plan-box-1">
                   <ul>
-                    <li>PROCEDURES</li>
+                    <p>PROCEDURES</p>
                     <li>X-Ray & Ultrasound</li>
                     <li>Laboratory Tests</li>
                     <li>CT Scan & MRI</li>
                     <li>Surgery</li>
+                  </ul>
+                </div>
+                <div className="insurance-plan-box insurance-plan-box-1">
+                  <ul>
+                    <p>ACCIDENTS</p>
+                    <li>Toxin ingestion</li>
+                    <li>ACL injuries</li>
+                    <li>Broken bones</li>
+                    <li>Hospitalization</li>
+                  </ul>
+                </div>
+                <div className="insurance-plan-box insurance-plan-box-1">
+                  <ul>
+                    <p>ILLNESS</p>
+                    <li>Cancer</li>
+                    <li>Digestive Issues</li>
+                    <li>Hypothyroidism</li>
+                    <li>Allergies</li>
+                    <li>IVDD*</li>
+                    <li>Physical therapy</li>
+                    <li>Prescription meds</li>
+                    <li>UTIs</li>
+                  </ul>
+                </div>
+                <div className="insurance-plan-box">
+                  <ul>
+                    <p>EMERGENCY CARE</p>
+                    <li>ER visits</li>
+                    <li>Foreign body removal**</li>
+                    <li>Animal bites**</li>
+                    <li>Lacerations</li>
+                    <li>Major trauma</li>
                   </ul>
                 </div>
               </div>

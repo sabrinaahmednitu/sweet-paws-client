@@ -113,6 +113,55 @@
   font-size: 0.743rem;
 }
 
+/* -------------insurance-plan-container ----------------*/
+.insurance-plan-container {
+  background-color: rgb(235 227 217);
+  padding: 50px 0px;
+}
+.insurance-plan-container h1 {
+  color: #37465a;
+  font-size: 1.9814rem;
+  line-height: 3.2rem;
+  text-align: center;
+}
+.insurance-plan-container p {
+  text-align: center;
+  line-height: 2rem;
+  font-size: 1.2384rem;
+}
+
+.insurance-plan-flex {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-top: 40px;
+  max-width: 1200px;
+  margin: auto;
+  gap: 20px;
+}
+
+.insurance-plan-box-1{
+  border-right: 1px solid #e3ae3e;
+ 
+}
+.insurance-plan-box p {
+  text-align: center;
+  line-height: 2rem;
+  font-size: 1.2384rem;
+  font-weight: 700;
+  padding-bottom: 10px;
+   margin-right: 50px;
+}
+.insurance-plan-box li {
+  color: #37465a;
+  text-align: center;
+  line-height: 2rem;
+  font-size: 1.2384rem;
+  padding-bottom: 10px;
+  font-weight: 400;
+   margin-right: 50px;
+}
+
 .simpler-think-container {
   background-image: url(https://v.fastcdn.co/u/de99de39/64417706-0-BILLIE-ROXIE-HOME-LI.jpg);
   background: repeat rgb(228, 222, 207) 52% 51% / cover;
@@ -141,9 +190,8 @@
   font-size: 1.4861rem !important;
 }
 
-
 /*------------ circle-box --------------*/
-.circle-box-flex{
+.circle-box-flex {
   display: flex;
   justify-content: space-evenly;
   max-width: 700px;
@@ -151,28 +199,27 @@
   flex-wrap: wrap;
   gap: 50px;
 }
-.circle-box-container{
+.circle-box-container {
   background-color: rgb(116, 124, 100);
- 
 }
-.circle-box p{
-    height: 8.125rem;
-    width: 8.125rem;
-    border: 0.0625rem solid #FFC435;
-    background: rgb(255,196,53);
-    border-radius: 50%;
-    line-height: 8rem;
-    text-align: center;
-    font-size: 50px;
-    display: block;
-    margin: auto;
+.circle-box p {
+  height: 8.125rem;
+  width: 8.125rem;
+  border: 0.0625rem solid #ffc435;
+  background: rgb(255, 196, 53);
+  border-radius: 50%;
+  line-height: 8rem;
+  text-align: center;
+  font-size: 50px;
+  display: block;
+  margin: auto;
 }
-.circle-box h1{
-   font-size: 20px;
-    margin: 50px 0px;
-     color: white;
+.circle-box h1 {
+  font-size: 20px;
+  margin: 50px 0px;
+  color: white;
 }
 
-.circle-1{
+.circle-1 {
   margin-top: -70px;
 }
