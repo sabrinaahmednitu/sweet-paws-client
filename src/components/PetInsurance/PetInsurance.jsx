@@ -2,14 +2,18 @@ import React from 'react';
 import './PetInsurance.css';
 import insurance1 from '../../images/insurance-1.jpg';
 import insurance2 from '../../images/insurance-2.jpg';
-import insurance3 from '../../images/insurance-3.jpg';
+import Slide from 'react-reveal/Slide';
+import Fade from 'react-reveal/Fade';
 const PetInsurance = () => {
   return (
     <div>
       <div className="insurance-container">
         <div className="insurance-banner">
-          <h1>Be there for them, like they are for you.</h1>
+          <Slide right>
+            <h1>Be there for them, like they are for you.</h1>
+          </Slide>
         </div>
+
         <section>
           <div className="got-solution-container">
             <div className="got-solution-content">
@@ -54,39 +58,45 @@ const PetInsurance = () => {
         </section>
         <section>
           <div className="pre-exciting-section">
-            <div className="pre-exciting-content">
-              <div className="pre-exciting-1">
-                <div className="pre-exciting-left">
-                  <img src={insurance2} alt="" />
-                </div>
-                <div className="pre-exciting-right">
-                  <h1>
-                    Rest Easy Knowing We Cover Pre-Existing Conditions After 365
-                    Days*
-                  </h1>
-                  <p>
-                    We believe every pet is a champion—that’s why we’re the only
-                    pet insurance company to cover pre-existing conditions.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="pre-exciting-content">
-              <div className="pre-exciting-1">
-                <div className="pre-exciting-right">
-                  <h4>
-                    Not available in all states. Pre-existing condition coverage
-                    available after 365 days of continuous coverage. “Only
-                    brand“ refers to comparison with 5 pet insurance carriers
-                    making up approximately 80% of the US pet insurance market
-                    (Nationwide, ASPCA, Trupanion, HealthyPaws and PetPlan).
-                  </h4>
-                </div>
-                <div className="pre-exciting-left">
-                  <img src={insurance1} alt="" />
+            <Fade left>
+              <div className="pre-exciting-content">
+                <div className="pre-exciting-1">
+                  <div className="pre-exciting-left">
+                    <img src={insurance2} alt="" />
+                  </div>
+                  <div className="pre-exciting-right">
+                    <h1>
+                      Rest Easy Knowing We Cover Pre-Existing Conditions After
+                      365 Days*
+                    </h1>
+                    <p>
+                      We believe every pet is a champion—that’s why we’re the
+                      only pet insurance company to cover pre-existing
+                      conditions.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Fade>
+            <Fade right>
+              <div className="pre-exciting-content">
+                <div className="pre-exciting-1">
+                  <div className="pre-exciting-right">
+                    <h4>
+                      Not available in all states. Pre-existing condition
+                      coverage available after 365 days of continuous coverage.
+                      “Only brand“ refers to comparison with 5 pet insurance
+                      carriers making up approximately 80% of the US pet
+                      insurance market (Nationwide, ASPCA, Trupanion,
+                      HealthyPaws and PetPlan).
+                    </h4>
+                  </div>
+                  <div className="pre-exciting-left">
+                    <img src={insurance1} alt="" />
+                  </div>
+                </div>
+              </div>
+            </Fade>
           </div>
         </section>
         <section>
