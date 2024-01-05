@@ -7,7 +7,7 @@ import { AuthContext } from '../../../Hooks/AuthProvider';
 import SocialLogin from './SocialLogin/SocialLogin';
 import emailjs from '@emailjs/browser';
 import money1 from '../../../images/download__1___1___1_-removebg-preview.png';
-
+import './Signup.css';
 const Signup = () => {
   const [user, setUser] = useState({});
   const {

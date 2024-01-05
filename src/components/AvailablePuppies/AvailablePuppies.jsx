@@ -2,6 +2,12 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import './AvailablePuppies.css';
+import Yorkie from '../../images/Available-puppy/Yorkie.jpg'
+import ShihTzu from '../../images/Available-puppy/ShihTzu.avif'
+import Dachshund from '../../images/Available-puppy/Dachshund.jpg';
+import Beagle from '../../images/Available-puppy/Beagle.jpg';
+import Boxer from '../../images/Available-puppy//Boxer.jpg';
+import Corgi from '../../images/Available-puppy//Corgi.jpg';
 
 const AvailablePuppies = () => {
   return (
@@ -32,11 +38,56 @@ const AvailablePuppies = () => {
             <div className="puppy-review-card">
               <div className="card-img-box">
                 <div className="love"></div>
-                <img
-                  className="img-box-1"
-                  src="https://photos.puppyspot.com/breeds/218/card/500415401_medium.jpg"
-                  alt="Shoes"
-                />
+                <img className="img-box-1" src={Yorkie} alt="Shoes" />
+                <div className="puppy-review-card-content">
+                  <h2 className="card-title">Yorkie</h2>
+                  <p>Golden Retriever</p>
+                  <p>15 weeks</p>
+                </div>
+              </div>
+            </div>
+            <div className="puppy-review-card">
+              <div className="card-img-box">
+                <div className="love"></div>
+                <img className="img-box-1" src={ShihTzu} alt="Shoes" />
+
+                <div className="puppy-review-card-content">
+                  <h2 className="card-title">ShihTz</h2>
+                  <p>Golden Retriever</p>
+                  <p>15 weeks</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="puppy-review-card">
+              <div className="card-img-box">
+                <div className="love"></div>
+                <img className="img-box-1" src={Dachshund} alt="Shoes" />
+
+                <div className="puppy-review-card-content">
+                  <h2 className="card-title">Dachshund</h2>
+                  <p>Golden Retriever</p>
+                  <p>15 weeks</p>
+                </div>
+              </div>
+            </div>
+            <div className="puppy-review-card">
+              <div className="card-img-box">
+                <div className="love"></div>
+                <img className="img-box-1" src={Beagle} alt="Shoes" />
+
+                <div className="puppy-review-card-content">
+                  <h2 className="card-title">Beagle</h2>
+                  <p>Golden Retriever</p>
+                  <p>15 weeks</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="puppy-review-card">
+              <div className="card-img-box">
+                <div className="love"></div>
+                <img className="img-box-1" src={Boxer} alt="Shoes" />
 
                 <div className="puppy-review-card-content">
                   <h2 className="card-title">Arrio</h2>
@@ -48,80 +99,10 @@ const AvailablePuppies = () => {
             <div className="puppy-review-card">
               <div className="card-img-box">
                 <div className="love"></div>
-                <img
-                  className="img-box-1"
-                  src="https://photos.puppyspot.com/breeds/276/card/500416275_medium.jpg"
-                  alt="Shoes"
-                />
+                <img className="img-box-1" src={Corgi} alt="Shoes" />
 
                 <div className="puppy-review-card-content">
-                  <h2 className="card-title">Arrio</h2>
-                  <p>Golden Retriever</p>
-                  <p>15 weeks</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="puppy-review-card">
-              <div className="card-img-box">
-                <div className="love"></div>
-                <img
-                  className="img-box-1"
-                  src="https://photos.puppyspot.com/breeds/226/card/500424518_medium.jpg"
-                  alt="Shoes"
-                />
-
-                <div className="puppy-review-card-content">
-                  <h2 className="card-title">Arrio</h2>
-                  <p>Golden Retriever</p>
-                  <p>15 weeks</p>
-                </div>
-              </div>
-            </div>
-            <div className="puppy-review-card">
-              <div className="card-img-box">
-                <div className="love"></div>
-                <img
-                  className="img-box-1"
-                  src="https://photos.puppyspot.com/2/listing/748592/photo/502172177_small.jpg"
-                  alt="Shoes"
-                />
-
-                <div className="puppy-review-card-content">
-                  <h2 className="card-title">Arrio</h2>
-                  <p>Golden Retriever</p>
-                  <p>15 weeks</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="puppy-review-card">
-              <div className="card-img-box">
-                <div className="love"></div>
-                <img
-                  className="img-box-1"
-                  src="https://photos.puppyspot.com/breeds/434/card/502167658_medium.jpg"
-                  alt="Shoes"
-                />
-
-                <div className="puppy-review-card-content">
-                  <h2 className="card-title">Arrio</h2>
-                  <p>Golden Retriever</p>
-                  <p>15 weeks</p>
-                </div>
-              </div>
-            </div>
-            <div className="puppy-review-card">
-              <div className="card-img-box">
-                <div className="love"></div>
-                <img
-                  className="img-box-1"
-                  src="https://photos.puppyspot.com/breeds/459/card/500423536_medium.jpg"
-                  alt="Shoes"
-                />
-
-                <div className="puppy-review-card-content">
-                  <h2 className="card-title">Arrio</h2>
+                  <h2 className="card-title">Corgi</h2>
                   <p>Golden Retriever</p>
                   <p>15 weeks</p>
                 </div>
