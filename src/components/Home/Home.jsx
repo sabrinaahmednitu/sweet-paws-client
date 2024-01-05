@@ -29,8 +29,8 @@ const Home = () => {
         <SaleEverywhere></SaleEverywhere>
         <div>
           <MessengerCustomerChat
-            pageId="<PAGE_ID>"
-            appId="<APP_ID>"
+            pageId="204969982695796"
+            appId="<3296407690658074>"
             htmlRef="<REF_STRING>"
           />
         </div>

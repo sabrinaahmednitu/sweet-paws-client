@@ -102,9 +102,8 @@ const AvailablePuppies = () => {
                 <div className="card-img-box">
                   <div className="love"></div>
                   <img className="img-box-1" src={Boxer} alt="Shoes" />
-
                   <div className="puppy-review-card-content">
-                    <h2 className="card-title">Arrio</h2>
+                    <h2 className="card-title">Boxer</h2>
                     <p>Golden Retriever</p>
                     <p>15 weeks</p>
                   </div>
