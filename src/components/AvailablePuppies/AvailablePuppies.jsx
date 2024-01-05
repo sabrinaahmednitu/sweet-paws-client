@@ -2,6 +2,8 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import './AvailablePuppies.css';
+import Rotate from 'react-reveal/Rotate';
+import Roll from 'react-reveal/Roll';
 import Yorkie from '../../images/Available-puppy/Yorkie.jpg'
 import ShihTzu from '../../images/Available-puppy/ShihTzu.avif'
 import Dachshund from '../../images/Available-puppy/Dachshund.jpg';
@@ -35,42 +37,48 @@ const AvailablePuppies = () => {
         </section>
         <section>
           <div className="available-cards">
-            <div className="puppy-review-card">
-              <div className="card-img-box">
-                <div className="love"></div>
-                <img className="img-box-1" src={Yorkie} alt="Shoes" />
-                <div className="puppy-review-card-content">
-                  <h2 className="card-title">Yorkie</h2>
-                  <p>Golden Retriever</p>
-                  <p>15 weeks</p>
+            <Rotate top left>
+              <div className="puppy-review-card">
+                <div className="card-img-box">
+                  <div className="love"></div>
+                  <img className="img-box-1" src={Yorkie} alt="Shoes" />
+                  <div className="puppy-review-card-content">
+                    <h2 className="card-title">Yorkie</h2>
+                    <p>Golden Retriever</p>
+                    <p>15 weeks</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="puppy-review-card">
-              <div className="card-img-box">
-                <div className="love"></div>
-                <img className="img-box-1" src={ShihTzu} alt="Shoes" />
+            </Rotate>
+            <Rotate top left>
+              <div className="puppy-review-card">
+                <div className="card-img-box">
+                  <div className="love"></div>
+                  <img className="img-box-1" src={ShihTzu} alt="Shoes" />
 
-                <div className="puppy-review-card-content">
-                  <h2 className="card-title">ShihTz</h2>
-                  <p>Golden Retriever</p>
-                  <p>15 weeks</p>
+                  <div className="puppy-review-card-content">
+                    <h2 className="card-title">ShihTz</h2>
+                    <p>Golden Retriever</p>
+                    <p>15 weeks</p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Rotate>
+            <Rotate top left>
+              <div className="puppy-review-card">
+                <div className="card-img-box">
+                  <div className="love"></div>
+                  <img className="img-box-1" src={Dachshund} alt="Shoes" />
 
-            <div className="puppy-review-card">
-              <div className="card-img-box">
-                <div className="love"></div>
-                <img className="img-box-1" src={Dachshund} alt="Shoes" />
-
-                <div className="puppy-review-card-content">
-                  <h2 className="card-title">Dachshund</h2>
-                  <p>Golden Retriever</p>
-                  <p>15 weeks</p>
+                  <div className="puppy-review-card-content">
+                    <h2 className="card-title">Dachshund</h2>
+                    <p>Golden Retriever</p>
+                    <p>15 weeks</p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Rotate>
+            <Rotate top left>
             <div className="puppy-review-card">
               <div className="card-img-box">
                 <div className="love"></div>
@@ -83,7 +91,8 @@ const AvailablePuppies = () => {
                 </div>
               </div>
             </div>
-
+            </Rotate>
+            <Rotate top left>
             <div className="puppy-review-card">
               <div className="card-img-box">
                 <div className="love"></div>
@@ -96,6 +105,8 @@ const AvailablePuppies = () => {
                 </div>
               </div>
             </div>
+            </Rotate>
+            <Rotate top left>
             <div className="puppy-review-card">
               <div className="card-img-box">
                 <div className="love"></div>
@@ -108,7 +119,8 @@ const AvailablePuppies = () => {
                 </div>
               </div>
             </div>
-
+            </Rotate>
+            <Rotate top left>
             <div className="puppy-review-card">
               <div className="card-img-box">
                 <div className="love"></div>
@@ -125,6 +137,8 @@ const AvailablePuppies = () => {
                 </div>
               </div>
             </div>
+            </Rotate>
+            <Rotate top left>
             <div className="puppy-review-card">
               <div className="card-img-box">
                 <div className="love"></div>
@@ -141,54 +155,61 @@ const AvailablePuppies = () => {
                 </div>
               </div>
             </div>
-            <div className="puppy-review-card">
-              <div className="card-img-box">
-                <div className="love"></div>
-                <img
-                  className="img-box-1"
-                  src="https://photos.puppyspot.com/breeds/347/card/500415579_medium.jpg"
-                  alt="Shoes"
-                />
+            </Rotate>
+            <Rotate top left>
+              <div className="puppy-review-card">
+                <div className="card-img-box">
+                  <div className="love"></div>
+                  <img
+                    className="img-box-1"
+                    src="https://photos.puppyspot.com/breeds/347/card/500415579_medium.jpg"
+                    alt="Shoes"
+                  />
 
-                <div className="puppy-review-card-content">
-                  <h2 className="card-title">Arrio</h2>
-                  <p>Golden Retriever</p>
-                  <p>15 weeks</p>
+                  <div className="puppy-review-card-content">
+                    <h2 className="card-title">Arrio</h2>
+                    <p>Golden Retriever</p>
+                    <p>15 weeks</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="puppy-review-card">
-              <div className="card-img-box">
-                <div className="love"></div>
-                <img
-                  className="img-box-1"
-                  src="https://photos.puppyspot.com/breeds/222/card/500416331_medium.jpg"
-                  alt="Shoes"
-                />
+            </Rotate>
+            <Rotate top left>
+              <div className="puppy-review-card">
+                <div className="card-img-box">
+                  <div className="love"></div>
+                  <img
+                    className="img-box-1"
+                    src="https://photos.puppyspot.com/breeds/222/card/500416331_medium.jpg"
+                    alt="Shoes"
+                  />
 
-                <div className="puppy-review-card-content">
-                  <h2 className="card-title">Arrio</h2>
-                  <p>Golden Retriever</p>
-                  <p>15 weeks</p>
+                  <div className="puppy-review-card-content">
+                    <h2 className="card-title">Arrio</h2>
+                    <p>Golden Retriever</p>
+                    <p>15 weeks</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="puppy-review-card">
-              <div className="card-img-box">
-                <div className="love"></div>
-                <img
-                  className="img-box-1"
-                  src="https://photos.puppyspot.com/breeds/258/card/500420369_medium.jpg"
-                  alt="Shoes"
-                />
+            </Rotate>
+            <Rotate top left>
+              <div className="puppy-review-card">
+                <div className="card-img-box">
+                  <div className="love"></div>
+                  <img
+                    className="img-box-1"
+                    src="https://photos.puppyspot.com/breeds/258/card/500420369_medium.jpg"
+                    alt="Shoes"
+                  />
 
-                <div className="puppy-review-card-content">
-                  <h2 className="card-title">Arrio</h2>
-                  <p>Golden Retriever</p>
-                  <p>15 weeks</p>
+                  <div className="puppy-review-card-content">
+                    <h2 className="card-title">Arrio</h2>
+                    <p>Golden Retriever</p>
+                    <p>15 weeks</p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Rotate>
           </div>
         </section>
       </div>

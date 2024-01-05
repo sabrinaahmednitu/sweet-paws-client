@@ -2,7 +2,7 @@ import React from 'react';
 import './AboutUs.css';
 import happydog from '../../images/pexels-photo-4056475.webp'
 import Helmet from 'react-helmet';
-
+import Fade from 'react-reveal/Fade';
 const AboutUs = () => {
   return (
     <div>
@@ -13,81 +13,85 @@ const AboutUs = () => {
       </Helmet>
       <section>
         <div className="searchFind">
-          <div className="searchFind-left">
-            <img
-              src="https://epicpaws.modeltheme.com/wp-content/uploads/2022/11/about-banner.png"
-              alt=""
-            />
-          </div>
-          <div className="searchFind-right">
-            <h6>Trusted Dog Walker</h6>
-            <h1>Search & Find Dog Walking Services In Your Area</h1>
-            <p>
-              We provide group and individual daily dogs walking that are
-              tailored to fit you and your dog’s needs. During the dog walking
-              booking, your sitter will walk and engage with your dog on a safe
-              route.
-            </p>
+          <Fade left>
+            <div className="searchFind-left">
+              <img
+                src="https://epicpaws.modeltheme.com/wp-content/uploads/2022/11/about-banner.png"
+                alt=""
+              />
+            </div>
+          </Fade>
+          <Fade right>
+            <div className="searchFind-right">
+              <h6>Trusted Dog Walker</h6>
+              <h1>Search & Find Dog Walking Services In Your Area</h1>
+              <p>
+                We provide group and individual daily dogs walking that are
+                tailored to fit you and your dog’s needs. During the dog walking
+                booking, your sitter will walk and engage with your dog on a
+                safe route.
+              </p>
 
-            <div className="searchFind-list">
-              <div className="searchFind-list-left">
-                <ul>
-                  <li>
-                    <i
-                      aria-hidden="true"
-                      className="fas fa-paw searchfind-icon"
-                    ></i>
-                    Professional Service
-                  </li>
-                  <li>
-                    {' '}
-                    <i
-                      aria-hidden="true"
-                      className="fas fa-map-marker-alt searchfind-icon"
-                    ></i>
-                    GPS Tracking
-                  </li>
-                  <li>
-                    <i
-                      aria-hidden="true"
-                      className="fas fa-tv searchfind-icon"
-                    ></i>
-                    Online Booking
-                  </li>
-                </ul>
+              <div className="searchFind-list">
+                <div className="searchFind-list-left">
+                  <ul>
+                    <li>
+                      <i
+                        aria-hidden="true"
+                        className="fas fa-paw searchfind-icon"
+                      ></i>
+                      Professional Service
+                    </li>
+                    <li>
+                      {' '}
+                      <i
+                        aria-hidden="true"
+                        className="fas fa-map-marker-alt searchfind-icon"
+                      ></i>
+                      GPS Tracking
+                    </li>
+                    <li>
+                      <i
+                        aria-hidden="true"
+                        className="fas fa-tv searchfind-icon"
+                      ></i>
+                      Online Booking
+                    </li>
+                  </ul>
+                </div>
+                <div className="searchFind-list-right">
+                  <ul>
+                    <li>
+                      <i
+                        aria-hidden="true"
+                        className="fas fa-chess-king searchfind-icon"
+                      ></i>{' '}
+                      30 Award Winner
+                    </li>
+                    <li>
+                      <i
+                        aria-hidden="true"
+                        className="fas fa-globe-africa searchfind-icon"
+                      ></i>
+                      Top Worldwide
+                    </li>
+                    <li>
+                      <i
+                        aria-hidden="true"
+                        className="fas fa-star searchfind-icon"
+                      ></i>
+                      500+ 5 Star Reviews
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div className="searchFind-list-right">
-                <ul>
-                  <li>
-                    <i
-                      aria-hidden="true"
-                      className="fas fa-chess-king searchfind-icon"
-                    ></i>{' '}
-                    30 Award Winner
-                  </li>
-                  <li>
-                    <i
-                      aria-hidden="true"
-                      className="fas fa-globe-africa searchfind-icon"
-                    ></i>
-                    Top Worldwide
-                  </li>
-                  <li>
-                    <i
-                      aria-hidden="true"
-                      className="fas fa-star searchfind-icon"
-                    ></i>
-                    500+ 5 Star Reviews
-                  </li>
-                </ul>
+              <div>
+                <a href="">
+                  <button className="about-btn">Contact Us</button>
+                </a>
               </div>
             </div>
-            <div>
-              <a href="">
-                <button className="about-btn">Contact Us</button>
-              </a>
-            </div>
-          </div>
+          </Fade>
         </div>
       </section>
       <section className="about-header-main">
