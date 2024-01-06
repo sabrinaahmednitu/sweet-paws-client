@@ -1,7 +1,7 @@
 .newfriend-main{
        background-color: #e6fffd;
-    height: -moz-max-content;
-    height: max-content;
+    /* height: -moz-max-content;
+    height: max-content; */
     padding: 4em 1em;
     width: 100%;
 }
@@ -25,4 +25,16 @@
     height: 84px;
     width: 160px;
   transform: scaleX(-1);
+}
+
+@media only screen and (max-width: 480px) {
+    .newfriend-img{
+        display: block;
+        margin: auto;
+    }
+.newfriend-content{
+    display: block;
+    flex-direction: row;
+      height: auto;
+}
 }
