@@ -161,6 +161,8 @@
   margin-right: 50px;
 }
 
+/* -----------simpler-think-container -------------*/
+
 .simpler-think-container {
   background-image: url(https://v.fastcdn.co/u/de99de39/64417706-0-BILLIE-ROXIE-HOME-LI.jpg);
   background: repeat rgb(228, 222, 207) 52% 51% / cover;
@@ -279,5 +281,14 @@
   max-width: 30rem;
   color: white;
   margin-left: 0px;
+}
+.insurance-plan-flex {
+display: block;
+gap: 10px;
+}
+.insurance-plan-box{
+  border: 1px solid #e3ae3e;
+  margin: 15px;
+  padding: 10px 0px;
 }
 }
