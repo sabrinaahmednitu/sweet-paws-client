@@ -17,6 +17,7 @@ import bulldog from '../../images/Available-puppy/Bulldog.jpg'
 import Poodle from '../../images/Available-puppy/Poodle .webp'; 
 import Poodle2 from '../../images/Available-puppy/poodle-2.jpeg'; 
 import Chihuahua from '../../images/Available-puppy/Chihuahua.jpg'; 
+import akc from '../../images/Available-puppy/AKC.webp'
 const AvailablePuppies = () => {
   return (
     <div className="available-main">
@@ -50,8 +51,11 @@ const AvailablePuppies = () => {
                   <img className="img-box-1" src={Yorkie} alt="Shoes" />
                   <div className="puppy-review-card-content">
                     <h2 className="card-title">Yorkie</h2>
-                    <p>Golden Retriever</p>
-                    <p>15 weeks</p>
+                    <p>Age: 8-15 weeks</p>
+                    <div className="akc-logo-div">
+                      <p>Registered : </p>
+                      <img src={akc} alt="" />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -64,8 +68,11 @@ const AvailablePuppies = () => {
 
                   <div className="puppy-review-card-content">
                     <h2 className="card-title">ShihTz</h2>
-                    <p>Golden Retriever</p>
-                    <p>15 weeks</p>
+                    <p>Age: 8-15 weeks</p>
+                    <div className="akc-logo-div">
+                      <p>Registered : </p>
+                      <img src={akc} alt="" />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -78,8 +85,11 @@ const AvailablePuppies = () => {
 
                   <div className="puppy-review-card-content">
                     <h2 className="card-title">Dachshund</h2>
-                    <p>Golden Retriever</p>
-                    <p>15 weeks</p>
+                    <p>Age: 8-15 weeks</p>
+                    <div className="akc-logo-div">
+                      <p>Registered : </p>
+                      <img src={akc} alt="" />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -92,8 +102,11 @@ const AvailablePuppies = () => {
 
                   <div className="puppy-review-card-content">
                     <h2 className="card-title">Beagle</h2>
-                    <p>Golden Retriever</p>
-                    <p>15 weeks</p>
+                    <p>Age: 8-15 weeks</p>
+                    <div className="akc-logo-div">
+                      <p>Registered : </p>
+                      <img src={akc} alt="" />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -105,8 +118,11 @@ const AvailablePuppies = () => {
                   <img className="img-box-1" src={Boxer2} alt="Shoes" />
                   <div className="puppy-review-card-content">
                     <h2 className="card-title">Boxer</h2>
-                    <p>Golden Retriever</p>
-                    <p>15 weeks</p>
+                    <p>Age: 8-15 weeks</p>
+                    <div className="akc-logo-div">
+                      <p>Registered : </p>
+                      <img src={akc} alt="" />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -119,8 +135,11 @@ const AvailablePuppies = () => {
 
                   <div className="puppy-review-card-content">
                     <h2 className="card-title">Corgi</h2>
-                    <p>Golden Retriever</p>
-                    <p>15 weeks</p>
+                    <p>Age: 8-15 weeks</p>
+                    <div className="akc-logo-div">
+                      <p>Registered : </p>
+                      <img src={akc} alt="" />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -133,8 +152,11 @@ const AvailablePuppies = () => {
 
                   <div className="puppy-review-card-content">
                     <h2 className="card-title">German Shephard</h2>
-                    <p>Golden Retriever</p>
-                    <p>15 weeks</p>
+                    <p>Age: 8-15 weeks</p>
+                    <div className="akc-logo-div">
+                      <p>Registered : </p>
+                      <img src={akc} alt="" />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -147,8 +169,11 @@ const AvailablePuppies = () => {
 
                   <div className="puppy-review-card-content">
                     <h2 className="card-title">miniature schnauzer</h2>
-                    <p>Golden Retriever</p>
-                    <p>15 weeks</p>
+                    <p>Age: 8-15 weeks</p>
+                    <div className="akc-logo-div">
+                      <p>Registered : </p>
+                      <img src={akc} alt="" />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -161,8 +186,11 @@ const AvailablePuppies = () => {
 
                   <div className="puppy-review-card-content">
                     <h2 className="card-title">bulldog</h2>
-                    <p>Golden Retriever</p>
-                    <p>15 weeks</p>
+                    <p>Age: 8-15 weeks</p>
+                    <div className="akc-logo-div">
+                      <p>Registered : </p>
+                      <img src={akc} alt="" />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -175,8 +203,11 @@ const AvailablePuppies = () => {
 
                   <div className="puppy-review-card-content">
                     <h2 className="card-title">Poodle</h2>
-                    <p>Golden Retriever</p>
-                    <p>15 weeks</p>
+                    <p>Age: 8-15 weeks</p>
+                    <div className="akc-logo-div">
+                      <p>Registered : </p>
+                      <img src={akc} alt="" />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -189,8 +220,11 @@ const AvailablePuppies = () => {
 
                   <div className="puppy-review-card-content">
                     <h2 className="card-title">Chihuahua</h2>
-                    <p>Golden Retriever</p>
-                    <p>15 weeks</p>
+                    <p>Age: 8-15 weeks</p>
+                    <div className="akc-logo-div">
+                      <p>Registered : </p>
+                      <img src={akc} alt="" />
+                    </div>
                   </div>
                 </div>
               </div>

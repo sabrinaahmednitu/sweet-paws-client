@@ -118,6 +118,19 @@
   color: rgb(255, 153, 0);
 }
 
+
+/* ---------akc-logo-div------------- */
+.akc-logo-div{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.akc-logo-div img{
+  height: 55px;
+  width: 55px;
+  margin-left: 0px;
+}
+
 /* -----------some info part-------- */
 .some-info-container {
   margin-top: 50px;
