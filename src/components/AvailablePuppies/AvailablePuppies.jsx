@@ -5,16 +5,17 @@ import './AvailablePuppies.css';
 import Rotate from 'react-reveal/Rotate';
 import Roll from 'react-reveal/Roll';
 import Yorkie from '../../images/Available-puppy/Yorkie.jpg'
-import ShihTzu from '../../images/Available-puppy/ShihTzu.avif'
-import Dachshund from '../../images/Available-puppy/Dachshund-2.jpg';
+import ShihTzu2 from '../../images/Available-puppy/ShihTzu2.jpeg'
+import Dachshund from '../../images/Available-puppy/Dachshund3.jpg';
 import Beagle from '../../images/Available-puppy/Beagle.jpg';
-import Boxer from '../../images/Available-puppy/Boxer.jpg';
+import Boxer2 from '../../images/Available-puppy/Boxer2.jpeg';
 import Corgi from '../../images/Available-puppy/Corgi.jpg';
 import corgi from '../../images/Available-puppy/corgi.avif';
 import German from '../../images/Available-puppy/GermanShepherd.jpg'
-import schnauzer from '../../images/Available-puppy/miniature schnauzerpuppies.webp'
+import schnauzer from '../../images/Available-puppy/schnauzer.jpeg'
 import bulldog from '../../images/Available-puppy/Bulldog.jpg' 
 import Poodle from '../../images/Available-puppy/Poodle .webp'; 
+import Poodle2 from '../../images/Available-puppy/poodle-2.jpeg'; 
 import Chihuahua from '../../images/Available-puppy/Chihuahua.jpg'; 
 const AvailablePuppies = () => {
   return (
@@ -59,7 +60,7 @@ const AvailablePuppies = () => {
               <div className="puppy-review-card">
                 <div className="card-img-box">
                   <div className="love"></div>
-                  <img className="img-box-1" src={ShihTzu} alt="Shoes" />
+                  <img className="img-box-1" src={ShihTzu2} alt="Shoes" />
 
                   <div className="puppy-review-card-content">
                     <h2 className="card-title">ShihTz</h2>
@@ -101,7 +102,7 @@ const AvailablePuppies = () => {
               <div className="puppy-review-card">
                 <div className="card-img-box">
                   <div className="love"></div>
-                  <img className="img-box-1" src={Boxer} alt="Shoes" />
+                  <img className="img-box-1" src={Boxer2} alt="Shoes" />
                   <div className="puppy-review-card-content">
                     <h2 className="card-title">Boxer</h2>
                     <p>Golden Retriever</p>
@@ -170,7 +171,7 @@ const AvailablePuppies = () => {
               <div className="puppy-review-card">
                 <div className="card-img-box">
                   <div className="love"></div>
-                  <img className="img-box-1" src={Poodle} alt="Shoes" />
+                  <img className="img-box-1" src={Poodle2} alt="Shoes" />
 
                   <div className="puppy-review-card-content">
                     <h2 className="card-title">Poodle</h2>

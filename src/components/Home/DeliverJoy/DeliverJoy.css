@@ -168,3 +168,10 @@ border-radius: 15px;
     margin-top: 20px;
 }
 }
+
+@media only screen and (max-width: 480px) {
+    .Deliver-btn-container{
+        display: block;
+        flex-direction: column;
+    }
+}
