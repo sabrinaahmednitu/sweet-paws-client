@@ -8,8 +8,8 @@ import PuppyChar from './PuppyChar/PuppyChar';
 import SaleEverywhere from './SaleEverywhere/SaleEverywhere';
 import TrustedCommunity from './TrustedCommunity/TrustedCommunity';
 import RecentlyViewed from './RecentlyViewed/RecentlyViewed';
-import MessengerCustomerChat from 'react-messenger-customer-chat';
 import Helmet from 'react-helmet';
+import FacebookMsg from '../FacebookMsg/FacebookMsg';
 const Home = () => {
     return (
       <div>
@@ -27,13 +27,14 @@ const Home = () => {
         <DeliverJoy></DeliverJoy>
         <RecentlyViewed></RecentlyViewed>
         <SaleEverywhere></SaleEverywhere>
-        <div>
+        {/* <div>
           <MessengerCustomerChat
             pageId="204969982695796"
             appId="<3296407690658074>"
             htmlRef="<REF_STRING>"
           />
-        </div>
+        </div> */}
+        <FacebookMsg></FacebookMsg>
       </div>
     );
 };
