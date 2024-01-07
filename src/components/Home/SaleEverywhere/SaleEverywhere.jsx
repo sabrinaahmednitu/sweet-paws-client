@@ -12,7 +12,7 @@ const SaleEverywhere = () => {
             <p>See all the US locations for Puppies for Sale</p>
           </div>
         </section>
-        <section className="states-container">
+        <section>
           <div className="states">
             <div className="state-1">
               <h3>WEST</h3>
