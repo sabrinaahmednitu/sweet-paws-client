@@ -16,8 +16,9 @@
 }
 
 .available-header {
-  max-width: 1370px;
+  max-width: 1500px;
   margin: auto;
+  padding: 0px 10px;
 }
 
 .available-header h1 {
@@ -31,6 +32,7 @@
   font-size: 16px;
   letter-spacing: 0.1px;
   line-height: 26px;
+  
 }
 .dog-character-head {
   font-size: 26px;

@@ -6,7 +6,6 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../Hooks/AuthProvider';
 import SocialLogin from './SocialLogin/SocialLogin';
 import emailjs from '@emailjs/browser';
-import money1 from '../../../images/download__1___1___1_-removebg-preview.png';
 import './Signup.css';
 const Signup = () => {
   const [user, setUser] = useState({});
@@ -205,7 +204,7 @@ const Signup = () => {
             Get Membership
           </h1>
           <div className="money-cards d-block m-auto">
-            <img src={money1} alt="" />
+            {/* <img src={money1} alt="" /> */}
           </div>
           <form className="w-[75%] mx-auto" ref={form} onSubmit={sendEmail}>
             <div className="flex gap-2">

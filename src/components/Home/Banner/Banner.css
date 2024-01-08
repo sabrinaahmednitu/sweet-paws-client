@@ -123,7 +123,8 @@
 @media only screen and (max-width: 600px) {
   .banner {
     height: auto;
-    background-image: url(../../../images/mobile.banner.jpg);
+    width: 100%;
+    background-image: url(../../../images/banner/mobile.banner.jpg);
       background-position: center;
   }
 }
