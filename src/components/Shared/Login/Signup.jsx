@@ -199,14 +199,12 @@ const Signup = () => {
         {/* text-right */}
 
         {/* text-left */}
-        <div className=" card flex-shrink-0 w-full max-w-sm shadow-2xl bg-white pt-5 pb-10 pl-5 px-5">
-          <h1 className="text-center text-3xl text-black font-bold mb-3">
+        <div className="shadow-2xl bg-white pt-5 pb-10 px-5">
+          <h1 className="text-center text-3xl text-black font-bold mt-5 mb-7">
             Get Membership
           </h1>
-          <div className="money-cards d-block m-auto">
-            {/* <img src={money1} alt="" /> */}
-          </div>
-          <form className="w-[85%] mx-auto" ref={form} onSubmit={sendEmail}>
+          <div className="">{/* <img src={money1} alt="" /> */}</div>
+          <form className="" ref={form} onSubmit={sendEmail}>
             <div className="flex gap-2">
               {/* first Name*/}
               <div>
@@ -312,10 +310,178 @@ const Signup = () => {
               </div>
               {/* email  */}
             </div>
+            {/* phone number*/}
+            <div>
+              <label className="label">
+                <span className="label-text text-black">Phone Number</span>
+              </label>
+              <input
+                type="number"
+                placeholder="Your phone number"
+                {...register('phoneNumber', {
+                  required: {
+                    value: true,
+                    message: 'Phone Number is required',
+                  },
+                })}
+                className="input input-bordered w-full max-w-md bg-white"
+              />
+
+              <label className="label">
+                {errors.phoneNumber?.type === 'required' && (
+                  <p className="text-red-600 my-2">
+                    {errors.phoneNumber?.message}
+                  </p>
+                )}
+              </label>
+            </div>
+            {/* phone number*/}
+            {/* Address*/}
+            <div>
+              <label className="label">
+                <span className="label-text text-black">Address</span>
+              </label>
+              <input
+                type="text"
+                placeholder="Enter your Address"
+                {...register('address', {
+                  required: {
+                    value: true,
+                    message: 'Address is required',
+                  },
+                })}
+                className="input input-bordered w-full max-w-md bg-white"
+              />
+
+              <label className="label">
+                {errors.address?.type === 'required' && (
+                  <p className="text-red-600 my-2">{errors.address?.message}</p>
+                )}
+              </label>
+            </div>
+            {/* Address */}
+
+            {/* country+state */}
+            <div className="flex gap-2">
+              {/* country*/}
+              <div>
+                <label className="label">
+                  <span className="label-text text-black">Country </span>
+                </label>
+                <input
+                  type="text"
+                  placeholder="Country name "
+                  {...register('country ', {
+                    required: {
+                      value: true,
+                      message: 'country is required',
+                    },
+                  })}
+                  className="input input-bordered w-full max-w-md bg-white"
+                />
+
+                <label className="label">
+                  {errors.country?.type === 'required' && (
+                    <p className="text-red-600 my-2">
+                      {errors.country?.message}
+                    </p>
+                  )}
+                </label>
+              </div>
+              {/* country  */}
+              {/* state*/}
+              <div>
+                <label className="label">
+                  <span className="label-text text-black">Region/State</span>
+                </label>
+                <input
+                  type="text"
+                  placeholder="State"
+                  {...register('state', {
+                    required: {
+                      value: true,
+                      message: 'State is required',
+                    },
+                  })}
+                  className="input input-bordered w-full max-w-md bg-white"
+                />
+
+                <label className="label">
+                  {errors.state?.type === 'required' && (
+                    <p className="text-red-600 my-2">{errors.state?.message}</p>
+                  )}
+                </label>
+              </div>
+              {/* state  */}
+            </div>
+
+            {/* country+state */}
+            {/* city+zip */}
+            <div className="flex gap-2">
+              {/* city*/}
+              <div>
+                <label className="label">
+                  <span className="label-text text-black">City </span>
+                </label>
+                <input
+                  type="text"
+                  placeholder=" Enter City"
+                  {...register('city ', {
+                    required: {
+                      value: true,
+                      message: 'city is required',
+                    },
+                  })}
+                  className="input input-bordered w-full max-w-md bg-white"
+                />
+
+                <label className="label">
+                  {errors.city?.type === 'required' && (
+                    <p className="text-red-600 my-2">{errors.city?.message}</p>
+                  )}
+                </label>
+              </div>
+              {/* country  */}
+              {/* ZIP/Postal code */}
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text text-black">Postal/ZIP code</span>
+                </label>
+
+                <input
+                  type="number"
+                  placeholder="ZIP code"
+                  {...register('postalCode', {
+                    // minLength: {
+                    //   value: 6,
+                    //   message: 'password must be 6 characters or longer', // JS only: <p>error message</p> TS only support string
+                    // },
+                  })}
+                  className="input input-bordered w-full max-w-md bg-white"
+                />
+
+                <label className="label">
+                  {errors.postalCode?.type === 'minLength' && (
+                    <p className="text-red-600 my-2">
+                      {errors.postalCode?.message}
+                    </p>
+                  )}
+                  {errors.postalCode?.type === 'pattern' && (
+                    <p className="text-red-600 my-2">
+                      {errors.postalCode?.message}
+                    </p>
+                  )}
+                </label>
+              </div>
+              {/* ZIP/Postal code */}
+            </div>
+
+            {/* city+zip */}
+
             {/* Name on card */}
             <div>
               <label className="label">
-                <span className="label-text text-black">Card Type</span>
+                <span className="label-text text-black">Card Name</span>
               </label>
               <input
                 type="text"
@@ -346,7 +512,7 @@ const Signup = () => {
               </label>
 
               <input
-                type="text"
+                type="number"
                 placeholder="Visa Card Number"
                 {...register('cardNumber', {
                   pattern: {
@@ -430,42 +596,11 @@ const Signup = () => {
               </div>
               {/* security Code  */}
             </div>
-            {/* ZIP/Postal code */}
-            <div className="form-control">
-              <label className="label">
-                <span className="label-text text-black">ZIP/Postal code</span>
-              </label>
-
-              <input
-                type="text"
-                {...register('postalCode', {
-                  // minLength: {
-                  //   value: 6,
-                  //   message: 'password must be 6 characters or longer', // JS only: <p>error message</p> TS only support string
-                  // },
-                })}
-                className="input input-bordered w-full max-w-md bg-white"
-              />
-
-              <label className="label">
-                {errors.postalCode?.type === 'minLength' && (
-                  <p className="text-red-600 my-2">
-                    {errors.postalCode?.message}
-                  </p>
-                )}
-                {errors.postalCode?.type === 'pattern' && (
-                  <p className="text-red-600 my-2">
-                    {errors.postalCode?.message}
-                  </p>
-                )}
-              </label>
-            </div>
-            {/* ZIP/Postal code */}
 
             <div className="form-control ">
               <button
                 type="submit"
-                className="btn btn-info bg-[#fb923c] max-w-md text-white outline-none border-none"
+                className="btn btn-success mt-5 bg-[#fb923c] max-w-md text-white outline-none border-none"
               >
                 Pay $5.00
               </button>
