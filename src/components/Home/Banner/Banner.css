@@ -1,6 +1,7 @@
 .banner {
   /* background: url(../../../images/banner.jpg) 0 100% no-repeat; */
-  background-image: url(https://cdn.buttercms.com/b2SZqAERcids13bfunhA);
+  background-image: url('../../../images/banner/homebanner.jpg');
+  /* background-image: url(https://cdn.buttercms.com/b2SZqAERcids13bfunhA); */
   /* background-size: 100% 850px; */
   background-size: cover;
   background-position: center;

@@ -1,7 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import './Error.css';
-import error from '../../../images/error-404.jpg'
+import error from '../../../images/error/error-404.jpg'
 const Error = () => {
     return (
       <div>

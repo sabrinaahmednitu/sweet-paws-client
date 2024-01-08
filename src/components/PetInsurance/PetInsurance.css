@@ -1,11 +1,12 @@
 .insurance-banner {
-  background-image: url(https://v.fastcdn.co/u/de99de39/64417521-0-ZACH-BUDI-INDUSTRIAL.jpg);
+  /* background-image: url(https://v.fastcdn.co/u/de99de39/64417521-0-ZACH-BUDI-INDUSTRIAL.jpg); */
+  background-image: url('../../images/insurancebanner-2.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
   width: 100%;
-  height: 650px;
+  height: 750px;
 }
 .insurance-banner h1 {
   font-size: 40px;
