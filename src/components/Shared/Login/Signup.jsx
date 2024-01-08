@@ -516,17 +516,8 @@ const Signup = () => {
                 placeholder="Visa Card Number"
                 {...register('cardNumber', {
                   pattern: {
-                    value: /^4\d{12}(\d{3})?$/,
-                    message: 'Please provide a valid Visa card number',
-                  },
-                  pattern: {
-                    value: /^(5[1-5]\d{14})$/,
-                    message:
-                      'Please provide a valid mastercardPattern  card number',
-                  },
-                  pattern: {
-                    value: /^(34|37)\d{13}$/,
-                    message: 'Please provide a valid amexPattern  card number',
+                    value: /^(4\d{12}(\d{3})?|5[1-5]\d{14}|(34|37)\d{13})$/,
+                    message: 'Please provide a valid card number',
                   },
                 })}
                 className="input input-bordered w-full max-w-md bg-white"
@@ -541,7 +532,7 @@ const Signup = () => {
               </label>
             </div>
             {/* card number */}
-            <div className="flex gap-2">
+            <div className="flex gap-5">
               {/* Expiration date */}
               <div>
                 <label className="label">
