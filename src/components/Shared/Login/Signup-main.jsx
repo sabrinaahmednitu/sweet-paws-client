@@ -78,7 +78,7 @@ const Signup = () => {
         <title>Create a new account | SweetPaws</title>
         <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
-      <div className="flex-signup--content">
+      <div className="hero-content flex-col lg:flex-row-reverse ">
         {/* form-right */}
         <div className="login-container card flex-shrink-0 w-full max-w-sm shadow-2xl bg-white pt-5 pb-10">
           <h1 className="text-center text-4xl text-black font-bold mb-3">
@@ -199,14 +199,14 @@ const Signup = () => {
         {/* text-right */}
 
         {/* text-left */}
-        <div className=" card flex-shrink-0 w-full max-w-sm shadow-2xl bg-white pt-5 pb-10 pl-5 px-5">
+        <div className=" card flex-shrink-0 w-full max-w-sm shadow-2xl bg-white pt-5 pb-10">
           <h1 className="text-center text-3xl text-black font-bold mb-3">
             Get Membership
           </h1>
           <div className="money-cards d-block m-auto">
             {/* <img src={money1} alt="" /> */}
           </div>
-          <form className="w-[85%] mx-auto" ref={form} onSubmit={sendEmail}>
+          <form className="w-[75%] mx-auto" ref={form} onSubmit={sendEmail}>
             <div className="flex gap-2">
               {/* first Name*/}
               <div>

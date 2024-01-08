@@ -1,6 +1,8 @@
-.hero-content-signup{
-    display: grid;
-   grid-template-columns: repeat(2,1fr);
-   justify-content: center;
-   align-items: center;
+
+.flex-signup--content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
 }
