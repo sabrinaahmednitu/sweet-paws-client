@@ -90,9 +90,12 @@ const Signup = () => {
           >
             {/* Name */}
             <div>
+              <label className="label">
+                <span className="label-text text-black">Name</span>
+              </label>
               <input
                 type="text"
-                placeholder="Enter Name"
+                placeholder="Enter your Name"
                 {...register('name', {
                   required: {
                     value: true,
@@ -115,6 +118,9 @@ const Signup = () => {
 
             {/* Email */}
             <div>
+              <label className="label">
+                <span className="label-text text-black">Email</span>
+              </label>
               <input
                 type="email"
                 placeholder="Email"
@@ -144,6 +150,9 @@ const Signup = () => {
 
             {/* Password */}
             <div>
+              <label className="label">
+                <span className="label-text text-black">Password</span>
+              </label>
               <input
                 type="password"
                 placeholder="Password"
@@ -201,9 +210,7 @@ const Signup = () => {
         {/* text-left */}
         <div className="shadow-2xl max-w-sm bg-white pb-10 ">
           <div className="membership-div">
-            <h1 className="text-center text-3xl">
-              Get Membership
-            </h1>
+            <h1 className="text-center text-3xl">Get Membership</h1>
             <div className="moneycard-flex">
               <div>
                 <img
