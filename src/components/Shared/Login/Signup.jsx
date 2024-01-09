@@ -199,12 +199,45 @@ const Signup = () => {
         {/* text-right */}
 
         {/* text-left */}
-        <div className="shadow-2xl max-w-sm bg-white pt-5 pb-10 px-5">
-          <h1 className="text-center text-3xl text-black font-bold mt-5 mb-7">
-            Get Membership
-          </h1>
-          <div className="">{/* <img src={money1} alt="" /> */}</div>
-          <form className="" ref={form} onSubmit={sendEmail}>
+        <div className="shadow-2xl max-w-sm bg-white pb-10 ">
+          <div className="membership-div">
+            <h1 className="text-center text-3xl">
+              Get Membership
+            </h1>
+            <div className="moneycard-flex">
+              <div>
+                <img
+                  src="https://quomodosoft.com/html/reservq/assets/images/small/Visa.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  src="https://quomodosoft.com/html/reservq/assets/images/small/Amex.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  src="https://quomodosoft.com/html/reservq/assets/images/small/PayPal.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  src="https://quomodosoft.com/html/reservq/assets/images/small/Mastercard.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  src="https://quomodosoft.com/html/reservq/assets/images/small/GooglePay.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <form className="px-5 mt-5" ref={form} onSubmit={sendEmail}>
             <div className="flex gap-2">
               {/* first Name*/}
               <div>
@@ -532,7 +565,7 @@ const Signup = () => {
               </label>
             </div>
             {/* card number */}
-            <div className="flex gap-5">
+            <div className="flex gap-2">
               {/* Expiration date */}
               <div>
                 <label className="label">
