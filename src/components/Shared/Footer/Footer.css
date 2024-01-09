@@ -25,3 +25,10 @@
     padding: 2em 2em 12em;
     text-align: center;
 }
+.footer-div-btn{
+    outline: none;
+    color: black;
+    background-color: rgb(84, 218, 72);
+    padding: 10px 10px;
+    border-radius: 5px;
+}
