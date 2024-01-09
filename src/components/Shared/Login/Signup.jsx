@@ -81,7 +81,7 @@ const Signup = () => {
       <div className="flex-signup--content">
         {/* form-right */}
         <div className="login-container card flex-shrink-0 w-full max-w-sm shadow-2xl bg-white pt-5 pb-10">
-          <h1 className="text-center text-4xl text-black font-bold mb-3">
+          <h1 className="text-center text-4xl text-white font-bold mb-5">
             Signup
           </h1>
           <form
@@ -199,7 +199,7 @@ const Signup = () => {
         {/* text-right */}
 
         {/* text-left */}
-        <div className="shadow-2xl bg-white pt-5 pb-10 px-5">
+        <div className="shadow-2xl max-w-sm bg-white pt-5 pb-10 px-5">
           <h1 className="text-center text-3xl text-black font-bold mt-5 mb-7">
             Get Membership
           </h1>
@@ -217,7 +217,7 @@ const Signup = () => {
                   {...register('firstName', {
                     required: {
                       value: true,
-                      message: 'firstName is required',
+                      message: 'First Name is required',
                     },
                   })}
                   className="input input-bordered w-full max-w-md bg-white"
@@ -243,14 +243,14 @@ const Signup = () => {
                   {...register('lastName', {
                     required: {
                       value: true,
-                      message: 'lastName is required',
+                      message: 'Last Name is required',
                     },
                   })}
                   className="input input-bordered w-full max-w-md bg-white"
                 />
 
                 <label className="label">
-                  {errors.email?.type === 'required' && (
+                  {errors.lastName?.type === 'required' && (
                     <p className="text-red-600 my-2">
                       {errors.lastName?.message}
                     </p>
@@ -267,7 +267,7 @@ const Signup = () => {
                 </label>
                 <input
                   type="date"
-                  {...register('dateBirth ', {
+                  {...register('dateBirth', {
                     required: {
                       value: true,
                       message: 'dateBirth is required',
@@ -293,7 +293,7 @@ const Signup = () => {
                 <input
                   type="email"
                   placeholder="Your Email"
-                  {...register('lastName', {
+                  {...register('email', {
                     required: {
                       value: true,
                       message: 'Email is required',
@@ -371,7 +371,7 @@ const Signup = () => {
                 <input
                   type="text"
                   placeholder="Country name "
-                  {...register('country ', {
+                  {...register('country', {
                     required: {
                       value: true,
                       message: 'country is required',
@@ -426,7 +426,7 @@ const Signup = () => {
                 <input
                   type="text"
                   placeholder=" Enter City"
-                  {...register('city ', {
+                  {...register('city', {
                     required: {
                       value: true,
                       message: 'city is required',
@@ -489,14 +489,14 @@ const Signup = () => {
                 {...register('cardName', {
                   required: {
                     value: true,
-                    message: 'cardName is required',
+                    message: 'card Name is required',
                   },
                 })}
                 className="input input-bordered w-full max-w-md bg-white"
               />
 
               <label className="label">
-                {errors.email?.type === 'required' && (
+                {errors.cardName?.type === 'required' && (
                   <p className="text-red-600 my-2">
                     {errors.cardName?.message}
                   </p>
@@ -542,7 +542,7 @@ const Signup = () => {
                 </label>
                 <input
                   type="date"
-                  {...register('expirationDate ', {
+                  {...register('expirationDate', {
                     required: {
                       value: true,
                       message: 'Expiration date is required',
@@ -559,14 +559,14 @@ const Signup = () => {
                   )}
                 </label>
               </div>
-              {/* date of birth  */}
+              {/* Expiration date */}
               {/* security code*/}
               <div>
                 <label className="label">
                   <span className="label-text text-black">Security Code</span>
                 </label>
                 <input
-                  type="text"
+                  type="number"
                   placeholder="security code"
                   {...register('securityCode', {
                     required: {
