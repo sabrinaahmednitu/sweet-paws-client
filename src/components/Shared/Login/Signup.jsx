@@ -303,10 +303,11 @@ const Signup = () => {
               {/* date of birth  */}
               <div>
                 <label className="label">
-                  <span className="label-text text-black">date of birth </span>
+                  <span className="label-text text-black">Date of Birth </span>
                 </label>
                 <input
-                  type="date"
+                  type="text"
+                placeholder='m\d\y'
                   {...register('dateBirth', {
                     required: {
                       value: true,
@@ -489,7 +490,7 @@ const Signup = () => {
                 </label>
 
                 <input
-                  type="number"
+                  type="text"
                   placeholder="ZIP code"
                   {...register('postalCode', {
                     // minLength: {
@@ -552,8 +553,8 @@ const Signup = () => {
               </label>
 
               <input
-                type="number"
-                placeholder="Visa Card Number"
+                type="text"
+                placeholder="Enter Card Number"
                 {...register('cardNumber', {
                   pattern: {
                     value: /^(4\d{12}(\d{3})?|5[1-5]\d{14}|(34|37)\d{13})$/,
@@ -581,7 +582,8 @@ const Signup = () => {
                   </span>
                 </label>
                 <input
-                  type="date"
+                  type="text"
+                placeholder='Expiration date'
                   {...register('expirationDate', {
                     required: {
                       value: true,
@@ -606,7 +608,7 @@ const Signup = () => {
                   <span className="label-text text-black">Security Code</span>
                 </label>
                 <input
-                  type="number"
+                  type="text"
                   placeholder="security code"
                   {...register('securityCode', {
                     required: {
