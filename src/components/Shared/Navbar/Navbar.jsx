@@ -42,7 +42,10 @@ const Navbar = () => {
   return (
     <div className="navbar-container">
       <section className="nav-1">
-        <p>Email us between 8AM-Midnight EST, every day! </p>
+        <p>
+          Email us (sweetpaws.service@gmail.com) between 8AM-Midnight EST, every
+          day!{' '}
+        </p>
       </section>
       <section>
         <div className="navbar bg-[#e6e7eb] text-black font-bold ">
@@ -89,10 +92,7 @@ const Navbar = () => {
             {/* <p>{user?.displayName}</p> */}
             <Link>
               {user ? (
-                <button
-                  onClick={logout}
-                  className="signout-btn font-bold "
-                >
+                <button onClick={logout} className="signout-btn font-bold ">
                   SignOut
                 </button>
               ) : (
