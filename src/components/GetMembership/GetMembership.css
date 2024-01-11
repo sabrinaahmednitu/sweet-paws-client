@@ -1,9 +1,11 @@
 .get-membership-content {
-  padding-top: 160px;
+
 }
 .get-membershit-header {
   max-width: 1200px;
   margin: auto;
+  padding: 15px;
+    padding-top: 160px;
 }
 .get-membershit-header h1 {
   font-size: 27px;

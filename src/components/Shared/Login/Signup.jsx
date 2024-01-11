@@ -58,12 +58,6 @@ const Signup = () => {
         form.current,
         'pR_K-Nt_Ffpfhs6Cv'
       )
-      // .sendForm(
-      //   'service_tryq59o',
-      //   'template_mbkrxrd',
-      //   form.current,
-      //   'QOZd1uV8CWVQhvq-N'
-      // )
       .then(
         (result) => {
           toast.success('Thank you so much', {
