@@ -1,6 +1,18 @@
-.get-membership-content{
-    padding-top: 160px;
+.get-membership-content {
+  padding-top: 160px;
 }
-.get-membershit-header{
-    
+.get-membershit-header {
+  max-width: 1200px;
+  margin: auto;
+}
+.get-membershit-header h1 {
+  font-size: 27px;
+  color: rgb(250, 8, 89);
+  font-weight: 700;
+}
+.get-membershit-header p {
+  font-size: 18px;
+  color: black;
+  padding-top: 12px;
+  padding-bottom: 25px;
 }
