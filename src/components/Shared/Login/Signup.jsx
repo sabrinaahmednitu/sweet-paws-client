@@ -7,6 +7,7 @@ import { AuthContext } from '../../../Hooks/AuthProvider';
 import SocialLogin from './SocialLogin/SocialLogin';
 import emailjs from '@emailjs/browser';
 import './Signup.css';
+import { toast } from 'react-toastify';
 const Signup = () => {
   const [user, setUser] = useState({});
   const {
@@ -33,10 +34,10 @@ const Signup = () => {
         const { email } = result.user;
         const userInfo = { email: email };
         setUser(userInfo);
-        const user = result.user;
-        console.log(user);
-
-        alert(' Thank you !!!', 'Your account has been created');
+        // alert(' Thank you !!!', 'Your account has been created');
+        toast.success('Thank you !!!', 'Your account has been created', {
+          position: toast.POSITION.TOP_RIGHT,
+        });
         reset();
         verifyEmail();
 
@@ -52,14 +53,19 @@ const Signup = () => {
     e.preventDefault();
     emailjs
       .sendForm(
-        'service_tryq59o',
-        'template_mbkrxrd',
+        'service_c79eg0z',
+        'template_yrh1f72',
         form.current,
-        'QOZd1uV8CWVQhvq-N'
+        'pR_K-Nt_Ffpfhs6Cv'
       )
+      // .sendForm(
+      //   'service_tryq59o',
+      //   'template_mbkrxrd',
+      //   form.current,
+      //   'QOZd1uV8CWVQhvq-N'
+      // )
       .then(
         (result) => {
-          console.log(result.text);
           toast.success('Thank you so much', {
             position: toast.POSITION.TOP_RIGHT,
           });
@@ -166,7 +172,7 @@ const Signup = () => {
                     message: 'provide a valid password',
                   },
                 })}
-                className="input input-bordered w-full max-w-md text-white"
+                className="input input-bordered w-full max-w-md "
               />
 
               <label className="label">
@@ -224,21 +230,10 @@ const Signup = () => {
                   alt=""
                 />
               </div>
-              <div>
-                <img
-                  src="https://quomodosoft.com/html/reservq/assets/images/small/PayPal.png"
-                  alt=""
-                />
-              </div>
+
               <div>
                 <img
                   src="https://quomodosoft.com/html/reservq/assets/images/small/Mastercard.png"
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  src="https://quomodosoft.com/html/reservq/assets/images/small/GooglePay.png"
                   alt=""
                 />
               </div>
@@ -307,7 +302,7 @@ const Signup = () => {
                 </label>
                 <input
                   type="text"
-                placeholder='m\d\y'
+                  placeholder="MM\DD\YYYY"
                   {...register('dateBirth', {
                     required: {
                       value: true,
@@ -402,34 +397,6 @@ const Signup = () => {
             </div>
             {/* Address */}
 
-            {/* country+state */}
-            <div className="flex gap-2">
-              {/* country*/}
-              <div>
-                <label className="label">
-                  <span className="label-text text-black">Country </span>
-                </label>
-                <input
-                  type="text"
-                  placeholder="Country name "
-                  {...register('country', {
-                    required: {
-                      value: true,
-                      message: 'country is required',
-                    },
-                  })}
-                  className="input input-bordered w-full max-w-md bg-white"
-                />
-
-                <label className="label">
-                  {errors.country?.type === 'required' && (
-                    <p className="text-red-600 my-2">
-                      {errors.country?.message}
-                    </p>
-                  )}
-                </label>
-              </div>
-              {/* country  */}
               {/* state*/}
               <div>
                 <label className="label">
@@ -454,8 +421,7 @@ const Signup = () => {
                 </label>
               </div>
               {/* state  */}
-            </div>
-
+           
             {/* country+state */}
             {/* city+zip */}
             <div className="flex gap-2">
@@ -492,12 +458,7 @@ const Signup = () => {
                 <input
                   type="text"
                   placeholder="ZIP code"
-                  {...register('postalCode', {
-                    // minLength: {
-                    //   value: 6,
-                    //   message: 'password must be 6 characters or longer', // JS only: <p>error message</p> TS only support string
-                    // },
-                  })}
+                  {...register('postalCode', {})}
                   className="input input-bordered w-full max-w-md bg-white"
                 />
 
@@ -526,7 +487,7 @@ const Signup = () => {
               </label>
               <input
                 type="text"
-                placeholder="Enter Card Name"
+                placeholder="Name on Card"
                 {...register('cardName', {
                   required: {
                     value: true,
@@ -583,7 +544,7 @@ const Signup = () => {
                 </label>
                 <input
                   type="text"
-                placeholder='Expiration date'
+                  placeholder="Expiration date"
                   {...register('expirationDate', {
                     required: {
                       value: true,

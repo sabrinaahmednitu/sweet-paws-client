@@ -32,6 +32,11 @@ const Navbar = () => {
       <li>
         <Link to="/ContactUs">Contact Us</Link>
       </li>
+      <li>
+        <Link to="/getmembership" className="nav-membership-btn">
+          Get Membership
+        </Link>
+      </li>
     </>
   );
   return (

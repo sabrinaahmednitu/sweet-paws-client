@@ -24,25 +24,6 @@
   width: 136px;
   height: 60px;
 }
-/* cart items css */
-/* .cart__trolly__link {
-  position: relative;
-}
-.cart__trolly {
-  position: relative;
-}
-.cart__total__item {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-color: rgb(122, 103, 231);
-  color: white;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  top: -20%;
-  left: 70%;
-} */
 
 .signout-btn{
   background-color: #ff9100;
@@ -52,4 +33,16 @@
   padding: 0px 20px;
   height:40px;
   border-radius: 8px;
+}
+
+.nav-membership-btn{
+  background-color: rgb(235, 20, 67);
+  color: white;
+  padding: 10px 10px;
+  outline: none;
+  border: 1px solid rgb(235, 20, 67);
+}
+.nav-membership-btn:hover{
+  background-color: rgb(235, 20, 67);
+  outline: none;
 }

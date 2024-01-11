@@ -2,6 +2,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import AboutUs from '../components/AboutUs/AboutUs';
 import AvailablePuppies from '../components/AvailablePuppies/AvailablePuppies';
 import ContactUs from '../components/ContactUs/ContactUs';
+import GetMembership from '../components/GetMembership/GetMembership';
 import Home from '../components/Home/Home';
 import PetInsurance from '../components/PetInsurance/PetInsurance';
 import Error from '../components/Shared/Error/Error';
@@ -35,6 +36,10 @@ export const router = createBrowserRouter([
       {
         path: '/contactus',
         element: <ContactUs></ContactUs>,
+      },
+      {
+        path: '/getmembership',
+        element: <GetMembership></GetMembership>,
       },
       {
         path: '/login',

@@ -27,11 +27,7 @@ const ContactUs = () => {
         </p>
         <p>
           You can also reach our team by email or phone for additional support:{' '}
-          <strong>help@SweetPaws.com | (888) 671-0518</strong>
-        </p>
-        <p>
-          Please direct all press inquiries to{' '}
-          <strong>press@SweetPaws.com</strong>{' '}
+          <strong>sweetpaws.service@gmail.com | +1(202)855-9181</strong>
         </p>
       </div>
     </div>

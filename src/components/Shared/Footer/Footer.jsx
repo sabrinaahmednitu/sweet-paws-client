@@ -11,7 +11,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <h3>Call Us: (888) 671-0518</h3>
+          <h3>Call Us: +1(202)855-9181</h3>
         </div>
       </section>
       <section className="second-footer z-1">
@@ -33,7 +33,7 @@ const Footer = () => {
             <a className="link link-hover">Breeder Login</a>
           </nav>
           <nav>
-            <header className="footer-title">About PuppySpot</header>
+            <header className="footer-title">About sweetpaws</header>
             <a className="link link-hover">About Us</a>
             <a className="link link-hover">Resource Center</a>
             <a className="link link-hover">Careers</a>
