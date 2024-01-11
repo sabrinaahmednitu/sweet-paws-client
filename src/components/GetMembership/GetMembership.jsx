@@ -116,7 +116,7 @@ const GetMembership = () => {
                           message: 'Last Name is required',
                         },
                       })}
-                      className="input input-bordered w-full max-w-md bg-white"
+                      className="input input-bordered w-full  bg-white"
                     />
 
                     <label className="label">
@@ -146,7 +146,7 @@ const GetMembership = () => {
                           message: 'dateBirth is required',
                         },
                       })}
-                      className="input input-bordered w-full max-w-md bg-white"
+                      className="input input-bordered w-full  bg-white"
                     />
 
                     <label className="label">
@@ -199,7 +199,7 @@ const GetMembership = () => {
                         message: 'Phone Number is required',
                       },
                     })}
-                    className="input input-bordered w-full max-w-md bg-white"
+                    className="input input-bordered w-full  bg-white"
                   />
 
                   <label className="label">
@@ -225,7 +225,7 @@ const GetMembership = () => {
                         message: 'Address is required',
                       },
                     })}
-                    className="input input-bordered w-full max-w-md bg-white"
+                    className="input input-bordered w-full  bg-white"
                   />
 
                   <label className="label">
@@ -252,7 +252,7 @@ const GetMembership = () => {
                         message: 'State is required',
                       },
                     })}
-                    className="input input-bordered w-full max-w-md bg-white"
+                    className="input input-bordered w-full bg-white"
                   />
 
                   <label className="label">
@@ -282,7 +282,7 @@ const GetMembership = () => {
                           message: 'city is required',
                         },
                       })}
-                      className="input input-bordered w-full max-w-md bg-white"
+                      className="input input-bordered w-full  bg-white"
                     />
 
                     <label className="label">
@@ -306,7 +306,7 @@ const GetMembership = () => {
                       type="text"
                       placeholder="ZIP code"
                       {...register('postalCode', {})}
-                      className="input input-bordered w-full max-w-md bg-white"
+                      className="input input-bordered w-full bg-white"
                     />
 
                     <label className="label">
@@ -341,7 +341,7 @@ const GetMembership = () => {
                         message: 'card Name is required',
                       },
                     })}
-                    className="input input-bordered w-full max-w-md bg-white"
+                    className="input input-bordered w-full  bg-white"
                   />
 
                   <label className="label">
@@ -369,7 +369,7 @@ const GetMembership = () => {
                         message: 'Please provide a valid card number',
                       },
                     })}
-                    className="input input-bordered w-full max-w-md bg-white"
+                    className="input input-bordered w-full  bg-white"
                   />
 
                   <label className="label text-black">
@@ -398,7 +398,7 @@ const GetMembership = () => {
                           message: 'Expiration date is required',
                         },
                       })}
-                      className="input input-bordered w-full max-w-md bg-white"
+                      className="input input-bordered w-full  bg-white"
                     />
 
                     <label className="label">
@@ -426,7 +426,7 @@ const GetMembership = () => {
                           message: 'securityCode is required',
                         },
                       })}
-                      className="input input-bordered w-full max-w-md bg-white"
+                      className="input input-bordered w-full  bg-white"
                     />
 
                     <label className="label">
@@ -443,7 +443,7 @@ const GetMembership = () => {
                 <div className="form-control ">
                   <button
                     type="submit"
-                    className="btn btn-success mt-5 bg-[#fb923c] max-w-md text-white outline-none border-none"
+                    className="btn btn-success mt-5 bg-[#fb923c] text-white outline-none border-none"
                   >
                     Pay $5.00
                   </button>

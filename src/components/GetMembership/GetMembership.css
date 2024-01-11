@@ -18,3 +18,25 @@
   padding-top: 12px;
   padding-bottom: 25px;
 }
+.get-membership-form{
+max-width: 800px;
+margin: auto;
+}
+
+.membership-div{
+    background-color: rgb(150, 150, 150);
+    padding-bottom: 20px;
+    padding-left:5px ;
+    padding-right:5px ;
+}
+
+.membership-div h1{
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.moneycard-flex{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
