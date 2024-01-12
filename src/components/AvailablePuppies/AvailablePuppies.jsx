@@ -346,8 +346,8 @@ const AvailablePuppies = () => {
                 />
 
                 <div className="puppy-review-card-content">
-                  <h2 className="">Lorre S.</h2>
-                  <h6>12/10/2023</h6>
+                  <h2 className="">Mickey M</h2>
+                  <h6>13/06/2023</h6>
                   <p>Goldendoodle</p>
                   <div className="stars">
                     <div>
