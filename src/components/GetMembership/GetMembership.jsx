@@ -57,7 +57,11 @@ const GetMembership = () => {
             {/* text-left */}
             <div className="shadow-2xl  bg-white pb-10 ">
               <div className="membership-div">
-                <h1 className="text-center text-3xl">Get Membership</h1>
+                <h1 className="text-center text-4xl font-bold">Get Membership</h1>
+                <h2>
+                  Join Today for Just $4.99 and Dive into a World of Exclusive
+                  Benefits
+                </h2>
                 <div className="moneycard-flex">
                   <div>
                     <img

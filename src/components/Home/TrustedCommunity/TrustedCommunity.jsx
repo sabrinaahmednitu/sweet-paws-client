@@ -13,7 +13,7 @@ const TrustedCommunity = () => {
             />
             <h3>Trusted by the Community</h3>
             <p>
-              PuppySpot serves you best by putting the health and well-being of
+              Sweet paws serves you best by putting the health and well-being of
               your puppy first. Don't take our word for it,{' '}
               <strong>
                 here's what real customers have to say about SweetPaws.
@@ -124,7 +124,7 @@ const TrustedCommunity = () => {
                 <p>Had a very pleasant experience from start to finish .</p>
               </div>
               <div>
-                <h6>- Sherryl A., Nevada</h6>
+                <h6>- Linda C., California</h6>
               </div>
               <div>
                 <h5>12/11/2023</h5>
@@ -198,7 +198,7 @@ const TrustedCommunity = () => {
                 </p>
               </div>
               <div>
-                <h6>- Lorre S., New York</h6>
+                <h6>- Mickey M., Texas</h6>
               </div>
               <div>
                 <h5>12/10/2023</h5>

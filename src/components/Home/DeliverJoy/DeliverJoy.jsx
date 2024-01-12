@@ -109,7 +109,7 @@ const DeliverJoy = () => {
                 <p>
                   Meet the breeder and your puppy at a location near the kennel.
                   If you are interested in a pickup, please check with a
-                  PuppySpot pack member to see if this is an option.
+                  sweet paws pack member to see if this is an option.
                 </p>
               </div>
             </div>

@@ -33,7 +33,12 @@ margin: auto;
 .membership-div h1{
     color: white;
     padding-top: 15px;
+}
+.membership-div h2{
+    color: white;
+    padding-top: 15px;
     padding-bottom: 15px;
+    text-align: center;
 }
 .moneycard-flex{
     display: flex;
