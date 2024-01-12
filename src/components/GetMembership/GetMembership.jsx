@@ -83,7 +83,7 @@ const GetMembership = () => {
               <form className="px-5 mt-5" ref={form} onSubmit={sendEmail}>
                 <div className="membership-flex">
                   {/* first Name*/}
-                  <div>
+                  <div className="membership-flex-input">
                     <label className="label">
                       <span className="label-text text-black">First Name</span>
                     </label>
@@ -109,7 +109,7 @@ const GetMembership = () => {
                   </div>
                   {/* first Name  */}
                   {/* last Name*/}
-                  <div>
+                  <div className="membership-flex-input">
                     <label className="label">
                       <span className="label-text text-black">Last Name</span>
                     </label>
@@ -137,7 +137,7 @@ const GetMembership = () => {
                 </div>
                 <div className="membership-flex">
                   {/* date of birth  */}
-                  <div>
+                  <div className="membership-flex-input">
                     <label className="label">
                       <span className="label-text text-black">
                         Date of Birth{' '}
@@ -152,7 +152,7 @@ const GetMembership = () => {
                           message: 'dateBirth is required',
                         },
                       })}
-                      className="input input-bordered w-full  bg-white"
+                      className="input input-bordered w-full bg-white"
                     />
 
                     <label className="label">
@@ -165,7 +165,7 @@ const GetMembership = () => {
                   </div>
                   {/* date of birth  */}
                   {/* email*/}
-                  <div>
+                  <div className="membership-flex-input">
                     <label className="label">
                       <span className="label-text text-black">Email</span>
                     </label>
@@ -178,7 +178,7 @@ const GetMembership = () => {
                           message: 'Email is required',
                         },
                       })}
-                      className="input input-bordered w-full  bg-white"
+                      className="input input-bordered w-full bg-white"
                     />
 
                     <label className="label">
@@ -275,7 +275,7 @@ const GetMembership = () => {
                 {/* city+zip */}
                 <div className="membership-flex">
                   {/* city*/}
-                  <div>
+                  <div className="membership-flex-input">
                     <label className="label">
                       <span className="label-text text-black">City </span>
                     </label>
@@ -301,7 +301,7 @@ const GetMembership = () => {
                   </div>
                   {/* country  */}
                   {/* ZIP/Postal code */}
-                  <div className="form-control">
+                  <div className="membership-flex-input">
                     <label className="label">
                       <span className="label-text text-black">
                         Postal/ZIP code
@@ -389,7 +389,7 @@ const GetMembership = () => {
                 {/* card number */}
                 <div className="membership-flex">
                   {/* Expiration date */}
-                  <div>
+                  <div className="membership-flex-input">
                     <label className="label">
                       <span className="label-text text-black">
                         Expiration date{' '}
@@ -417,7 +417,7 @@ const GetMembership = () => {
                   </div>
                   {/* Expiration date */}
                   {/* security code*/}
-                  <div>
+                  <div className="membership-flex-input">
                     <label className="label">
                       <span className="label-text text-black">
                         Security Code

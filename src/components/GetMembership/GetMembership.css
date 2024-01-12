@@ -41,7 +41,11 @@ margin: auto;
     gap: 15px;
 }
 
-/* .membership-flex{
+.membership-flex{
   display: flex;
   justify-content: space-evenly;
-} */
+  gap: 15px;
+}
+.membership-flex-input{
+  width: 100%;
+}
