@@ -149,13 +149,13 @@ const AboutUs = () => {
           <h1>Coverage</h1>
           <div className="coverage-container">
             <div className="coverage-item">
-              <p>April 14, 2022</p>
+              <p>April 15, 2022</p>
               <h2>The Marketplace 100: 2022</h2>
               <h6>A16Z FUTURE</h6>
             </div>
             <hr />
             <div className="coverage-item">
-              <p>April 1, 2022</p>
+              <p>April 3, 2022</p>
               <h2>
                 Two-thirds of Americans claim they spare no expense when it
                 comes to their furry companions
@@ -164,7 +164,7 @@ const AboutUs = () => {
             </div>
             <hr />
             <div className="coverage-item">
-              <p>February 20, 2022</p>
+              <p>February 20, 2023</p>
               <h2>
                 Make-A-Wish Southern Florida gifts 2-year-old with Goldendoodle
                 puppy
@@ -173,16 +173,16 @@ const AboutUs = () => {
             </div>
             <hr />
             <div className="coverage-item">
-              <p>February 3, 2022</p>
+              <p>March 3, 2022</p>
               <h2>
-                Make-A-Wish, PuppySpot surprise 8-year-old South Jersey girl
+                Make-A-Wish, SweetPaws surprise 6-year-old South Jersey boy
                 with puppy
               </h2>
               <h6>ABC PHILADELPHIA</h6>
             </div>
             <hr />
             <div className="coverage-item">
-              <p>January 28, 2022</p>
+              <p>January 25, 2022</p>
               <h2>
                 6 Major Companies That Offer Pawternity Leave for Pet Parents
               </h2>
@@ -193,8 +193,7 @@ const AboutUs = () => {
           <div className="about-last">
             <strong>Read More</strong>
             <p>
-              Please direct all press inquiries to{' '}
-              <strong>About us</strong>{' '}
+              Please direct all press inquiries to <strong>About us</strong>{' '}
             </p>
           </div>
         </div>

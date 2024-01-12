@@ -35,11 +35,11 @@ const AvailablePuppies = () => {
           <h1>Happy, Healthy Puppies for Sale</h1>
           <p>
             Browse our nationwide selection of adorable, healthy puppies for
-            sale and discover... your perfect companion at PuppySpot. With our
+            sale and discover your perfect companion at SweetPaws. With our
             rigorous breeder screening process, dedicated support, and expertise
             in getting the dog to you, you’ll find peace of mind knowing you’re
             getting a well-bred puppy from a trusted source. Start your journey
-            today!{' '}
+            today!
           </p>
         </section>
         <section>
@@ -235,7 +235,7 @@ const AvailablePuppies = () => {
       <section className="some-info-container">
         <div className="some-info">
           <p>
-            At PuppySpot, we have the widest selection of puppies for sale on
+            At SweetPaws, we have the widest selection of puppies for sale on
             the internet. Whether you're looking for a purebred Australian
             Shepherd, a hypoallergenic Mini Poodle, a dashing designer breed
             like the Goldendoodle or the Cavapoo, or the ever-popular Golden
@@ -248,7 +248,7 @@ const AvailablePuppies = () => {
             We have spent over twenty years sourcing the highest quality
             breeders from all around the country. From the Miniature Poodle to
             the Great Dane, each puppy comes with a special AKC registration
-            package provided through PuppySpot. We want you to feel secure in
+            package provided through SweetPaws. We want you to feel secure in
             your purchase, knowing your breeder only utilizes the most
             responsible, sustainable breeding practices.
           </p>
