@@ -194,7 +194,7 @@ const AboutUs = () => {
             <strong>Read More</strong>
             <p>
               Please direct all press inquiries to{' '}
-              <strong>press@sweetpaws.com</strong>{' '}
+              <strong>About us</strong>{' '}
             </p>
           </div>
         </div>

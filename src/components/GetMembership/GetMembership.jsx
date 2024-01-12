@@ -451,7 +451,7 @@ const GetMembership = () => {
                     type="submit"
                     className="btn btn-success mt-5 bg-[#fb923c] text-white outline-none border-none"
                   >
-                    Pay $5.00
+                    Pay $4.99
                   </button>
                 </div>
               </form>
