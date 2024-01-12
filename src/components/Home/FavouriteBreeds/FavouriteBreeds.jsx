@@ -44,7 +44,7 @@ const FavouriteBreeds = () => {
           <SwiperSlide>
             <a href="#">
               <img
-                src="	https://cdn.buttercms.com/38iL0zXQB2pXvBpHESxB"
+                src="https://images.pexels.com/photos/18964465/pexels-photo-18964465/free-photo-of-a-brown-poodle-laying-on-the-grass-in-front-of-a-fence.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt=""
               />
               <div className="dog-name">
@@ -97,7 +97,7 @@ const FavouriteBreeds = () => {
             <a href="#">
               {' '}
               <img
-                src="		https://cdn.buttercms.com/7hUftqFZS5YnXo2Un0cw"
+                src="https://images.pexels.com/photos/3397939/pexels-photo-3397939.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt=""
               />{' '}
               <div className="dog-name">

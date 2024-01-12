@@ -58,7 +58,7 @@ const TrustedCommunity = () => {
         <section className="TrustedCommunity-slider">
           <div className="trusted-item-1">
             <img
-              src="https://cdn-yotpo-images-production.yotpo.com/Review/531797504/504244824/original.jpg?1703042922"
+              src="https://images.pexels.com/photos/6491060/pexels-photo-6491060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt=""
             />
             <div className="trusted-item-1-content">
@@ -81,7 +81,7 @@ const TrustedCommunity = () => {
               </div>
               <div>
                 <p>
-                  Our experience with puppy spot was excellent . Communication
+                  Our experience with sweet paws was excellent . Communication
                   was good. The wait in between buying the puppy and delivery
                   was torture lol but they sent updated pics and videos and kept
                   in touch. Our puppy is in excellent health as per our vet. The
@@ -90,7 +90,7 @@ const TrustedCommunity = () => {
                 </p>
               </div>
               <div>
-                <h6>- Robin K., New York</h6>
+                <h6>- Albert K., New York</h6>
               </div>
               <div>
                 <h5>12/13/2023</h5>
@@ -99,7 +99,7 @@ const TrustedCommunity = () => {
           </div>
           <div className="trusted-item-1">
             <img
-              src="https://cdn-yotpo-images-production.yotpo.com/Review/529586520/500810740/original.jpg?1702265336"
+              src="https://images.pexels.com/photos/3299908/pexels-photo-3299908.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt=""
             />
             <div className="trusted-item-1-content">
@@ -133,7 +133,7 @@ const TrustedCommunity = () => {
           </div>
           <div className="trusted-item-1">
             <img
-              src="https://cdn-yotpo-images-production.yotpo.com/Review/529462792/500378480/original.jpg?1702210791"
+              src="https://images.pexels.com/photos/5623944/pexels-photo-5623944.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt=""
             />
             <div className="trusted-item-1-content">
@@ -170,7 +170,7 @@ const TrustedCommunity = () => {
           </div>
           <div className="trusted-item-1">
             <img
-              src="https://cdn-yotpo-images-production.yotpo.com/Review/530260269/502077975/original.jpg?1702476086"
+              src="https://images.pexels.com/photos/3361739/pexels-photo-3361739.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt=""
             />
             <div className="trusted-item-1-content">
