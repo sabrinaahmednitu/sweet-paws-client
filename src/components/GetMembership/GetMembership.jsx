@@ -75,7 +75,7 @@ const GetMembership = () => {
                 </div>
               </div>
               <form className="px-5 mt-5" ref={form} onSubmit={sendEmail}>
-                <div className="flex gap-2">
+                <div className="membership-flex">
                   {/* first Name*/}
                   <div>
                     <label className="label">
@@ -129,7 +129,7 @@ const GetMembership = () => {
                   </div>
                   {/* last Name  */}
                 </div>
-                <div className="flex gap-2">
+                <div className="membership-flex">
                   {/* date of birth  */}
                   <div>
                     <label className="label">
@@ -267,7 +267,7 @@ const GetMembership = () => {
 
                 {/* country+state */}
                 {/* city+zip */}
-                <div className="flex gap-2">
+                <div className="membership-flex">
                   {/* city*/}
                   <div>
                     <label className="label">
@@ -381,7 +381,7 @@ const GetMembership = () => {
                   </label>
                 </div>
                 {/* card number */}
-                <div className="flex gap-2">
+                <div className="membership-flex">
                   {/* Expiration date */}
                   <div>
                     <label className="label">

@@ -1,5 +1,5 @@
 .get-membership-content {
-
+padding-bottom: 50px;
 }
 .get-membershit-header {
   max-width: 1200px;
@@ -40,3 +40,8 @@ margin: auto;
     justify-content: center;
     gap: 15px;
 }
+
+/* .membership-flex{
+  display: flex;
+  justify-content: space-evenly;
+} */

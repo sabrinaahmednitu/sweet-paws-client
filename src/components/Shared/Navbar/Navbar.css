@@ -40,9 +40,4 @@
   color: white;
   padding: 10px 10px;
   outline: none;
-  border: 1px solid rgb(235, 20, 67);
-}
-.nav-membership-btn:hover{
-  background-color: rgb(235, 20, 67);
-  outline: none;
 }
