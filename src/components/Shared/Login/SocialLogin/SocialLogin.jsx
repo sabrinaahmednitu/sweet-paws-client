@@ -8,15 +8,15 @@ import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../../Hooks/AuthProvider';
 import google from '../../../../images/google4.png'
 import facebook from '../../../../images/facebook.png'
+import { toast } from 'react-toastify';
 
 const SocialLogin = () => {
-   const { googleLoginInProvider, githubSignUp, verifyEmail, facebookSignUp } =
+   const { googleLoginInProvider, verifyEmail, facebookSignUp } =
     useContext(AuthContext);
 
   const navigate = useNavigate();
 
   const googleProvider = new GoogleAuthProvider();
-    const githubProvider = new GithubAuthProvider();
    const facebookProvider = new FacebookAuthProvider();
 
   //  for Google SignIn
@@ -27,25 +27,15 @@ const SocialLogin = () => {
         const user = result.user;
         console.log(user);
 
-        alert(' Thank you !!!', 'Your account has been created');
+         toast.success('Login Successfully', {
+           position: toast.POSITION.TOP_RIGHT,
+         });
         verifyEmail();
         navigate('/');
       })
       .catch((error) => console.log(error));
   };
 
-  // for github SignUp;
-  // const handleGitHub = () => {
-  //   githubSignUp(githubProvider)
-  //     .then((result) => {
-  //       const user = result.user;
-  //       console.log(user);
-  //       verifyEmail();
-  //       navigate('/');
-  //     })
-  //     .catch((error) => console.log(error));
-  // };
-  // for facebook SignUp;
   const handleFacebook = () => {
     facebookSignUp(facebookProvider)
       .then((result) => {
@@ -74,16 +64,7 @@ const SocialLogin = () => {
           Continue with google
         </button>
       </div>
-      {/* and github button */}
-      {/* <div className="form-control mt-2">
-        <button
-          onClick={handleGitHub}
-          className="btn text-white bg-black-200 w-[75%] max-w-md mx-auto"
-        >
-          Continue with github
-        </button>
-      </div> */}
-      {/* and facebook button */}
+     
       <div className="form-control mt-2">
         <button
           onClick={handleFacebook}

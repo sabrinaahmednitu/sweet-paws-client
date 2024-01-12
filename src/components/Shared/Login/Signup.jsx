@@ -36,7 +36,7 @@ const Signup = () => {
         const userInfo = { email: email };
         setUser(userInfo);
         // alert(' Thank you !!!', 'Your account has been created');
-        toast.success('Thank you !!!', 'Your account has been created', {
+        toast.success('Thank you ! Your account has been created', {
           position: toast.POSITION.TOP_RIGHT,
         });
         reset();
@@ -49,28 +49,28 @@ const Signup = () => {
   };
 
   //for 2nd one
-  const form = useRef();
-  const sendEmail = (e) => {
-    e.preventDefault();
-    emailjs
-      .sendForm(
-        'service_c79eg0z',
-        'template_yrh1f72',
-        form.current,
-        'pR_K-Nt_Ffpfhs6Cv'
-      )
-      .then(
-        (result) => {
-          toast.success('Thank you so much', {
-            position: toast.POSITION.TOP_RIGHT,
-          });
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    e.target.reset();
-  };
+  // const form = useRef();
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
+  //   emailjs
+  //     .sendForm(
+  //       'service_c79eg0z',
+  //       'template_yrh1f72',
+  //       form.current,
+  //       'pR_K-Nt_Ffpfhs6Cv'
+  //     )
+  //     .then(
+  //       (result) => {
+  //         toast.success('Thank you so much', {
+  //           position: toast.POSITION.TOP_RIGHT,
+  //         });
+  //       },
+  //       (error) => {
+  //         console.log(error.text);
+  //       }
+  //     );
+  //   e.target.reset();
+  // };
 
   return (
     <div className="login-main">
@@ -103,7 +103,7 @@ const Signup = () => {
                     message: 'name is required',
                   },
                 })}
-                className="input input-bordered w-full max-w-md text-white"
+                className="input input-bordered w-full max-w-md "
               />
 
               <label className="label">
@@ -135,7 +135,7 @@ const Signup = () => {
                     message: 'provide a valid email',
                   },
                 })}
-                className="input input-bordered w-full max-w-md text-white"
+                className="input input-bordered w-full max-w-md "
               />
 
               <label className="label">
@@ -161,11 +161,7 @@ const Signup = () => {
                   minLength: {
                     value: 6,
                     message: 'password must be 6 characters or longer', // JS only: <p>error message</p> TS only support string
-                  },
-                  pattern: {
-                    value: /(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])/,
-                    message: 'provide a valid password',
-                  },
+                  }
                 })}
                 className="input input-bordered w-full max-w-md "
               />

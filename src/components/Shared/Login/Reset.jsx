@@ -21,15 +21,12 @@ const Reset = () => {
     try {
       setMessage('');
       setError('');
-      // setLoading(true)
-      console.log('wait');
       await ResetPassword(emailRef.current.value);
       navigate(from, { replace: true });
-      console.log('done');
       setMessage('Check your inbox for further instructions');
       Swal.fire('Check your email');
     } catch (error) {
-      console.log(error);
+
       setError('Failed to reset password');
     }
 
@@ -43,13 +40,12 @@ const Reset = () => {
         padding: '190px',
       }}
     >
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Forgot Your Password ? | SweetPaws</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+      </Helmet>
       <div className="reset-main">
-        <Helmet>
-          <meta charSet="utf-8" />
-          <title>Forgot Your Password ? | SweetPaws</title>
-          <link rel="canonical" href="http://mysite.com/example" />
-        </Helmet>
-
         {message && <p className="text-cyan-600">{message}</p>}
         <form className="reset-container" onSubmit={handleSubmit}>
           <h3> Forgot your password?</h3>

@@ -6,6 +6,7 @@ import './Login.css';
 import SocialLogin from './SocialLogin/SocialLogin';
 
 import Helmet from 'react-helmet';
+import { toast } from 'react-toastify';
 const Login = () => {
   const {
     register,
@@ -23,9 +24,10 @@ const Login = () => {
     console.log(data);
     logIn(data.email, data.password)
       .then((result) => {
-        const user = result.user;
-        console.log(user);
-        alert(' Thank you !!!', 'Successfully login');
+        toast.success('Thank you !! Successfully Login  ', {
+          position: toast.POSITION.TOP_RIGHT,
+        });
+
         navigate('/');
       })
       .catch((error) => console.log(error));
@@ -93,11 +95,7 @@ const Login = () => {
                   minLength: {
                     value: 6,
                     message: 'password must be 6 characters or longer', // JS only: <p>error message</p> TS only support string
-                  },
-                  pattern: {
-                    value: /(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])/,
-                    message: 'provide a valid ppassword',
-                  },
+                  }
                 })}
                 className="input input-bordered w-full max-w-md "
               />

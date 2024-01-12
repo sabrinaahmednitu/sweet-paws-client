@@ -99,7 +99,7 @@ const Signup = () => {
                     message: 'name is required',
                   },
                 })}
-                className="input input-bordered w-full max-w-md text-white"
+                className="input input-bordered w-full max-w-md "
               />
 
               <label className="label">
