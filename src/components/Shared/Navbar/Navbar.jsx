@@ -43,8 +43,8 @@ const Navbar = () => {
     <div className="navbar-container">
       <section className="nav-1">
         <p>
-          Email us (sweetpaws.service@gmail.com) between 8AM-Midnight EST, every
-          day!{' '}
+          Email us for quick response(sweetpaws.service@gmail.com) , between
+          8AM-Midnight EST, every day!{' '}
         </p>
       </section>
       <section>
