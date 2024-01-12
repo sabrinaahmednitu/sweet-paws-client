@@ -8,7 +8,7 @@ import SocialLogin from './SocialLogin/SocialLogin';
 import emailjs from '@emailjs/browser';
 import './Signup.css';
 import { toast } from 'react-toastify';
-import signupimage from '../../../images/login-signup-photo/sign-concept-illustration_114360-125.avif'
+import signupimage from '../../../images/login-signup-photo/sign-concept-illustration_114360-125.avif';
 const Signup = () => {
   const [user, setUser] = useState({});
   const {
@@ -206,13 +206,6 @@ const Signup = () => {
           </p>
           <SocialLogin></SocialLogin>
         </div>
-        {/* text-right */}
-
-        {/* text-left */}
-        {/* <div className="shadow-2xl max-w-sm bg-white pb-10 ">
-          <img src={signupimage} alt="" />
-        </div> */}
-        {/* text-left */}
       </div>
     </div>
   );

@@ -7,7 +7,6 @@ import SocialLogin from './SocialLogin/SocialLogin';
 
 import Helmet from 'react-helmet';
 const Login = () => {
-   
   const {
     register,
     formState: { errors },
@@ -32,16 +31,14 @@ const Login = () => {
       .catch((error) => console.log(error));
   };
 
- 
-
   return (
-    <div className=" hero login-main">
+    <div className="login-main">
       <Helmet>
         <meta charSet="utf-8" />
         <title>Log into your account | SweetPaws</title>
         <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
-      <div className="hero-content flex-col lg:flex-row-reverse ">
+      <div className="flex-login--content">
         {/* form-right */}
         <div className="login-container card flex-shrink-0 w-full max-w-sm shadow-2xl bg-white pt-5 pb-10">
           <h1 className="text-center text-4xl text-white font-bold mb-3">
@@ -152,19 +149,6 @@ const Login = () => {
           </p>
           <SocialLogin></SocialLogin>
         </div>
-        {/* form-right */}
-
-        {/* form-left bg-[#dcfce7]*/}
-        <div className="text-center">
-          <h1 className="text-5xl font-bold  ">Login now !</h1>
-
-          <p className="py-6 text-2xl max-w-lg">
-            Login is the process of gaining access to a secure system or
-            account providing valid credentials, such as a username and
-            password.
-          </p>
-        </div>
-        {/* form */}
       </div>
     </div>
   );

@@ -4,9 +4,15 @@ import insurance1 from '../../images/insurance-1.jpg';
 import insurance2 from '../../images/insurance-2.jpg';
 import Slide from 'react-reveal/Slide';
 import Fade from 'react-reveal/Fade';
+import Helmet from 'react-helmet';
 const PetInsurance = () => {
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Pet Insurance | SweetPaws</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+      </Helmet>
       <div className="insurance-container">
         <div className="insurance-banner">
           <Slide right>

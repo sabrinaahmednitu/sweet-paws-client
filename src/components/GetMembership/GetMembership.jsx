@@ -3,6 +3,7 @@ import './GetMembership.css';
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
 import { useForm } from 'react-hook-form';
+import Helmet from 'react-helmet';
 
 const GetMembership = () => {
      const {
@@ -34,6 +35,11 @@ const GetMembership = () => {
   };
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Get Membership | SweetPaws</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+      </Helmet>
       <div className="get-membership-container container mx-auto">
         <div className="get-membership-content">
           <div className="get-membershit-header">

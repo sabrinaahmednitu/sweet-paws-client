@@ -4,7 +4,6 @@
    width: 100%;
    background-size: cover;
    background-position:bottom ;
-    /* background-attachment: fixed; */
     z-index: -1;
     padding-top:170px ;
     padding-bottom:70px ;
@@ -26,4 +25,11 @@
 
 .login-container input{
 background-color: white;
+}
+.flex-login--content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
 }
