@@ -10,7 +10,10 @@ const Banner = () => {
           <span>Happy, Healthy</span> Puppies, Direct To You
         </h2>
         <h3>From our nationwide network of responsible breeders</h3>
-        <button className="banner-btn">Browse All Puppies</button>
+        <a href="/availablepuppies">
+          {' '}
+          <button className="banner-btn">Browse All Puppies</button>
+        </a>
         <Jump>
           <div className="items-group">
             <div className="item-1">

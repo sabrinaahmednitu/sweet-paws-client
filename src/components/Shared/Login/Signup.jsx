@@ -51,29 +51,6 @@ const Signup = () => {
       .catch((error) => console.log(error));
   };
 
-  //for 2nd one
-  // const form = useRef();
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
-  //   emailjs
-  //     .sendForm(
-  //       'service_c79eg0z',
-  //       'template_yrh1f72',
-  //       form.current,
-  //       'pR_K-Nt_Ffpfhs6Cv'
-  //     )
-  //     .then(
-  //       (result) => {
-  //         toast.success('Thank you so much', {
-  //           position: toast.POSITION.TOP_RIGHT,
-  //         });
-  //       },
-  //       (error) => {
-  //         console.log(error.text);
-  //       }
-  //     );
-  //   e.target.reset();
-  // };
 
   return (
     <div className="login-main">
