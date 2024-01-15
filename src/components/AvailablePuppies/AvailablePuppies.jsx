@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React from 'react';
+import React, { useEffect } from 'react';
 import Helmet from 'react-helmet';
 import './AvailablePuppies.css';
 import Rotate from 'react-reveal/Rotate';
@@ -19,6 +19,9 @@ import Poodle2 from '../../images/Available-puppy/poodle-2.jpeg';
 import Chihuahua from '../../images/Available-puppy/Chihuahua.jpg'; 
 import akc from '../../images/Available-puppy/AKC.webp'
 const AvailablePuppies = () => {
+   useEffect(() => {
+     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+   }, []);
   return (
     <div className="available-main">
       <Helmet>

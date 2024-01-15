@@ -1,10 +1,13 @@
-import React, { useContext, useRef, useState } from 'react';
+import React, { useContext, useEffect, useRef, useState } from 'react';
 import Swal from 'sweetalert2';
 import { AuthContext } from '../../../Hooks/AuthProvider';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './Reset.css';
 import Helmet from 'react-helmet';
 const Reset = () => {
+   useEffect(() => {
+     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+   }, []);
   const emailRef = useRef();
   const { ResetPassword, setLoading } = useContext(AuthContext);
   const [error, setError] = useState('');

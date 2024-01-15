@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './PetInsurance.css';
 import insurance1 from '../../images/insurance-1.jpg';
 import insurance2 from '../../images/insurance-2.jpg';
@@ -6,6 +6,9 @@ import Slide from 'react-reveal/Slide';
 import Fade from 'react-reveal/Fade';
 import Helmet from 'react-helmet';
 const PetInsurance = () => {
+   useEffect(() => {
+     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+   }, []);
   return (
     <div>
       <Helmet>

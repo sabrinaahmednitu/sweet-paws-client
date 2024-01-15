@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../Hooks/AuthProvider';
@@ -8,6 +8,10 @@ import SocialLogin from './SocialLogin/SocialLogin';
 import Helmet from 'react-helmet';
 import { toast } from 'react-toastify';
 const Login = () => {
+
+   useEffect(() => {
+     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+   }, []);
   const {
     register,
     formState: { errors },

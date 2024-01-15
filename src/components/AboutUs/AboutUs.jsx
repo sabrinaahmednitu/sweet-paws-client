@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './AboutUs.css';
 import happydog from '../../images/pexels-photo-4056475.webp'
 import Helmet from 'react-helmet';
 import Fade from 'react-reveal/Fade';
 const AboutUs = () => {
+   useEffect(() => {
+     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+   }, []);
   return (
     <div>
       <Helmet>

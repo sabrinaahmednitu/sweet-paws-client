@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './GetMembership.css';
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
@@ -6,6 +6,9 @@ import { useForm } from 'react-hook-form';
 import Helmet from 'react-helmet';
 
 const GetMembership = () => {
+   useEffect(() => {
+     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+   }, []);
      const {
        register,
        formState: { errors },

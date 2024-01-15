@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import NewFriend from './NewFriend/NewFriend';
 import Banner from './Banner/Banner';
 import DeliverJoy from './DeliverJoy/DeliverJoy';
@@ -11,6 +11,9 @@ import RecentlyViewed from './RecentlyViewed/RecentlyViewed';
 import Helmet from 'react-helmet';
 import FacebookMsg from '../FacebookMsg/FacebookMsg';
 const Home = () => {
+ useEffect(() => {
+   window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+ }, []);
     return (
       <div>
         <Helmet>
