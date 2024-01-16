@@ -5,37 +5,37 @@ import { toast } from 'react-toastify';
 import { useForm } from 'react-hook-form';
 import Helmet from 'react-helmet';
 
-const GetMembership = () => {
-   useEffect(() => {
-     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-   }, []);
-     const {
-       register,
-       formState: { errors },
-     } = useForm();
-  //for 2nd one
-  const form = useRef();
-  const sendEmail = (e) => {
-    e.preventDefault();
-    emailjs
-      .sendForm(
-        'service_c79eg0z',
-        'template_yrh1f72',
-        form.current,
-        'pR_K-Nt_Ffpfhs6Cv'
-      )
-      .then(
-        (result) => {
-          toast.success('Thank you so much', {
-            position: toast.POSITION.TOP_RIGHT,
-          });
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    e.target.reset();
-  };
+ const GetMembership = () => {
+//    useEffect(() => {
+//      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+//    }, []);
+//      const {
+//        register,
+//        formState: { errors },
+//      } = useForm();
+//   //for 2nd one
+//   const form = useRef();
+//   const sendEmail = (e) => {
+//     e.preventDefault();
+//     emailjs
+//       .sendForm(
+//         'service_c79eg0z',
+//         'template_yrh1f72',
+//         form.current,
+//         'pR_K-Nt_Ffpfhs6Cv'
+//       )
+//       .then(
+//         (result) => {
+//           toast.success('Thank you so much', {
+//             position: toast.POSITION.TOP_RIGHT,
+//           });
+//         },
+//         (error) => {
+//           console.log(error.text);
+//         }
+//       );
+//     e.target.reset();
+//   };
   return (
     <div>
       <Helmet>
